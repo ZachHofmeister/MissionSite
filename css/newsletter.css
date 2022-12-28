@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap');
+
+/* COLORS */
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #101010;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	html {
+		background-color: #FAFAFA;
+	}
+}
+
+.page { background-color: var(--page-color) !important; }
+
+.title {
+	background-color: var(--title-bg-color) !important;
+	color: var(--title-tx-color) !important;
+}
+.title *:not(:first-child) {
+	color: var(--title-tx-sub) !important;
+}
+
+html { color: var(--tx-color) !important; }
+h1:not(:first-of-type), h2, h3, h4, h5, h6 { color: var(--h-color) !important; }
+p { color: var(--p-color) !important; }
+.caption { color: var(--caption-color) !important; }
+
+.text-boxed {
+	background-color: var(--box-bg-color) !important; 
+	color: var(--box-tx-color) !important;
+}
+
+/* LAYOUT */
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0%;
+	margin-bottom: 2%;
+}
+
+p:not(:last-of-type) {
+	margin-bottom: 3%;
+}
+
+.page {
+	/* background-color: white; */
+	margin: 0 auto 4vw;
+	overflow: hidden;
+	aspect-ratio: 8.5 / 11 !important; /* width / height */
+	height: 100vw; /* This is required because safari is too dumb to calc inside percents without it*/
+}
+
+.page-section {
+	margin: 2%;
+	display: flex;
+}
+.page-section.quarter { height: 23%; }
+.page-section.third { height: 31.2%; }
+.page-section.half { height: 47.6%; }
+.page-section.twothird { height: 64%; }
+.page-section.sixth {height: 15%; }
+.page-section.eighth {height: 10.8%; }
+.page-section.twelfth {height: 6.7%; }
+.page-section.sixteenth {height: 4.6%; }
+
+
+.page-item {
+	flex: 1 1 0;
+	width: 0;
+	padding: 0 2%;
+	/* overflow: hidden; */
+}
+.page-item.double { flex: 2 2 0; }
+.page-item.triple { flex: 3 3 0; }
+.page-item.quad { flex: 4 4 0; }
+
+.page-item.vert-center, .page-item.center-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.page-item.center-center { align-items: center; }
+.page-item.vert-center *, .page-item.center-center * { margin: 0; }
+
+.page-item img {
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.photo-stack {
+	display: flex;
+	flex-direction: column;
+}
+
+.photo-item {
+	flex: 1 1 0;
+	height: 0;
+	padding: .5%;
+}
+.photo-item.double { flex: 2 2 0; }
+.photo-item.triple { flex: 3 3 0; }
+.photo-item.quad { flex: 4 4 0; }
+
+.photo-item img {
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+}
+
+img.h100 { height: 100%; }
+img.h80 { height: 80%; }
+img.h70 { height: 70%; }
+img.h60 { height: 60%; }
+img.h50 { height: 50%; }
+img.contain { object-fit: contain; }
+
+.title {
+	display: block;
+	position: relative;
+	top: -95%;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	padding: .5%;
+}
+
+.title * { margin: 0; }
+
+ul, ol {
+	padding-left: 2vw;
+}
+
+/* FONTS */
+html {
+	font-family: 'Open Sans';
+	font-size: 1.8vw;
+}
+
+h1 {
+	font-size: 4vw;
+}
+
+h2 {
+	font-size: 3vw;
+}
+
+h3 {
+	font-size: 2.1vw;
+}
+
+h4 {
+	font-size: 1.7vw;
+}
+
+h5 {
+	font-size: 1.5vw;
+}
+
+h6 {
+	font-size: 1.3vw;
+}
+
+p, ol, ul{
+	font-size: 1.683vw;
+	font-family: "Cardo";
+	line-height: 175%;
+}
+
+p.normal {
+	font-family: "Open Sans";
+	line-height: initial;
+	margin: 0;
+}
+
+p.small, .caption, ol, ul{
+	font-size: 1.4vw;
+	line-height: 125%;
+}
+
+.caption {
+	font-family: "Cardo";
+	text-align: center;
+	margin-top: 1%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+.text-boxed {
+	display: inline-flex;
+	padding: 4% 15%;
+}
+
+/* PRINT */
+@media print {
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+
+	.page {
+		overflow: hidden;
+		margin: 0;
+		break-after: always !important;
+		break-inside: avoid;
+		aspect-ratio: 8.5 / 11 !important;
+		height: initial !important;
+		box-decoration-break: slice;
+		/* overflow: visible !important; */
+	}
+
+	h1 { font-size: 4.5vw; }
+	h2 { font-size: 3.5vw; }
+	h3 { font-size: 2.6vw; }
+	h4 { font-size: 2.2vw; }
+	h5 { font-size: 1.8vw; }
+	h6 { font-size: 1.6vw; }
+
+	p, html{ font-size: 2.2vw; }
+	p.small, .caption, ol, ul { font-size: 1.8vw; }
+}

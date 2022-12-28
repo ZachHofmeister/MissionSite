@@ -1,0 +1,37 @@
+:root {
+	/* Winder colors? Maybe january*/
+	--color-1: #61788C;
+	--color-2: #BDD9F2;
+	--color-3: #4B5936;
+	--color-4: #3E4031;
+	--color-5: #6D5F44;
+
+	--page-color: var(--color-1);
+	--title-bg-color: var(--color-2);
+	--title-tx-color: var(--color-1);
+	/* --title-tx-sub: var(--color-5); */
+	--tx-color: var(--color-2);
+	--h-color: var(--color-1);
+	--p-color: ;
+	--caption-color: ;
+	--box-bg-color: var(--color-1);
+	--box-tx-color: var(--color-5);
+}
+
+/* BORDERS */
+
+/* .page-item {
+	border: 1px solid black;
+}
+
+.photo-item {
+	border: 1px solid red;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	border: 1px solid blue;
+}
+
+img {
+	border: 1px solid green;
+} */

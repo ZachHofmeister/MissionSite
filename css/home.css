@@ -1,0 +1,162 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap');
+
+/* COLOR SETTINGS */
+
+:root {
+	--color-1: #101010;
+	--color-2: #858585;
+	--color-3: #FAFAFA;
+	--color-4: #A8BEAA;
+	--color-5: #568259;
+
+	/* --header-bg-color: var(--bg-color); */
+	/* --header-tx-color: var(--color-3); */
+	/* --header-br-color: var(--br-color); */
+	/* --header-tx-sub: var(--color-5); */
+
+	/* --main-bg-color: var(--color-3); */
+	/* --main-tx-color: var(--color-2); */
+	/* --main-br-color: var(--color-2); */
+
+	/* --h-color: var(--color-1);
+	--p-color: ; */
+
+	--post-bg-color: var(--bg-color);
+	/* --post-tx-color: var(--color-1); */
+	--post-br-color: var(--br-color);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: var(--color-1);
+		--tx-color: var(--color-3);
+		--br-color: var(--color-2);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-color: var(--color-3);
+		--tx-color: var(--color-1);
+		--br-color: var(--color-2);
+	}
+}
+
+/* DEBUG BORDERS */
+
+/* #header {
+	border: 2px solid red !important;
+} */
+
+/* #main {
+	border: 1px solid magenta !important;
+} */
+
+/* .section {
+	border: 1px solid teal;
+} */
+
+/* h1, h2, h3, h4, h5, h6, p {
+	border: 1px solid blue;
+} */
+
+/* img {
+	border: 1px solid green;
+} */
+
+/* LAYOUT */
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0%;
+	margin-bottom: 2%;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--tx-color);
+	font-family: 'Open Sans';
+}
+
+#main {
+	/* SIZE */
+	width: 90vw;
+	/* min-height: 200vh; */
+	margin: 0 auto;
+	/* border-radius: 10px; */
+	/* COLOR */
+	background-color: var(--main-bg-color);
+	color: var(--main-tx-color);
+	border: 1px solid var(--main-br-color);
+}
+
+.section {
+	margin-bottom: 5vh;
+}
+
+.section.w50 {
+	width: 50vw;
+}
+
+.hcenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Arranging */
+
+/* .hstack, .vstack {
+	margin-bottom: 2%;
+	display: flex;
+}
+
+.vstack {
+	flex-direction: column;
+}
+
+.hstack .item {
+	flex: 1 1 0;
+	width: 0;
+	padding: 0 2%;
+} */
+
+/* Post Previews */
+.post {
+	/* SIZE */
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 2vh;
+	height: 30vw;
+	/* COLOR */
+	background-color: var(--post-bg-color);
+	border: 1px solid var(--post-br-color);
+	color: var(--post-tx-color);
+	/* LAYOUT */
+	display: flex;
+}
+
+.post-body {
+	margin: 20px;
+}
+
+.post-img {
+	width: 33vw;
+	margin-left: auto;
+	object-fit: cover;
+}
+
+/* FONTS */
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }

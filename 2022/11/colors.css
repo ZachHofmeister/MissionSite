@@ -1,0 +1,36 @@
+:root {
+	/* --color-1: #DDD4EF; */
+	--color-2: #DED5F0;
+	--color-3: #9D679B;
+	--color-4: #44225E;
+	/* --color-5: #DA2DA6; */
+
+	--page-color: var(--color-3);
+	--title-bg-color: var(--color-2);
+	--title-tx-color: var(--color-4);
+	/* --title-tx-sub: var(--color-5); */
+	--tx-color: var(--color-4);
+	--h-color: var(--color-2);
+	/* --p-color: ; */
+	/* --caption-color: var(--color-2); */
+	--box-bg-color: var(--color-2);
+	--box-tx-color: var(--color-4);
+}
+
+/* BORDERS */
+
+/* .page-item {
+	border: 1px solid black;
+}
+
+.photo-item {
+	border: 1px solid red;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	border: 1px solid blue;
+}
+
+img {
+	border: 1px solid green;
+} */
