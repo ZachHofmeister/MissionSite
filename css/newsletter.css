@@ -83,6 +83,7 @@ p:not(:last-of-type) {
 }
 .page-item.center-center { align-items: center; }
 .page-item.vert-center *, .page-item.center-center * { margin: 0; }
+.page-item.nopad { padding: 0; }
 
 .page-item img {
 	width: 100%;
