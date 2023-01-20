@@ -6,6 +6,16 @@ const templateSrc = '/views/navbar.html';
 const elementId = 'navbar';
 const clickHref = '/index.html';
 
+const scrollStart = 10;
+const scrollEnd = 40;
+const fontStart = 4;
+const fontEnd = 2;
+const heightStart = 10;
+const heightEnd = 5;
+const fontUnits = 'vw';
+const heightUnits = 'vw';
+
+
 async function main() {
 	await renderView();
 	document.getElementById(elementId).onclick = clickFunction;
@@ -36,8 +46,8 @@ async function renderView() {
 }
 
 function scrollFunction() {
-	document.getElementById(elementId).style.fontSize = scrollScale(10, 40, 5, 3.3) + "vh";
-	document.getElementById(elementId).style.height = scrollScale(10, 40, 15, 10) + "vh";
+	document.getElementById(elementId).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
+	document.getElementById(elementId).style.height = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
 }
 
 function clickFunction() {

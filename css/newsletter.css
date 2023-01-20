@@ -195,6 +195,10 @@ p.small, .caption, ol, ul{
 	font-style: italic;
 }
 
+.no-decor {
+	text-decoration: none;
+}
+
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
@@ -205,11 +209,24 @@ p.small, .caption, ol, ul{
 	padding: 4% 15%;
 }
 
+a {
+	color: inherit;
+	/* text-decoration: none; */
+}
+
 /* PRINT */
 @media print {
 	html, body {
-		margin: 0;
+		margin: 0 !important;
 		padding: 0;
+	}
+
+	#navbar {
+		display: none !important;
+	}
+	
+	a {
+		text-decoration: none;
 	}
 
 	.page {
