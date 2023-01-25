@@ -65,7 +65,6 @@ p:not(:last-of-type) {
 .page-section.twelfth {height: 6.7%; }
 .page-section.sixteenth {height: 4.6%; }
 
-
 .page-item {
 	flex: 1 1 0;
 	width: 0;
@@ -132,6 +131,7 @@ img.contain { object-fit: contain; }
 
 ul, ol {
 	padding-left: 2vw;
+	margin-top: 0;
 }
 
 /* FONTS */
