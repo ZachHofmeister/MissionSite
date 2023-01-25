@@ -30,4 +30,9 @@ window.onclick = function(event) {
 	if (event.target == lightbox) {
 		lightbox.style.display = "none";
 	}
-  } 
+} 
+window.touchstart = function(event) {
+	if (event.target == lightbox) {
+		lightbox.style.display = "none";
+	}
+} 
