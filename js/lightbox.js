@@ -31,7 +31,7 @@ window.onclick = function(event) {
 		lightbox.style.display = "none";
 	}
 } 
-window.touchstart = function(event) {
+window.ontouchstart = function(event) {
 	if (event.target == lightbox) {
 		lightbox.style.display = "none";
 	}
