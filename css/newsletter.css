@@ -127,6 +127,10 @@ img.contain { object-fit: contain; }
 	padding: .5%;
 }
 
+.title.not-rel {
+	top: initial;
+}
+
 .title * { margin: 0; }
 
 ul, ol {

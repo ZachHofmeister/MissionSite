@@ -26,20 +26,17 @@
 	--post-bg-color: var(--bg-color);
 	/* --post-tx-color: var(--color-1); */
 	--post-br-color: var(--br-color);
+
+	/* LIGHT COLOR SCHEME */
+	--bg-color: var(--color-3);
+	--tx-color: var(--color-1);
+	--br-color: var(--color-2);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-color: var(--color-1);
 		--tx-color: var(--color-3);
-		--br-color: var(--color-2);
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		--bg-color: var(--color-3);
-		--tx-color: var(--color-1);
 		--br-color: var(--color-2);
 	}
 }
@@ -136,6 +133,8 @@ body {
 	/* LAYOUT */
 	display: flex;
 }
+
+.post:hover { cursor: pointer; }
 
 .post-body {
 	margin: 20px;
