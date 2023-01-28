@@ -3,8 +3,10 @@ import Mustache from '../modules/mustache.js';
 const cssHref = '/css/navbar.css';
 const dataSrc = '/_data/navbar.json';
 const templateSrc = '/views/navbar.html';
-const elementId = 'navbar';
-const clickHref = '/index.html';
+
+const navbarID = 'navbar'
+const linksID = 'nav-links';
+const buttonID = 'nav-button';
 
 const scrollStart = 10;
 const scrollEnd = 40;
@@ -18,7 +20,7 @@ const heightUnits = 'vw';
 
 async function main() {
 	await renderView();
-	document.getElementById(elementId).onclick = clickFunction;
+	// document.getElementById(buttonID).onclick = toggleLinks;
 	window.onscroll = scrollFunction;
 	scrollFunction();
 	if (cssHref != '') {
@@ -42,17 +44,17 @@ async function renderView() {
 	let template = await templateReq.text();
 
     var content = Mustache.render(template, data);
-	document.getElementById(elementId).innerHTML = content;
+	document.getElementById(navbarID).innerHTML = content;
 }
 
 function scrollFunction() {
-	document.getElementById(elementId).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
-	document.getElementById(elementId).style.height = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
+	document.getElementById(navbarID).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
+	document.getElementById(navbarID).style.height = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
 }
 
-function clickFunction() {
-	window.location.assign(clickHref);
-}
+// function clickFunction() {
+// 	window.location.assign(clickHref);
+// }
 
 function scrollScale (scrollMin, scrollMax, valMin, valMax) {
 	let scroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
@@ -62,6 +64,14 @@ function scrollScale (scrollMin, scrollMax, valMin, valMax) {
 	return Math.min(Math.max(val, valMax), valMin);
 }
 
+function toggleLinks () {
+	var links = document.getElementById(linksID);
+	if (links.style.display == 'block') {
+		links.style.display = 'none';
+	} else {
+		links.style.display = 'block';
+	}
+}
 
 // START MAIN
 main();
