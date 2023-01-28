@@ -32,51 +32,38 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	transition: 0.2s;
+	
 	/* COLOR */
 	background-color: var(--nav-bg-color);
 	color: var(--nav-tx-color);
 	border-bottom: 1px solid var(--nav-br-color);
-	/* border-style: hidden hidden solid; */
-	/* TEXT */
-	/* text-align: center; */
-	/* font-size: 300; */
-	/* center-center text */
-	/* display: table; */
+	font-size: 2vw;
+
 	z-index: 999;
 
 	/* FLEX */
 	display: flex;
-	align-items: stretch;
+	/* align-items: stretch; */
+	transition: 0.2s;
 }
 
-#navbar > * {
+#navbar > a {
+	border: 1px solid blue;
 	display: flex;
 	align-items: center;
-	/* border: 1px solid green; */
+	margin: 0 2vw;
+	padding: 2vw 0;
 }
 
-#nav-title {
-	margin-left: 4vw;
-}
+/* links on either end margin */
+#navbar > a:first-child { margin-left: 4vw; }
+#navbar > a:last-child { margin-right: 4vw; }
 
-#nav-links {
-	gap: 2vw;
+/* Push the links after the main link to the right*/
+#navbar > a:nth-of-type(2) {
 	margin-left: auto;
-	display: relative;
-	/* border: 1px solid blue; */
-}
-
-#navbar > * > a {
-	text-decoration: none;
-	color: inherit;
 }
 
 #nav-button {
-	margin-left: auto;
-	aspect-ratio: 1;
-}
-
-#nav-button > * {
-	margin: 0 auto;
+	padding: 0 3vw;
 }

@@ -3,8 +3,10 @@ import Mustache from '../modules/mustache.js';
 const cssHref = '/css/navbar.css';
 const dataSrc = '/_data/navbar.json';
 const templateSrc = '/views/navbar.html';
+const faSrc = 'https://kit.fontawesome.com/43ec7226a9.js';
 
 const navbarID = 'navbar'
+const navTitleID = 'nav-title'
 const linksID = 'nav-links';
 const buttonID = 'nav-button';
 
@@ -12,8 +14,8 @@ const scrollStart = 10;
 const scrollEnd = 40;
 const fontStart = 4;
 const fontEnd = 2;
-const heightStart = 10;
-const heightEnd = 5;
+const heightStart = 2;
+const heightEnd = 0;
 const fontUnits = 'vw';
 const heightUnits = 'vw';
 
@@ -26,14 +28,24 @@ async function main() {
 	if (cssHref != '') {
 		appendCSS();
 	}
+	if (faSrc != '') {
+		appendFontAwesome();
+	}
 }
 
-function appendCSS () {
+function appendCSS() {
 	let cssLink = document.createElement('link');
 	cssLink.href = cssHref;
 	cssLink.type = 'text/css';
 	cssLink.rel = 'stylesheet';
 	document.head.appendChild(cssLink);
+}
+
+function appendFontAwesome() {
+	let faScript = document.createElement('script');
+	faScript.src = faSrc
+	faScript.crossOrigin = 'anonymous';
+	document.head.appendChild(faScript);
 }
 
 async function renderView() {
@@ -48,8 +60,10 @@ async function renderView() {
 }
 
 function scrollFunction() {
-	document.getElementById(navbarID).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
-	document.getElementById(navbarID).style.height = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
+	document.getElementById(navTitleID).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
+	document.getElementById(navTitleID).style.paddingTop = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
+	document.getElementById(navTitleID).style.paddingBottom = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
+
 }
 
 // function clickFunction() {
