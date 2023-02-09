@@ -2,11 +2,13 @@
 	--nav-color-1: #101010;
 	--nav-color-2: #858585;
 	--nav-color-3: #FAFAFA;
+	--nav-color-4: #628395;
 
 	/* LIGHT MODE COLORS */
 	--nav-bg-color: var(--nav-color-3);
 	--nav-tx-color: var(--nav-color-1);
 	--nav-br-color: var(--nav-color-2);
+	--nav-ac-color: var(--nav-color-4);
 }
 
 /* DARK MODE COLORS */
@@ -19,51 +21,103 @@
 }
 
 body {
-	margin-top: 15vw;
+	margin-top: 100px;
+	-webkit-text-size-adjust: 100%;
 }
 
-#navbar > * { 
+/* .navbar > * { 
 	all: unset;
-}
+} */
 
-#navbar {
-	/* SIZE */
-	width: 100%;
+.navbar {
+	position: fixed;
 	top: 0;
 	left: 0;
-	position: fixed;
-	
-	/* COLOR */
+	width: 100%;
+
+	font-size: 20px;
 	background-color: var(--nav-bg-color);
-	color: var(--nav-tx-color);
 	border-bottom: 1px solid var(--nav-br-color);
-	font-size: 2vw;
+	margin-bottom: 20px;
 
+	display: flex;
+	gap: 20px;
 	z-index: 999;
-
-	/* FLEX */
-	display: flex;
-	/* align-items: stretch; */
-	transition: 0.2s;
 }
 
-#navbar > a {
-	border: 1px solid blue;
-	display: flex;
-	align-items: center;
-	margin: 0 2vw;
-	padding: 2vw 0;
+.navbar * {
+	text-decoration: none;
+	color: var(--nav-tx-color);
 }
 
-/* links on either end margin */
-#navbar > a:first-child { margin-left: 4vw; }
-#navbar > a:last-child { margin-right: 4vw; }
-
-/* Push the links after the main link to the right*/
-#navbar > a:nth-of-type(2) {
+.nav-items {
+	display: flex;
+	gap: 20px;
 	margin-left: auto;
 }
 
-#nav-button {
-	padding: 0 3vw;
+.nav-link {
+	/* padding: 16px; */
+	padding: 2vw 4vw;
+	/* border: 1px solid red; */
+}
+
+/* On devices that support hover, do hover effect */
+@media (hover) {
+	.nav-link:hover {
+		background-color: var(--nav-br-color);
+	}
+}
+
+.nav-toggle {
+	display: none;
+	z-index: 1000;
+	background-color: var(--nav-bg-color);
+}
+
+/* Styling for high dpi screens ONLY */
+@media 
+(-webkit-min-device-pixel-ratio: 2.5), 
+(min-resolution: 220dpi) {
+	body {
+		margin-top: 150px;
+	}
+	.navbar {
+		font-size: 50px;
+	}
+}
+
+/* Styling for narrow screens */
+@media 
+(-webkit-min-device-pixel-ratio: 2.5), 
+(min-resolution: 220dpi),
+(max-width: 600px) {
+	.navbar,
+	.nav-items {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.nav-items {
+		margin-left: 0;
+		display: none;
+	}
+
+	.nav-items.toggle-show {
+		display: flex;
+	}
+
+	.nav-toggle {
+		align-self: flex-end;
+		position: absolute;
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-toggle div {
+		width: 0;
+		visibility: hidden;
+	}
 }

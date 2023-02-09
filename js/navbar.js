@@ -7,24 +7,30 @@ const faSrc = 'https://kit.fontawesome.com/43ec7226a9.js';
 
 const navbarID = 'navbar'
 const navTitleID = 'nav-title'
-const linksID = 'nav-links';
-const buttonID = 'nav-button';
 
 const scrollStart = 10;
 const scrollEnd = 40;
-const fontStart = 4;
-const fontEnd = 2;
-const heightStart = 2;
-const heightEnd = 0;
+const fontStart = 8;
+const fontEnd = 4;
+const heightStart = 10;
+const heightEnd = 5;
 const fontUnits = 'vw';
-const heightUnits = 'vw';
+const heightUnits = 'px';
 
 
 async function main() {
 	await renderView();
-	// document.getElementById(buttonID).onclick = toggleLinks;
-	window.onscroll = scrollFunction;
-	scrollFunction();
+	
+	try {
+		document.querySelector('.nav-toggle').addEventListener('click', toggleAction);
+	} catch {
+		console.error('No .nav-toggle element found!');
+	}
+
+	//TODO: Rework scroll function once navbar looks nice
+	// window.onscroll = scrollFunction;
+	// scrollFunction();
+
 	if (cssHref != '') {
 		appendCSS();
 	}
@@ -63,7 +69,6 @@ function scrollFunction() {
 	document.getElementById(navTitleID).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
 	document.getElementById(navTitleID).style.paddingTop = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
 	document.getElementById(navTitleID).style.paddingBottom = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
-
 }
 
 // function clickFunction() {
@@ -78,13 +83,11 @@ function scrollScale (scrollMin, scrollMax, valMin, valMax) {
 	return Math.min(Math.max(val, valMax), valMin);
 }
 
-function toggleLinks () {
-	var links = document.getElementById(linksID);
-	if (links.style.display == 'block') {
-		links.style.display = 'none';
-	} else {
-		links.style.display = 'block';
-	}
+function toggleAction () {
+	var navItems = document.querySelectorAll('.nav-items');
+	navItems.forEach(
+		nav => nav.classList.toggle('toggle-show')
+	);
 }
 
 // START MAIN
