@@ -1,0 +1,18 @@
+<div class="navbar" id="navbar">
+	<a href="/"><div class="nav-link nav-title">
+		Zach's Mission Updates
+	</div></a>
+
+	<div onClick="return true" class="nav-link nav-toggle">
+		<i class="fa fa-bars"></i><div>M</div>
+	</div>
+
+	<nav class="nav-items">
+		<a href="/"><div class="nav-link">
+			About
+		</div></a>
+		<a href="/"><div class="nav-link">
+			Resources
+		</div></a>
+	</nav>
+</div>
