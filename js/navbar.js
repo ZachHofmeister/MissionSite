@@ -19,7 +19,7 @@ const heightUnits = 'px';
 
 
 async function main() {
-	await renderView();
+	// await renderView();
 	
 	try {
 		document.querySelector('.nav-toggle').addEventListener('click', toggleAction);
@@ -31,12 +31,12 @@ async function main() {
 	// window.onscroll = scrollFunction;
 	// scrollFunction();
 
-	if (cssHref != '') {
-		appendCSS();
-	}
-	if (faSrc != '') {
-		appendFontAwesome();
-	}
+	// if (cssHref != '') {
+	// 	appendCSS();
+	// }
+	// if (faSrc != '') {
+	// 	appendFontAwesome();
+	// }
 }
 
 function appendCSS() {
