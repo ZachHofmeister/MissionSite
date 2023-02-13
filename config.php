@@ -12,10 +12,10 @@
 	$json = file_get_contents(".creds.json");
 	$creds = json_decode($json, true);
 
-	$host = $settings['host'] ?? null;
-	$user = $settings['username'] ?? null;
-	$pass = $settings ['password'] ?? null;
-	$db = $settings['schema'] ?? null;
+	$host = $creds['host'] ?? null;
+	$user = $creds['username'] ?? null;
+	$pass = $creds['password'] ?? null;
+	$db = $creds['schema'] ?? null;
 
 	$conn = mysqli_connect($host, $user, $pass, $db);
 	if (!$conn) {
