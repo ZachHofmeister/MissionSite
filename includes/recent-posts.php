@@ -15,7 +15,7 @@
 							<h2 class="post-title">' . $row['title'] . '</h2>
 							<h6 class="post-details">Published ' . $row['nice_date'] . ' by ' . $row['author'] . '</h6>
 							<p class="post-preview">
-								' . $row['desc'] . '
+								' . $row['blurb'] . '
 								<strong>...</strong>
 							</p>
 						</div>

@@ -60,11 +60,14 @@ body {
 	/* padding: 16px; */
 	padding: 2vw 4vw;
 	/* border: 1px solid red; */
+	-webkit-transition: background-color 0.15s;
+	-ms-transition: background-color 0.15s;
+	transition: background-color 0.15s;
 }
 
 /* On devices that support hover, do hover effect */
 @media (hover) {
-	.nav-link:hover {
+	.nav-toggle:hover {
 		background-color: var(--nav-br-color);
 	}
 }
@@ -72,7 +75,7 @@ body {
 .nav-toggle {
 	display: none;
 	z-index: 1000;
-	background-color: var(--nav-bg-color);
+	/* background-color: var(--nav-bg-color); */
 }
 
 /* Styling for high dpi screens ONLY */
@@ -121,3 +124,29 @@ body {
 		visibility: hidden;
 	}
 }
+
+/* Hover underline effects */
+
+.nav-link:not(.nav-toggle) {
+	/* display: inline-block; */
+	position: relative;
+  }
+  
+  /*:after adds content after the selection*/
+  .nav-link:not(.nav-toggle):after {
+	content: ''; /*no text, just line*/
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--nav-tx-color);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease;
+  }
+  
+  .nav-link:not(.nav-toggle):hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
