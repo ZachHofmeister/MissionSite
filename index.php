@@ -20,5 +20,5 @@
 	</body>
 
 	<!-- JAVASCRIPT-->
-	<script src="/js/navbar.js" type="module"></script>
+	<script type="text/javascript" src="/js/navbar.js"></script>
 </html>
