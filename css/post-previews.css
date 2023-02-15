@@ -1,0 +1,38 @@
+:root {
+	--post-bg-color: var(--bg-color);
+	/* --post-tx-color: var(--color-1); */
+	--post-br-color: var(--br-color);
+}
+
+/* Post Previews */
+a {
+	text-decoration: none;
+	color: var(--post-tx-color);
+}
+
+.post {
+	/* SIZE */
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 2vh;
+	/* height: 30vw; */
+	height: fit-content;
+	/* COLOR */
+	background-color: var(--post-bg-color);
+	border: 1px solid var(--post-br-color);
+	color: var(--post-tx-color);
+	/* LAYOUT */
+	display: flex;
+}
+
+/* .post:hover { cursor: pointer; } */
+
+.post-body {
+	margin: 20px;
+}
+
+.post-img {
+	max-width: 33vw;
+	margin-left: auto;
+	object-fit: cover;
+}

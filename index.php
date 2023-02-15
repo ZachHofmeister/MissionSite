@@ -4,8 +4,9 @@
 	<?php require_once('config.php') ?>
 	<head>
 		<title>Zach's Mission Updates</title>
-		<link href="css/home.css" type="text/css" rel="stylesheet"/>
-		<link href="css/navbar.css" type="text/css" rel="stylesheet"/>
+		<link type="text/css" rel="stylesheet" href="/css/home.css"/>
+		<link type="text/css" rel="stylesheet" href="/css/post-previews.css" />
+		<link type="text/css" rel="stylesheet" href="/css/navbar.css"/>
 		<script src="https://kit.fontawesome.com/43ec7226a9.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
