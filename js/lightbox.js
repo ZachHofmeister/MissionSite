@@ -4,7 +4,6 @@ var lightboxImg = document.getElementById("main-img");
 
 var images = document.querySelectorAll("img:not(.no-lightbox)");
 
-
 //view image on click
 Array.from(images).forEach(img => {
 	img.onclick = function() {
@@ -13,12 +12,6 @@ Array.from(images).forEach(img => {
 		lightboxImg.alt = img.alt;
 	}
 });
-
-// document.getElementsByTagName("img")[0].onclick = function() {
-// 	lightbox.style.display = "block";
-// }
-
-
 
 //close if click close button
 lightboxClose.onclick = function() {

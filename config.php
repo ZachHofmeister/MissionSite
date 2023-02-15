@@ -16,8 +16,9 @@
 	$user = $creds['username'] ?? null;
 	$pass = $creds['password'] ?? null;
 	$db = $creds['schema'] ?? null;
+	$port = $creds['port'] ?? null;
 
-	$conn = mysqli_connect($host, $user, $pass, $db);
+	$conn = mysqli_connect($host, $user, $pass, $db, $port);
 	if (!$conn) {
 		die("Error connecting to database: " . mysqli_connect_error());
 	}

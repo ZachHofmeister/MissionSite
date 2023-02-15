@@ -1,6 +1,7 @@
 <div class="section" id="recent-posts">
 	<?php
-		$query = 'SELECT *, DATE_FORMAT(published_date, "%M %d, %Y") AS nice_date
+		// $date_format = "%M %d, %Y";
+		$query = 'SELECT *, DATE_FORMAT(published_date, "%m/%d/%Y") AS nice_date
 			FROM newsletters
 			WHERE published = 1
 			ORDER BY published_date DESC';
@@ -8,8 +9,10 @@
 		$newsletters = $result->fetch_all(MYSQLI_ASSOC);
 
 		foreach($newsletters as $row) {
+			$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
+			// echo $nl_url;
 			echo '
-				<a href="' . $row['url'] . '">
+				<a href="' . $nl_url . '">
 					<div class="post" data-href="' . $row['url'] . '">
 						<div class="post-body">
 							<h2 class="post-title">' . $row['title'] . '</h2>

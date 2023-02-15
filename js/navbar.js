@@ -1,10 +1,5 @@
 const cssHref = '/css/navbar.css';
-const dataSrc = '/_data/navbar.json';
-const templateSrc = '/views/navbar.html';
 const faSrc = 'https://kit.fontawesome.com/43ec7226a9.js';
-
-const navbarID = 'navbar'
-const navTitleID = 'nav-title'
 
 const scrollStart = 10;
 const scrollEnd = 40;
@@ -16,9 +11,7 @@ const fontUnits = 'vw';
 const heightUnits = 'px';
 
 
-async function main() {
-	// await renderView();
-	
+async function main() {	
 	try {
 		document.querySelector('.nav-toggle').addEventListener('click', toggleAction);
 	} catch {
@@ -52,25 +45,10 @@ async function main() {
 // 	document.head.appendChild(faScript);
 // }
 
-// async function renderView() {
-// 	let dataReq = await fetch(dataSrc);
-//     let templateReq = await fetch(templateSrc);
-
-// 	let data = await dataReq.json();
-// 	let template = await templateReq.text();
-
-//     var content = Mustache.render(template, data);
-// 	document.getElementById(navbarID).innerHTML = content;
-// }
-
 // function scrollFunction() {
 // 	document.getElementById(navTitleID).style.fontSize = scrollScale(scrollStart, scrollEnd, fontStart, fontEnd) + fontUnits;
 // 	document.getElementById(navTitleID).style.paddingTop = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
 // 	document.getElementById(navTitleID).style.paddingBottom = scrollScale(scrollStart, scrollEnd, heightStart, heightEnd) + heightUnits;
-// }
-
-// function clickFunction() {
-// 	window.location.assign(clickHref);
 // }
 
 // function scrollScale (scrollMin, scrollMax, valMin, valMax) {

@@ -8,10 +8,10 @@
 	</div>
 
 	<nav class="nav-items">
-		<a href="/"><div class="nav-link">
+		<!-- <a href="/"><div class="nav-link">
 			About
-		</div></a>
-		<a href="/"><div class="nav-link">
+		</div></a> -->
+		<a href="/resources.php"><div class="nav-link">
 			Resources
 		</div></a>
 	</nav>
