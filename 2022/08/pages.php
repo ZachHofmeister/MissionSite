@@ -33,12 +33,12 @@
 		<!-- PHOTO STACK -->
 		<div class="page-item double photo-stack">
 			<div class="photo-item">
-				<img class="h90" src="/2022/08/cliff-jumping.jpeg" alt="">
-				<p class="caption">Mass at SEEK in the St. Louis Dome</p>
+				<img class="h80" src="/2022/08/cliff-jumping.jpeg" alt="">
+				<p class="caption">Our group after hiking and cliff jumping at Paradise Cove </p>
 			</div>
 			<div class="photo-item">
 				<img class="h80" src="/2022/08/spire-game.jpeg" alt="">
-				<p class="caption">The Air Force men on their way to a men's talk at SEEK</p>
+				<p class="caption">Our first SPIRE meeting, where we have talks and activities</p>
 			</div>
 		</div>
 		<!-- TEXT -->
