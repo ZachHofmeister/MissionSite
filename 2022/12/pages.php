@@ -2,13 +2,13 @@
 <div class="page">
 	<div class="page-section half">
 		<div class="page-item nopad">
-			<img class="h100" src="/2022/12/1.png">
+			<img class="h100" src="/2022/12/1.jpeg">
 		</div>
 	</div>
 
 	<div class="page-section half">
 		<div class="page-item nopad">
-			<img class="h100 no-lightbox" src="/2022/12/2.png">
+			<img class="h100 no-lightbox" src="/2022/12/2.jpeg">
 		</div>
 	</div>
 
