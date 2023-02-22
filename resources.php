@@ -19,7 +19,7 @@
 				<p>I love bringing you into the mission we are on together through my monthly newsletters, but there is even more I would like to share with you! On this page, I plan to list some of the resources that I share with students or that have been helpful to me in my relationship with God. I hope that the Holy Spirit may use them to bring more fruit to your journey also!</p>
 			</div>
 
-			<div class="section bordered">
+			<!-- <div class="section bordered">
 				<h2>Bible Studies</h2>
 				<p>An important part of our week is leading and inviting students to weekly Bible studies. In Bible study, we help students learn more about who God is and how to follow Him while building virtuous friendships.</p>
 				<p>Typically, we lead bible studies written by FOCUS. While we could and sometimes do use outside sources or come up with our own material, we do this so that as our students begin to lead their own bible studies they have a clear roadmap of how to lead others.</p>
@@ -35,10 +35,10 @@
 			<div class="section bordered">
 				<h2>Books</h2>
 				<p>I must admit I don't read as much as I would like to; most of the what I read are spiritual books in prayer time. Here are some that I have found / am finding fruitful!</p>
-			</div>
+			</div> -->
 
 			<div class="section padded text-center">
-				<h2>More coming soon!</h3>
+				<h2>Coming soon!</h3>
 			</div>
 		</div>
 	</body>
