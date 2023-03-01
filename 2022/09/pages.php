@@ -4,7 +4,7 @@
 			<img class="h100" src="/2022/09/retreat-all.jpg" alt="">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy | September 2022</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style">|</span> September 2022</h4>
 			</div>
 		</div>
 	</div>

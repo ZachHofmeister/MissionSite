@@ -23,9 +23,10 @@ a {
 	color: var(--post-tx-color);
 	/* LAYOUT */
 	display: flex;
+	transition: 0.25s ease;
 }
 
-/* .post:hover { cursor: pointer; } */
+.post:hover { border: 1px solid var(--tx-color); }
 
 .post-body {
 	margin: 20px;

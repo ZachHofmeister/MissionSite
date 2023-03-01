@@ -5,7 +5,7 @@
 			<img class="h100" src="/2022/11/dallas-sunset.jpeg" alt="" style="object-position: center 70%;">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy | November 2022</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style">|</span> November 2022</h4>
 			</div>
 		</div>
 	</div>

@@ -7,9 +7,12 @@ var images = document.querySelectorAll("img:not(.no-lightbox)");
 //view image on click
 Array.from(images).forEach(img => {
 	img.onclick = function() {
-		lightbox.style.display = "block";
-		lightboxImg.src = img.src;
-		lightboxImg.alt = img.alt;
+		//maybe this will fix double-tap error on ios devices? prob not
+		if (lightbox.style.display == "none") {
+			lightbox.style.display = "block";
+			lightboxImg.src = img.src;
+			lightboxImg.alt = img.alt;
+		}
 	}
 });
 

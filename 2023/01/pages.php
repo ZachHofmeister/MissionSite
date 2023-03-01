@@ -5,7 +5,7 @@
 			<img class="h100" src="/2023/01/stlouis-basilica.jpeg" alt="The beautiful St. Louis Cathedral Basilica" style="object-position: center 50%;">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy | January 2023</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style">|</span> January 2023</h4>
 			</div>
 		</div>
 	</div>

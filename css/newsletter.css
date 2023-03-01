@@ -40,12 +40,12 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 2%;
 }
 
+/* Spacing under paragraphs */
 p:not(:last-of-type) {
 	margin-bottom: 3%;
 }
 
 .page {
-	/* background-color: white; */
 	margin: 0 auto 4vw;
 	overflow: hidden;
 	aspect-ratio: 8.5 / 11 !important; /* width / height */
@@ -53,17 +53,47 @@ p:not(:last-of-type) {
 }
 
 .page-section {
-	margin: 2%;
+	/* margin: 2%; */
+	padding: 1% 2%;
 	display: flex;
+
+	/* Make padding not add to height */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-.page-section.quarter { height: 23%; }
-.page-section.third { height: 31.2%; }
-.page-section.half { height: 47.6%; }
-.page-section.twothird { height: 64%; }
-.page-section.sixth {height: 15%; }
-.page-section.eighth {height: 10.8%; }
-.page-section.twelfth {height: 6.7%; }
-.page-section.sixteenth {height: 4.6%; }
+
+.page-section._100 { height: 100%; }
+.page-section._95 { height: 95%; }
+.page-section._90 { height: 90%; }
+.page-section._85 { height: 85%; }
+.page-section._80 { height: 80%; }
+.page-section._75 { height: 75%; }
+.page-section._70 { height: 70%; }
+.page-section.twothird { height: 66.6%; }
+.page-section._65 { height: 65%; }
+.page-section._60 { height: 60%; }
+.page-section._55 { height: 55%; }
+.page-section._50,
+.page-section.half { height: 50%; }
+.page-section._45 { height: 45%; }
+.page-section._40 { height: 40%; }
+.page-section._35 { height: 35%; }
+.page-section.third { height: 33.3%; }
+.page-section._30 { height: 30%; }
+.page-section._25,
+.page-section.quarter { height: 25%; }
+.page-section._20 { height: 20%; }
+.page-section.sixth { height: 16.6%; }
+.page-section._15 { height: 15%; }
+.page-section.eighth {height: 12.5%; }
+.page-section._10 { height: 10%; }
+.page-section.twelfth { height: 8.3%; }
+.page-section.sixteenth {height: 6.25%; }
+.page-section._5 { height: 5%; }
+
+.page-section:first-child { padding-top: 2% }
+.page-section:last-child { padding-bottom: 2% }
 
 .page-item {
 	flex: 1 1 0;
@@ -199,6 +229,10 @@ p.small, .caption, ol, ul{
 	font-style: italic;
 }
 
+.no-style {
+	font-style: normal;
+}
+
 .no-decor {
 	text-decoration: none;
 }
@@ -210,7 +244,7 @@ p.small, .caption, ol, ul{
 
 .text-boxed {
 	display: inline-flex;
-	padding: 4% 15%;
+	padding: 1.5vw 3vw;
 }
 
 a {

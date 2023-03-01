@@ -5,7 +5,7 @@
 			<!-- <img class="h100" src="/2022/08/stlouis-basilica.jpeg" alt=""> -->
 			<div class="title not-rel">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy | August 2022</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style">|</span> August 2022</h4>
 			</div>
 		</div>
 	</div>
@@ -110,7 +110,7 @@
 	<!-- PHOTO -->
 	<div class="page-section third">
 		<div class="page-item">
-			<img class="h90" src="/2022/08/mass-f1.jpeg" alt="" style="object-position: center 90%;"/>
+			<img class="h80" src="/2022/08/mass-f1.jpeg" alt="" style="object-position: center 90%;"/>
 			<p class="caption">Mass with the freshmen during their basic training</p>
 		</div>
 	</div>

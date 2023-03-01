@@ -16,7 +16,7 @@
 		<div id="main">
 			<div class="section padded">
 				<h1 class="text-center">Resources</h1>
-				<p>I love bringing you into the mission we are on together through my monthly newsletters, but there is even more I would like to share with you! On this page, I plan to list some of the resources that I share with students or that have been helpful to me in my relationship with God. I hope that the Holy Spirit may use them to bring more fruit to your journey also!</p>
+				<p class="text-justify">I love bringing you into the mission we are on together through my monthly newsletters, but there is even more I would like to share with you! On this page, I plan to list some of the resources that have helped me grow in my relationship with God and that I share with students. I hope that the Holy Spirit may use them to bless you also!</p>
 			</div>
 
 			<!-- <div class="section bordered">
@@ -30,9 +30,9 @@
 					<li>The Big 3 (Men)</li>
 					<li>Living Gospel</li>
 				</ul>
-			</div>
+			</div> -->
 
-			<div class="section bordered">
+			<!-- <div class="section bordered">
 				<h2>Books</h2>
 				<p>I must admit I don't read as much as I would like to; most of the what I read are spiritual books in prayer time. Here are some that I have found / am finding fruitful!</p>
 			</div> -->

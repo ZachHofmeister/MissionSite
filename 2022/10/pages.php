@@ -6,7 +6,7 @@
 			<img class="h100" src="/2022/10/camping-mass.jpg" alt="" style="object-position: center 70%;">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy | October 2022</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style">|</span> October 2022</h4>
 			</div>
 		</div>
 	</div>
