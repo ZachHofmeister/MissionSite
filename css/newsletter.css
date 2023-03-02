@@ -2,29 +2,25 @@
 
 /* COLORS */
 
+body {
+	background-color: #FAFAFA;
+}
+
 @media (prefers-color-scheme: dark) {
-	html {
-		background-color: #101010;
-	}
+	body { background-color: #101010; }
 }
 
-@media (prefers-color-scheme: light) {
-	html {
-		background-color: #FAFAFA;
-	}
+.page { 
+	color: var(--tx-color) !important;
+	background-color: var(--page-color); 
 }
-
-.page { background-color: var(--page-color) !important; }
 
 .title {
 	background-color: var(--title-bg-color) !important;
 	color: var(--title-tx-color) !important;
 }
-.title *:not(:first-child) {
-	color: var(--title-tx-sub) !important;
-}
+.title *:not(:first-child) { color: var(--title-tx-sub) !important; }
 
-html { color: var(--tx-color) !important; }
 h1:not(:first-of-type), h2, h3, h4, h5, h6 { color: var(--h-color) !important; }
 p { color: var(--p-color) !important; }
 .caption { color: var(--caption-color) !important; }
@@ -201,7 +197,7 @@ h6 {
 p, ol, ul{
 	font-size: 1.683vw;
 	font-family: "Cardo";
-	line-height: 175%;
+	line-height: 165%;
 }
 
 p.normal {
@@ -210,9 +206,14 @@ p.normal {
 	margin: 0;
 }
 
-p.small, .caption, ol, ul{
+p.small, .caption, ol, ul {
 	font-size: 1.4vw;
 	line-height: 125%;
+}
+
+ol.normal, ul.normal {
+	font-size: 1.683vw;
+	line-height: 140%;
 }
 
 .caption {

@@ -17,18 +17,22 @@
 
 /* BORDERS */
 
-/* .page-section {
-	border: 2px solid lime;
+.page-section {
+	/* outline: 2px solid lime; */
+	outline-offset: -2px;
 }
 
 .page-item {
-	border: 2px dashed black;
-} */
+	/* outline: 2px dashed black; */
+	outline-offset: -2px;
+}
 
-/* h1, h2, h3, h4, h5, h6, p {
-	border: 1px dashed blue;
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	/* outline: 2px dashed blue; */
+	outline-offset: -2px;
 }
 
 img {
-	border: 1px dashed red;
-} */
+	/* outline: 2px dashed red; */
+	outline-offset: -2px;
+}
