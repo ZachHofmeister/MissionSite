@@ -29,11 +29,30 @@ a {
 .post:hover { border: 1px solid var(--tx-color); }
 
 .post-body {
-	margin: 20px;
+	padding: 20px;
 }
 
 .post-img {
-	max-width: 33vw;
+	max-width: 35vw;
 	margin-left: auto;
 	object-fit: cover;
+}
+
+.post-preview {
+	margin-bottom: 0;
+}
+
+/* Styling for narrow screens */
+@media 
+(-webkit-min-device-pixel-ratio: 2.5), 
+(min-resolution: 220dpi),
+(max-width: 600px) {
+	.post {
+		flex-direction: column;
+	}
+	.post-img {
+		max-width: 100%;
+		width: 100%;
+		max-height: 20vh;
+	}
 }
