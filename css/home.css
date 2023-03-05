@@ -123,9 +123,10 @@ a {
 
 /* Styling for narrow screens */
 @media 
-(-webkit-min-device-pixel-ratio: 2.5), 
-(min-resolution: 220dpi),
-(max-width: 600px) {
+(-webkit-min-device-pixel-ratio: 2.5)
+,(min-resolution: 220dpi)
+/* ,(max-width: 600px) */
+{
 	body {
 		font-size: 2em;
 	}

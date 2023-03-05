@@ -12,7 +12,7 @@ a {
 
 .post {
 	/* SIZE */
-	border-radius: 10px;
+	border-radius: 1em;
 	overflow: hidden;
 	margin-bottom: 2vh;
 	/* height: 30vw; */
@@ -44,9 +44,10 @@ a {
 
 /* Styling for narrow screens */
 @media 
-(-webkit-min-device-pixel-ratio: 2.5), 
-(min-resolution: 220dpi),
-(max-width: 600px) {
+(-webkit-min-device-pixel-ratio: 2.5)
+,(min-resolution: 220dpi)
+,(max-width: 600px) 
+{
 	.post {
 		flex-direction: column;
 	}
