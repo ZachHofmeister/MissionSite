@@ -10,9 +10,15 @@
 
 	session_start();
 
+	define ('ROOT_PATH', realpath(dirname(__FILE__)));
+	// define('BASE_URL', 'http://localhost/');
+
+	$pathsJson = file_get_contents(ROOT_PATH . "/.paths.json");
+	$paths = json_decode($pathsJson, true);
+
 	// connect to database
 
-	$json = file_get_contents(".creds.json");
+	$json = file_get_contents($paths['creds']);
 	$creds = json_decode($json, true);
 
 	$host = $creds['host'] ?? null;
@@ -26,7 +32,4 @@
 		die("Error");
 		// die("Error connecting to database: " . mysqli_connect_error());
 	}
-
-	define ('ROOT_PATH', realpath(dirname(__FILE__)));
-	// define('BASE_URL', 'http://localhost/');
 ?>
