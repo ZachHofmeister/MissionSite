@@ -21,13 +21,9 @@
 }
 
 body {
-	margin-top: 100px;
+	margin-top: 80px;
 	-webkit-text-size-adjust: 100%;
 }
-
-/* .navbar > * { 
-	all: unset;
-} */
 
 .navbar {
 	position: fixed;
@@ -58,7 +54,7 @@ body {
 
 .nav-link {
 	/* padding: 16px; */
-	padding: 2vw 4vw;
+	padding: 12px 4vw;
 	/* border: 1px solid red; */
 	-webkit-transition: background-color 0.15s;
 	-ms-transition: background-color 0.15s;
@@ -76,18 +72,6 @@ body {
 	display: none;
 	z-index: 1000;
 	/* background-color: var(--nav-bg-color); */
-}
-
-/* Styling for high dpi screens ONLY */
-@media 
-(-webkit-min-device-pixel-ratio: 2.5), 
-(min-resolution: 220dpi) {
-	body {
-		margin-top: 150px;
-	}
-	.navbar {
-		font-size: 50px;
-	}
 }
 
 /* Styling for narrow screens */
