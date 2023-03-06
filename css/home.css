@@ -101,7 +101,7 @@ body {
 	margin-right: auto;
 }
 
-/* FONTS */
+/* TYPOGRAPHY CLASSES */
 
 .bold {
 	font-weight: bold;
@@ -119,17 +119,6 @@ body {
 a {
 	color: var(--ac-color);
 	text-decoration: none;
-}
-
-/* Styling for narrow screens */
-@media 
-(-webkit-min-device-pixel-ratio: 2.5)
-,(min-resolution: 220dpi)
-/* ,(max-width: 600px) */
-{
-	body {
-		font-size: 2em;
-	}
 }
 
 /* Hover underline effects */

@@ -3,7 +3,8 @@
 	<!-- CONFIG INCLUDE -->
 	<?php require_once('config.php') ?>
 	<head>
-		<title>Zach's Mission Updates</title>
+		<title>Zach's Mission Updates - Resources</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<link href="css/home.css" type="text/css" rel="stylesheet"/>
 		<link href="css/navbar.css" type="text/css" rel="stylesheet"/>
 		<script src="https://kit.fontawesome.com/43ec7226a9.js" crossorigin="anonymous"></script>
