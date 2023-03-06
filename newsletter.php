@@ -23,14 +23,7 @@
 		<?php include(NEWSLETTER_DIR . '/pages.php'); ?>
 
 		<!-- LIGHTBOX -->
-
-		<div id="lightbox" class="lightbox" style="display:none;">
-			<div class="lightbox-content">
-				<span class="close-lightbox">&times;</span>
-				<!-- <p>Some text in the Lightbox..</p> -->
-				<img id="main-img" src="" alt="">
-			</div>
-		</div>
+		<?php include(ROOT_PATH . '/includes/lightbox.php'); ?>
 
 		<!-- JAVASCRIPT -->
 		<script src="/js/navbar.js"></script>
