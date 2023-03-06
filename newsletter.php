@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<?php
 		require_once('config.php');
 		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
@@ -13,7 +13,7 @@
 		?>
 		<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
 		<link rel="stylesheet" type="text/css" href="/css/lightbox.css">
-		<link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 		<script src="https://kit.fontawesome.com/43ec7226a9.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -32,7 +32,8 @@
 			</div>
 		</div>
 
+		<!-- JAVASCRIPT -->
+		<script src="/js/navbar.js"></script>
+		<script src="/js/lightbox.js"></script>
 	</body>
-	<script type="text/javascript" src="/js/navbar.js"></script>
-	<script type="text/javascript" src="/js/lightbox.js"></script>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<!-- CONFIG INCLUDE -->
 	<?php require_once('config.php') ?>
 	<head>
 		<title>Zach's Mission Updates - Resources</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<link href="css/home.css" type="text/css" rel="stylesheet"/>
-		<link href="css/navbar.css" type="text/css" rel="stylesheet"/>
+		<link href="css/home.css" type="text/css" rel="stylesheet">
+		<link href="css/navbar.css" type="text/css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/43ec7226a9.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -47,11 +47,11 @@
 			</div> -->
 
 			<div class="section padded text-center">
-				<h2>Coming soon!</h3>
+				<h2>Coming soon!</h2>
 			</div>
 		</div>
-	</body>
 
-	<!-- JAVASCRIPT-->
-	<script type="text/javascript" src="/js/navbar.js"></script>
+		<!-- JAVASCRIPT-->
+		<script src="/js/navbar.js"></script>
+	</body>
 </html>
