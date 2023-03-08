@@ -1,17 +1,17 @@
 <div class="navbar" id="navbar">
-	<a href="/"><div class="nav-link nav-title">
+	<a href="/"><div class="navbar-link navbar-title">
 		Zach's Mission Updates
 	</div></a>
 
-	<div onClick="return true" class="nav-link nav-toggle">
+	<div onClick="return true" class="navbar-link navbar-toggle">
 		<i class="fa fa-bars"></i><div>M</div>
 	</div>
 
-	<nav class="nav-items">
-		<!-- <a href="/"><div class="nav-link">
+	<nav class="navbar-items">
+		<!-- <a href="/"><div class="navbar-link">
 			About
 		</div></a> -->
-		<a href="/resources.php"><div class="nav-link">
+		<a href="/resources.php"><div class="navbar-link">
 			Resources
 		</div></a>
 	</nav>

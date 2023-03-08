@@ -1,2 +1,157 @@
-/* UNIVERSAL STYLE SHEET */
+/* IMPORTS */
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap');
+
+/* COLOR SETTINGS */
+
+:root {
+	--site-color-1: #101010;
+	--site-color-2: #AAAAAA;
+	--site-color-3: #FAFAFA;
+	--site-color-4: #7AC74F;
+	--site-color-5: #53AA20;
+
+	/* LIGHT COLOR SCHEME */
+	--bg-color: var(--site-color-3);
+	--tx-color: var(--site-color-1);
+	--br-color: var(--site-color-2);
+	--ac-color: var(--site-color-5);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: var(--site-color-1);
+		--tx-color: var(--site-color-3);
+		--ac-color: var(--site-color-4);
+	}
+}
+
+/* LAYOUT */
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0%;
+	margin-bottom: 2%;
+}
+
+hr {
+	border-color: inherit;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--tx-color);
+	font-family: 'Open Sans';
+}
+
+#main {
+	/* SIZE */
+	width: 90vw;
+	/* min-height: 200vh; */
+	margin: 0 auto;
+	/* border-radius: 10px; */
+	/* COLOR */
+	background-color: var(--main-bg-color);
+	color: var(--main-tx-color);
+	border: 1px solid var(--main-br-color);
+}
+
+.section {
+	margin-bottom: 5vh;
+}
+
+.section.w50 {
+	width: 50vw;
+}
+
+.section.bordered {
+	border: 1px solid var(--br-color);
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.section.padded {
+	padding: 0 20px;
+}
+
+.hcenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* TYPOGRAPHY CLASSES */
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+a {
+	color: var(--ac-color);
+	text-decoration: none;
+}
+
+/* Hover underline effects */
+
+.hover-underline {
+	display: inline-block;
+	position: relative;
+}
+
+.hover-underline:hover {
+	text-decoration: none;
+}
+
+/*:after adds content after the selection*/
+.hover-underline:after {
+	content: ''; /*no text, just line*/
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--ac-color);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease;
+}
+
+.hover-underline:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/* DEBUG BORDERS */
+
+/* #header {
+	outline: 2px solid red !important;
+	outline-offset: -2px;
+} */
+
+/* #main {
+	outline: 1px solid magenta !important;
+	outline-offset: -1px;
+} */
+
+/* .section {
+	outline: 1px solid teal;
+	outline-offset: -1px;
+} */
+
+/* h1, h2, h3, h4, h5, h6, p {
+	outline: 1px solid blue;
+	outline-offset: -1px;
+} */
+
+/* img {
+	outline: 1px solid green;
+	outline-offset: -1px;
+} */

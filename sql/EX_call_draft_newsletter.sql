@@ -1,1 +1,0 @@
-CALL draft_newsletter('July 2022 Update', 'Another newsletter!', '/2023/01/newsletter.html', '/2023/01/men-walking.jpeg', 'Zacchaeus');

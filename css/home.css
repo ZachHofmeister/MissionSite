@@ -6,7 +6,7 @@
 
 :root {
 	--color-1: #101010;
-	--color-2: #858585;
+	--color-2: #AAAAAA;
 	--color-3: #FAFAFA;
 	--color-4: #7AC74F;
 	--color-5: #53AA20;
@@ -25,28 +25,6 @@
 		--ac-color: var(--color-4);
 	}
 }
-
-/* DEBUG BORDERS */
-
-/* #header {
-	border: 2px solid red !important;
-} */
-
-/* #main {
-	border: 1px solid magenta !important;
-} */
-
-/* .section {
-	border: 1px solid teal;
-} */
-
-/* h1, h2, h3, h4, h5, h6, p {
-	border: 1px solid blue;
-} */
-
-/* img {
-	border: 1px solid green;
-} */
 
 /* LAYOUT */
 
@@ -150,3 +128,30 @@ a {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
+
+/* DEBUG BORDERS */
+
+/* #header {
+	outline: 2px solid red !important;
+	outline-offset: -2px;
+} */
+
+/* #main {
+	outline: 1px solid magenta !important;
+	outline-offset: -1px;
+} */
+
+/* .section {
+	outline: 1px solid teal;
+	outline-offset: -1px;
+} */
+
+/* h1, h2, h3, h4, h5, h6, p {
+	outline: 1px solid blue;
+	outline-offset: -1px;
+} */
+
+/* img {
+	outline: 1px solid green;
+	outline-offset: -1px;
+} */

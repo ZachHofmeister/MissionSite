@@ -1,14 +1,12 @@
 :root {
 	--nav-color-1: #101010;
-	--nav-color-2: #858585;
+	--nav-color-2: #AAAAAA;
 	--nav-color-3: #FAFAFA;
-	--nav-color-4: #628395;
 
 	/* LIGHT MODE COLORS */
 	--nav-bg-color: var(--nav-color-3);
 	--nav-tx-color: var(--nav-color-1);
 	--nav-br-color: var(--nav-color-2);
-	--nav-ac-color: var(--nav-color-4);
 }
 
 /* DARK MODE COLORS */
@@ -46,13 +44,13 @@ body {
 	color: var(--nav-tx-color);
 }
 
-.nav-items {
+.navbar-items {
 	display: flex;
 	gap: 20px;
 	margin-left: auto;
 }
 
-.nav-link {
+.navbar-link {
 	/* padding: 16px; */
 	padding: 12px 4vw;
 	/* border: 1px solid red; */
@@ -63,38 +61,35 @@ body {
 
 /* On devices that support hover, do hover effect */
 @media (hover) {
-	.nav-toggle:hover {
+	.navbar-toggle:hover {
 		background-color: var(--nav-br-color);
 	}
 }
 
-.nav-toggle {
+.navbar-toggle {
 	display: none;
 	z-index: 1000;
 	/* background-color: var(--nav-bg-color); */
 }
 
 /* Styling for narrow screens */
-@media 
-(-webkit-min-device-pixel-ratio: 2.5), 
-(min-resolution: 220dpi),
-(max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	.navbar,
-	.nav-items {
+	.navbar-items {
 		flex-direction: column;
 		gap: 0;
 	}
 
-	.nav-items {
+	.navbar-items {
 		margin-left: 0;
 		display: none;
 	}
 
-	.nav-items.toggle-show {
+	.navbar-items.toggle-show {
 		display: flex;
 	}
 
-	.nav-toggle {
+	.navbar-toggle {
 		align-self: flex-end;
 		position: absolute;
 		cursor: pointer;
@@ -103,7 +98,7 @@ body {
 		align-items: center;
 	}
 
-	.nav-toggle div {
+	.navbar-toggle div {
 		width: 0;
 		visibility: hidden;
 	}
@@ -111,13 +106,13 @@ body {
 
 /* Hover underline effects */
 
-.nav-link:not(.nav-toggle) {
+.navbar-link:not(.navbar-toggle) {
 	/* display: inline-block; */
 	position: relative;
   }
   
   /*:after adds content after the selection*/
-  .nav-link:not(.nav-toggle):after {
+  .navbar-link:not(.navbar-toggle):after {
 	content: ''; /*no text, just line*/
 	position: absolute;
 	width: 100%;
@@ -130,7 +125,7 @@ body {
 	transition: transform 0.25s ease;
   }
   
-  .nav-link:not(.nav-toggle):hover:after {
+  .navbar-link:not(.navbar-toggle):hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
   }

@@ -13,9 +13,9 @@ const heightUnits = 'px';
 
 async function main() {	
 	try {
-		document.querySelector('.nav-toggle').addEventListener('click', toggleAction);
+		document.querySelector('.navbar-toggle').addEventListener('click', toggleAction);
 	} catch {
-		console.error('No .nav-toggle element found!');
+		console.error('No .navbar-toggle element found!');
 	}
 
 	//TODO: Rework scroll function once navbar looks nice
@@ -60,7 +60,7 @@ async function main() {
 // }
 
 function toggleAction () {
-	var navItems = document.querySelectorAll('.nav-items');
+	var navItems = document.querySelectorAll('.navbar-items');
 	navItems.forEach(
 		nav => nav.classList.toggle('toggle-show')
 	);

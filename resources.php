@@ -43,7 +43,6 @@
 
 			<!-- <div class="section bordered">
 				<h2>Books</h2>
-				<p>I must admit I don't read as much as I would like to; most of the what I read are spiritual books in prayer time. Here are some that I have found / am finding fruitful!</p>
 			</div> -->
 
 			<div class="section padded text-center">

@@ -26,7 +26,10 @@ a {
 	transition: 0.25s ease;
 }
 
-.post:hover { border: 1px solid var(--tx-color); }
+.post:hover {
+	border: 1px solid var(--tx-color);
+	box-shadow: 0 0 3px 1px var(--tx-color);
+}
 
 .post-body {
 	padding: 20px;
@@ -43,11 +46,7 @@ a {
 }
 
 /* Styling for narrow screens */
-@media 
-(-webkit-min-device-pixel-ratio: 2.5)
-,(min-resolution: 220dpi)
-,(max-width: 600px)
-{
+@media only screen and (max-width: 600px) {
 	.post {
 		flex-direction: column;
 	}

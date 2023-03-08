@@ -1,1 +1,0 @@
-CALL add_newsletter('May 2022 Update', 'My first month EVER!', '/2022/11/newsletter.html', '/2023/01/men-walking.jpeg', 1, '2022-05-31', 'Edward Zachary Hofmeister');
