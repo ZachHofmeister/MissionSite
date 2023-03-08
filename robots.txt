@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /20*/*.jpeg$
+Disallow: /20*/*.png$
+Disallow: /20*/*.jpg$
+Disallow: /20*/*.gif$
+Disallow: /20*/*.m4a$
+Disallow: /20*/*.mp4$
