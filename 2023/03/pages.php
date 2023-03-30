@@ -26,11 +26,11 @@
 		<!-- PHOTO STACK -->
 		<div class="page-item double photo-stack">
 			<div class="photo-item">
-				<img class="h80" src="/2023/03/images/nou-new.jpeg" alt="">
+				<img class="h80" src="/2023/03/images/fish-fry.jpeg" alt="">
 				<p class="caption">CAPTION</p>
 			</div>
 			<div class="photo-item">
-				<img class="h80" src="/2023/03/images/airsoft-josh.jpeg" alt="">
+				<img class="h80" src="/2023/03/images/sunday-catan.jpeg" alt="">
 				<p class="caption">CAPTION</p>
 			</div>
 		</div>
@@ -51,7 +51,7 @@
 		<!-- PHOTO STACK -->
 		<div class="page-item photo-stack">
 			<div class="photo-item">
-				<img class="h80" src="/2023/03/images/pete-range.jpeg" alt="" style="object-position: 30% center">
+				<img class="h80" src="/2023/03/images/blood-pressure.jpeg" alt="" style="object-position: 30% center">
 				<p class="caption">CAPTION</p>
 			</div>
 		</div>
@@ -62,8 +62,8 @@
 				Paragraph
 			</p>
 			<h4 class="text-right">Other Highlights</h4>
-			<ul class="normal">
-				<li>List</li>
+			<ul class="normal text-left">
+				<li>Getting my blood pressure taken by Joe for his EMR (emergency medical response) club project</li>
 			</ul>
 		</div>
 	</div>

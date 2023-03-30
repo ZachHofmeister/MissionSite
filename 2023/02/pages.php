@@ -67,7 +67,7 @@
 				I have been having lots of good conversations in my growing discipleship meetings this month with Jared and Joe, who I mentioned last update, and I also recently started meeting with Pete! We have been discussing the four practices of the disciples in Acts 2:42 and how we can better incorporate them into our lives.
 			</p>
 			<h4 class="text-right">Other Highlights</h4>
-			<ul class="normal">
+			<ul class="normal text-left">
 				<li>Watching 200+ cadets receive ashes on Ash Wednesday</li>
 				<li>Singing karaoke with Zion</li>
 				<li>Taking a big group to Denver for Vigil Praise (The top photo is us stopping for dinner)</li>
