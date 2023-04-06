@@ -53,3 +53,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+img:not(.no-lightbox) {
+	cursor: pointer;
+}
