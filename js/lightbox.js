@@ -1,6 +1,6 @@
 var lightbox = document.getElementById("lightbox");
-var lightboxClose = document.getElementsByClassName("close-lightbox")[0];
-var lightboxImg = document.getElementById("main-img");
+var lightboxClose = document.getElementById("lightbox-close");
+var lightboxImg = document.getElementById("lightbox-img");
 
 var images = document.querySelectorAll("img:not(.no-lightbox)");
 const taptype = ( window.ontouchstart === null ) ? 'touchend' : 'click';
@@ -20,7 +20,6 @@ Array.from(images).forEach(img => {
 lightboxClose.addEventListener(taptype, function() {
 	lightbox.style.display = "none";
 });
-
 
 //Close if click outside lightbox
 window.addEventListener(taptype, function(event) {

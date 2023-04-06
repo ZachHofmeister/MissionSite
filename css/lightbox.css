@@ -1,4 +1,4 @@
-.lightbox {
+#lightbox {
 	display: none;
 	position: fixed;
 	z-index: 99999;
@@ -13,7 +13,7 @@
 	backdrop-filter: blur(10px);
 }
 
-.lightbox-content {
+#lightbox-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -26,19 +26,19 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.lightbox-content {
+	#lightbox-content {
 		box-shadow: 0 0 5px 2px white;
 	}
 }
 
-#main-img {
+#lightbox-img {
 	max-width: 93vw;
 	max-height: 93vh;
 	margin: 0 auto;
 	display: block;
 }
 
-.close-lightbox {
+#lightbox-close {
 	color: white;
 	float: right;
 	font-size: 28px;
@@ -47,8 +47,8 @@
 	margin-left: 1vw;
 }
 
-.close-lightbox:hover,
-.close-lightbox:focus {
+#lightbox-close:hover,
+#lightbox-close:focus {
   color: #aaa;
   text-decoration: none;
   cursor: pointer;

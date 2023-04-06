@@ -1,7 +1,6 @@
-<div id="lightbox" class="lightbox" style="display:none;">
-	<div class="lightbox-content">
-		<span class="close-lightbox">&times;</span>
-		<!-- <p>Some text in the Lightbox..</p> -->
-		<img id="main-img" src="" alt="">
+<div id="lightbox" style="display:none;">
+	<div id="lightbox-content">
+		<span id="lightbox-close">&times;</span>
+		<img id="lightbox-img" src="" alt="">
 	</div>
 </div>
