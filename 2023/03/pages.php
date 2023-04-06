@@ -78,7 +78,7 @@
 			<ul class="normal text-left">
 				<li>Meeting new guys at brunch after mass</li>
 				<li>Picking Pete up from the airport</li>
-				<li>Seeing my family and friends over break</li>
+				<li>Visiting family and friends in California over break</li>
 			</ul>
 		</div>
 		<div class="page-item">
