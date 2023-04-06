@@ -17,7 +17,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate( -50%, -50% );
+	transform: translate(-50%, -50%);
 	
 	background-color: rgb(0, 0, 0);
 	width: fit-content;
@@ -54,6 +54,6 @@
   cursor: pointer;
 }
 
-img:not(.no-lightbox) {
+img:not(.no-lightbox):not(#lightbox-img) {
 	cursor: pointer;
 }
