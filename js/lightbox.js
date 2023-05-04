@@ -1,6 +1,9 @@
 var lightbox = document.getElementById("lightbox");
 var lightboxClose = document.getElementById("lightbox-close");
 var lightboxImg = document.getElementById("lightbox-img");
+var lightboxCaption = document.getElementById("lightbox-cap");
+var lightboxNext = document.getElementById("lightbox-next");
+var lightboxPrev = document.getElementById("lightbox-prev");
 
 var images = document.querySelectorAll("img:not(.no-lightbox)");
 const taptype = ( window.ontouchstart === null ) ? 'touchend' : 'click';
@@ -12,6 +15,17 @@ Array.from(images).forEach(img => {
 			lightbox.style.display = "block";
 			lightboxImg.src = img.src;
 			lightboxImg.alt = img.alt;
+			//display caption in lightbox
+			let captionElement = img.nextElementSibling;
+			lightboxCaption.innerText = "";
+			lightboxCaption.style.display = "none";
+			if (captionElement.classList.contains("caption")) {
+				lightboxCaption.innerText = captionElement.innerText;
+				lightboxCaption.style.display = "block";
+			} else if ("caption" in img.dataset) {
+				lightboxCaption.innerText = img.dataset.caption;
+				lightboxCaption.style.display = "block";
+			}
 		}
 	})
 });
