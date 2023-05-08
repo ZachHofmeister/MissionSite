@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Spacing under paragraphs */
 p:not(:last-of-type) {
-	margin-bottom: 3%;
+	margin-bottom: 2%;
 }
 
 .page {
