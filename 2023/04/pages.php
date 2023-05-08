@@ -21,7 +21,7 @@
 			<p>
 				Christ is Risen! I hope that you had a wonderful celebration and are still filled with Easter joy throughout the season! This month has gone too fast, but God has blessed it in many ways which I'm excited to share with you!
 			</p>
-			<h4>Easter!</h4>
+			<h4>Easter Joy</h4>
 			<p>
 				It was so good to reflect on the passion of our Lord and celebrate the joy of His resurrection with the cadets! We had mass on base for Holy Thursday and Good Friday, prayed and watched the Passion of the Christ together, and celebrated at the Easter Vigil! On Easter Sunday, we had fun making brunch for 200+ cadets after the morning mass! After Easter, I had some great conversations with cadets about how we can share the joy of the resurrection with others!
 			</p>
@@ -59,32 +59,34 @@
 		<div class="page-item double photo-stack">
 			<div class="photo-item">
 				<img class="h70" src="/2023/04/images/easter-dinner.jpeg" alt="" style="object-position: 50% center">
-				<p class="caption">I felt so loved and appreciated when some of the cadets came and cooked for us on Easter Sunday to thank us for the work we'd done that weekend.</p>
+				<p class="caption">I felt so loved and appreciated when some of the cadets made dinner for us on Easter Sunday to thank us for the work we'd done that weekend</p>
 			</div>
 		</div>
 		<!-- TEXT -->
 		<div class="page-item triple text-justify">
 			<h4 class="text-right">Next Year and Beyond</h4>
 			<p>
-				I have some big news to share with you: next school year, FOCUS has invited me to serve at a new school, Colorado Mesa University. I was surprised by this invitation, and it's hard to think that I will be leaving my friends at the academy so soon. At the same time, I know that this isn't the end of my friendships here, and I am excited to see what new opportunities await me in Grand Junction, CO. Please pray for me to be able to finish well in these final weeks and love those that I have the opportunity to as best I can!
+				I have some big news to share with you: this Fall, FOCUS has invited me to serve at a new school, Colorado Mesa University. I was surprised by this invitation, and it's hard to think that I will be leaving my friends at the academy so soon. At the same time, I know that this isn't the end of my friendships here, and I am excited to see what new opportunities await me in Grand Junction. Please pray for me to be able to finish well in these final weeks and love those that I have the opportunity to as best I can!
 			</p>
+			<h4 class="text-right">Other Highlights</h4>
 		</div>
 	</div>
 
-	<!-- PHOTOS -->
+	<!-- PHOTOS / OTHER HIGHLIGHTS -->
 	<div class="page-section _25">
 		<div class="page-item">
 			<img class="h70" src="/2023/04/images/seminarians-spire.jpeg" alt=""/>
-			<p class="caption">A former marine officer, now seminarian, visited us to share his story at SPIRE.</p>
+			<p class="caption">A former marine officer, now seminarian, visited us to share his story at SPIRE</p>
 		</div>
 		<div class="page-item">
 			<img class="h70" src="/2023/04/images/cali-missionaries.jpeg" alt="" data-caption="I got together with some of my fellow CA -> CO missionary friends the week after Easter!" style="object-position: center 60%;"/>
-			<p class="caption">I got to hang out with some of my fellow missionaries from California after Easter!</p>
+			<p class="caption">I got to meet up with some of my fellow missionaries from California after Easter!</p>
 		</div>
 		<div class="page-item">
-			<h4 class="text-right">Other Highlights</h4>
+			<!-- <h4 class="text-right">Other Highlights</h4> -->
 			<ul class="normal text-left">
-				<li>Getting to speak at SPIRE about how God invited me to pray</li>
+				<li>Getting to pray with my bible study freshmen before they began Recognition, the most challenging weekend of their year</li>
+				<li>Getting to speak at SPIRE about prayer</li>
 				<li>Movie night with Pete and Joe</li>
 			</ul>
 		</div>
@@ -95,19 +97,21 @@
 		<div class="page-item double text-right">
 			<h6 class="italic text-boxed">THANK YOU</h6>
 			<p class="">
-				Thank you!
+				It is such a blessing to be on mission with you! Thank you for your prayers and support!
 			</p>
 			<p>
-				Yours in Christ, Zach
+				In Christ Jesus, Zach
 			</p>
 		</div>
 		<div class="page-item">
-			<img class="h90" src="/2023/04/images/ski-selfie.jpeg" alt="" style="object-position: 0 0">
+			<img class="h100" src="/2023/04/images/friends-dinner.jpeg" alt="" data-caption="Right-to-left: Grace, Claire, my teammate Fiona, me, and JP (our non-cadet friends) had a fun night together while the cadets were busy with Recognition">
 		</div>
 		<div class="page-item double">
 			<h6 class="italic text-boxed">PLEASE PRAY</h6>
 			<ul class="normal">
-				<li>For ...</li>
+				<li>For God to use these sad goodbyes according to His plan</li>
+				<li>For the cadets to grow closer to God over summer</li>
+				<li>For us to live mission in these final days on campus with boldness</li>
 			</ul>
 		</div>
 	</div>

@@ -19,7 +19,7 @@ Array.from(images).forEach(img => {
 			let captionElement = img.nextElementSibling;
 			lightboxCaption.innerText = "";
 			lightboxCaption.style.display = "none";
-			if (captionElement.classList.contains("caption")) {
+			if (captionElement && captionElement.classList.contains("caption")) {
 				lightboxCaption.innerText = captionElement.innerText;
 				lightboxCaption.style.display = "block";
 			} else if ("caption" in img.dataset) {
