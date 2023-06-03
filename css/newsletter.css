@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 /* COLORS */
 
@@ -184,12 +186,12 @@ h3 {
 
 h4 {
 	font-size: 1.7vw;
-	letter-spacing: -0.5px;
+	/* letter-spacing: -0.5px; */
 }
 
 h5 {
 	font-size: 1.5vw;
-	letter-spacing: -0.5px;
+	/* letter-spacing: -0.5px; */
 }
 
 h6 {
