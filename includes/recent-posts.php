@@ -1,4 +1,4 @@
-<div class="section" id="recent-posts">
+<div class="section post-container" id="recent-posts">
 	<?php
 		// $date_format = "%M %d, %Y";
 		$query = 'SELECT *, DATE_FORMAT(published_date, "%m/%d/%Y") AS nice_date
@@ -13,16 +13,16 @@
 			// echo $nl_url;
 			echo '
 				<a href="' . $nl_url . '">
-					<div class="post" data-href="' . $row['url'] . '">
+					<div class="post">
+						<img class="post-img" src="' . $row['img_url'] . '" alt="">
 						<div class="post-body">
 							<h2 class="post-title">' . $row['title'] . '</h2>
 							<h6 class="post-details">Published ' . $row['nice_date'] . ' by ' . $row['author'] . '</h6>
-							<p class="post-preview">
+							<p class="post-blurb">
 								' . $row['blurb'] . '
 								<strong>...</strong>
 							</p>
 						</div>
-						<img class="post-img" src="' . $row['img_url'] . '" alt="">
 					</div>
 				</a>
 			';
