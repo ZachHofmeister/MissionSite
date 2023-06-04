@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-body { background-color: #FAFAFA; }
+body {
+	background-color: #FAFAFA;
+	margin: 0;
+}
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
 	body { background-color: #101010; }
@@ -17,7 +20,7 @@ body { background-color: #FAFAFA; }
 	/* LAYOUT */
 	margin: 0 auto 4vw;
 	overflow: hidden;
-	aspect-ratio: 8.5 / 11 !important; /* width / height */
+	aspect-ratio: 8.5 / 11; /* width / height */
 	height: 100vw; /* This is required because safari is too dumb to calc inside percents without a defined height*/
 }
 
@@ -236,7 +239,23 @@ a {
 	}
 
 	.page {
+		margin: 0 auto;
+		aspect-ratio: initial;
+		height: initial;
+		height: 100vh;
+	}
 
+	.page-section {
+		flex-direction: column;
+	}
+
+	.page-item {
+		width: initial;
+		height: 0;
+	}
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, .caption {
+		font-size: initial;
 	}
 }
 
