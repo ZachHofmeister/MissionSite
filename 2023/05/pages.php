@@ -3,43 +3,36 @@
 <!-- PAGE ONE -->
 <div class="page">
 	<!-- MAIN IMAGE / HEADER -->
-	<div class="page-section _35"> 
+	<div class="page-section _40"> 
 		<div class="page-item">
-			<img class="h100" src="/2023/04/images/easter-vigil.jpeg" alt="" data-caption="" style="object-position: center 20%;">
+			<img class="h100" src="/2023/05/images/camping-hike.jpeg" alt="" data-caption="Myself, Emile, Seth, and Pete hiking in Twin Lakes, CO on a camping trip!" style="object-position: center 60%;">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy <span class="no-style"> | </span>May 2023</h4>
+				<h4 class="italic">US Air Force Academy <span class="no-style"> | </span>May + Summer 2023</h4>
 			</div>
 		</div>
 	</div>
 	
 	<!-- PARAGRAPH / IMAGES -->
-	<div class="page-section _65">
+	<div class="page-section _60">
+		<!-- PHOTO STACK -->
+		<div class="page-item photo-stack">
+			<div class="photo-item">
+				<img class="h80" src="/2023/05/images/bstud-goodbye.jpeg" alt="">
+				<p class="caption">Myself, Linus, and Joe at our last bible study meeting.</p>
+			</div>
+			<div class="photo-item">
+				<img class="h80" src="/2023/05/images/bstud-group.jpeg" alt="">
+				<p class="caption">My last bible study with Seth, Carson, James, Ike, and Michael.</p>
+			</div>
+		</div>
 		<!-- TEXT -->
 		<div class="page-item double text-justify">
 			<h2 class="italic">Dear Friends,</h2>
 			<p>
 				Paragraph
 			</p>
-			<h4>Easter Joy</h4>
-			<p>
-				It was so good to reflect on the passion of our Lord and celebrate the joy of His resurrection with the cadets! We had mass on base for Holy Thursday and Good Friday, prayed and watched the Passion of the Christ together, and celebrated at the Easter Vigil! On Easter Sunday, we had fun making brunch for 200+ cadets after the morning mass! After Easter, I had some great conversations with cadets about how we can share the joy of the resurrection with others!
-			</p>
-			<h4>Bible Studies and Discipleship</h4>
-			<p>
-				We are beginning to wrap up bible studies, and my focus has been on how we can continue to respond to the call of Jesus this summer and beyond. In discipleship, Joe and I have been preparing for him to lead a bible study next year. I've also started walking with two seniors in living and sharing their faith after graduation! 
-			</p>
-		</div>
-		<!-- PHOTO STACK -->
-		<div class="page-item photo-stack">
-			<div class="photo-item">
-				<img class="h80" src="/2023/04/images/thurs-james.jpeg" alt="">
-				<p class="caption">The washing of the feet at Holy Thursday Mass</p>
-			</div>
-			<div class="photo-item">
-				<img class="h80" src="/2023/04/images/seth-rec.jpeg" alt="">
-				<p class="caption">Seth and the other freshmen were happy to finally get to wear civilian clothes after Recognition!</p>
-			</div>
+			<h4>Subheading</h4>
 		</div>
 	</div>
 </div>
@@ -49,46 +42,33 @@
 	<!-- QUOTE -->
 	<div class="page-section _10">
 		<div class="page-item text-center center-center">
-			<h4 class="italic">"Remember not the former things, nor consider the things of old. Behold, I am doing a new thing; now it springs forth, do you not perceive it? I will make a way in the wilderness and rivers in the desert." - Isaiah 43:18-19</h4>
+			<h4 class="italic">QUOTE</h4>
 		</div>
 	</div>
 
 	<!-- PARAGRAPH / IMAGES -->
-	<div class="page-section _35">
+	<div class="page-section _60">
+		<!-- TEXT -->
+		<div class="page-item triple text-justify">
+			<h4>Subheading</h4>
+			<p>
+				Paragraph
+			</p>
+			<h4>Other Highlights</h4>
+			<ul class="normal text-left">
+				<li>Stuff!</li>
+			</ul>
+		</div>
 		<!-- PHOTO STACK -->
 		<div class="page-item double photo-stack">
 			<div class="photo-item">
-				<img class="h70" src="/2023/04/images/easter-dinner.jpeg" alt="" style="object-position: 50% center">
-				<p class="caption">I felt so loved and appreciated when some of the cadets made dinner for us on Easter Sunday to thank us for the work we'd done that weekend</p>
+				<img class="h80" src="/2023/05/images/team-welcome.jpeg" alt="" style="object-position: 50% center">
+				<p class="caption">Meet my new teammates! From right to left: Brian, myself, Ally, and Jacky.</p>
 			</div>
-		</div>
-		<!-- TEXT -->
-		<div class="page-item triple text-justify">
-			<h4 class="text-right">Next Year and Beyond</h4>
-			<p>
-				I have some big news to share with you: this Fall, FOCUS has invited me to serve at a new school, Colorado Mesa University. I was surprised by this invitation, and it's hard to think that I will be leaving my friends at the academy so soon. At the same time, I know that this isn't the end of my friendships here, and I am excited to see what new opportunities await me in Grand Junction. Please pray for me to be able to finish well in these final weeks and love those that I have the opportunity to as best I can!
-			</p>
-			<h4 class="text-right">Other Highlights</h4>
-		</div>
-	</div>
-
-	<!-- PHOTOS / OTHER HIGHLIGHTS -->
-	<div class="page-section _25">
-		<div class="page-item">
-			<img class="h70" src="/2023/04/images/seminarians-spire.jpeg" alt=""/>
-			<p class="caption">A former marine officer, now seminarian, visited us to share his story at SPIRE</p>
-		</div>
-		<div class="page-item">
-			<img class="h70" src="/2023/04/images/cali-missionaries.jpeg" alt="" data-caption="I got together with some of my fellow CA -> CO missionary friends the week after Easter!" style="object-position: center 60%;"/>
-			<p class="caption">I got to meet up with some of my fellow missionaries from California after Easter!</p>
-		</div>
-		<div class="page-item">
-			<!-- <h4 class="text-right">Other Highlights</h4> -->
-			<ul class="normal text-left">
-				<li>Getting to pray with my bible study freshmen before they began Recognition, the most challenging weekend of their year</li>
-				<li>Getting to speak at SPIRE about prayer</li>
-				<li>Movie night with Pete and Joe</li>
-			</ul>
+			<div class="photo-item">
+				<img class="h80" src="/2023/05/images/team-party.jpeg" alt="" style="object-position: 50% center">
+				<p class="caption">I can already tell we make a great team!</p>
+			</div>
 		</div>
 	</div>
 
@@ -97,21 +77,19 @@
 		<div class="page-item double text-right">
 			<h6 class="italic text-boxed">THANK YOU</h6>
 			<p class="">
-				It is such a blessing to be on mission with you! Thank you for your prayers and support!
+				Thank you!
 			</p>
 			<p>
 				In Christ Jesus, Zach
 			</p>
 		</div>
 		<div class="page-item">
-			<img class="h100" src="/2023/04/images/friends-dinner.jpeg" alt="" data-caption="Right-to-left: Grace, Claire, my teammate Fiona, me, and JP (our non-cadet friends) had a fun night together while the cadets were busy with Recognition">
+			<img class="h100" src="/2023/05/images/training-self.jpeg" alt="" style="object-position: 30% 50%;">
 		</div>
 		<div class="page-item double">
 			<h6 class="italic text-boxed">PLEASE PRAY</h6>
 			<ul class="normal">
-				<li>For God to use these sad goodbyes according to His plan</li>
-				<li>For the cadets to grow closer to God over summer</li>
-				<li>For us to live mission in these final days on campus with boldness</li>
+				<li>For...</li>
 			</ul>
 		</div>
 	</div>
@@ -120,13 +98,13 @@
 	<div class="page-section _10">
 		<div class="page-item double text-left vert-center">
 			<h5>
-				14219 Woodrock Path<br>
-				Colorado Springs, CO 80921
+				***REMOVED***<br>
+				Grand Junction, CO 81501
 			</h5>
 		</div>
 		<div class="page-item vert-center">
 			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2023/04/images/focus-logo.png" alt="FOCUS logo">
+				<img class="contain no-lightbox" src="/2023/05/images/focus-logo.png" alt="FOCUS logo">
 			</a>
 		</div>
 		<div class="page-item double text-right vert-center">
@@ -134,6 +112,71 @@
 				<a href="tel:+16196558686" class="no-decor">(619) 655-8686</a><br>
 				<a href="mailto:edward.hofmeister@focus.org" class="no-decor">edward.hofmeister@focus.org</a>
 			</h5>
+		</div>
+	</div>
+</div>
+
+<!-- PAGE THREE -->
+<div class="page">
+	<!-- <div class="page-section _5">
+		<div class="page-item text-center center-center">
+			<h2>More pictures!</h2>
+		</div>
+	</div> -->
+
+	<!-- PHOTOS - Coworkers -->
+	<div class="page-section _25">
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/team-final.jpeg" alt="" style="object-position: 50% 100%">
+			<p class="caption">My team's last picture together - we had a fun day at the Cheyenne Mountain Zoo! I miss them a lot already.</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/staff-final.jpeg" alt="" style="object-position: 50% 0%">
+			<p class="caption">One last lunch with the Catholic Chapel staff - From left to right: Fiona, Mikayla, Mrs. Lumpkin, Dcn. Bob, Fr. Zach, and me.</p>
+		</div>
+	</div>
+
+	<!-- PHOTOS - SPIRE -->
+	<div class="page-section _25">
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/spire-final.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">For our last SPIRE night, we grilled and played games!</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/spire-volley.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">Playing volleyball during our last SPIRE!</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/spire-grill.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">James took over the grill and did a great job!</p>
+		</div>
+	</div>
+
+	<!-- PHOTOS - Camping + TacSim -->
+	<div class="page-section _25">
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/airsoft-final.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">My last time playing Airsoft with the TacSim club. From left to right: Sam, Pete, and myself.</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/camping-fire.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">Nothing like sitting around a campfire with friends!</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/camping-sunset.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">We interrupted our dinner to run down to the lake for the sunset!</p>
+		</div>
+	</div>
+
+	<!-- PHOTOS - Training -->
+	<div class="page-section _25">
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/training-lunch.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">It was great seeing lots of my Fullerton friends at summer training!</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/05/images/training-praise.jpeg" alt="" style="object-position: 50% center">
+			<p class="caption">More friends from California at training, having a praise and worship jam session to celebrate the Lord's day!</p>
 		</div>
 	</div>
 </div>
