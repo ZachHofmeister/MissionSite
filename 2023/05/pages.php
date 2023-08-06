@@ -30,7 +30,7 @@
 		<div class="page-item double text-justify">
 			<h2 class="italic">Dear Friends,</h2>
 			<p>
-			What a year it has been! I hope that you've had a good summer! Thank you for your generosity in accompanying me through all of the ups and downs of my first year on mission with FOCUS. In this update I'm excited to share with you how my time at the Air Force Academy finished up, my summer, and what I'm looking forward to this year at Colorado Mesa!
+			What a year it has been! I hope that you've had a good summer so far! Thank you for your generosity in accompanying me through all of the ups and downs of my first year on mission with FOCUS. In this update I'm excited to share with you how my time at the Air Force Academy finished up, my summer, and what I'm looking forward to this year at Colorado Mesa!
 			</p>
 			<h4>Leaving the Academy</h4>
 			<p>
