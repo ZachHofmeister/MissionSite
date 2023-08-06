@@ -62,7 +62,7 @@
 		<div class="page-item photo-stack">
 			<div class="photo-item">
 				<img class="h80" src="/2023/05/images/team-welcome.jpeg" alt="" style="object-position: 50% center">
-				<p class="caption">Meet my new teammates! From right to left: Brian, myself, Ally, and Jacky.</p>
+				<p class="caption">Meet my new teammates! From left to right: Brian, myself, Ally, and Jacky.</p>
 			</div>
 			<div class="photo-item">
 				<img class="h80" src="/2023/05/images/team-party.jpeg" alt="" style="object-position: 50% center">
