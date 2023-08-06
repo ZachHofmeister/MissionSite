@@ -41,7 +41,7 @@ body { background-color: #FAFAFA; }
 .page-section._80 { height: 80%; }
 .page-section._75 { height: 75%; }
 .page-section._70 { height: 70%; }
-.page-section.twothird { height: 66.6%; }
+.page-section.twothird { height: calc(200%/3); }
 .page-section._65 { height: 65%; }
 .page-section._60 { height: 60%; }
 .page-section._55 { height: 55%; }
@@ -50,16 +50,16 @@ body { background-color: #FAFAFA; }
 .page-section._45 { height: 45%; }
 .page-section._40 { height: 40%; }
 .page-section._35 { height: 35%; }
-.page-section.third { height: 33.3%; }
+.page-section.third { height: calc(100%/3); }
 .page-section._30 { height: 30%; }
 .page-section._25,
 .page-section.quarter { height: 25%; }
 .page-section._20 { height: 20%; }
-.page-section.sixth { height: 16.6%; }
+.page-section.sixth { height: calc(100%/6); }
 .page-section._15 { height: 15%; }
 .page-section.eighth {height: 12.5%; }
 .page-section._10 { height: 10%; }
-.page-section.twelfth { height: 8.3%; }
+.page-section.twelfth { height: calc(100%/12); }
 .page-section.sixteenth {height: 6.25%; }
 .page-section._5 { height: 5%; }
 
