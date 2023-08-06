@@ -224,22 +224,6 @@ a {
 	/* text-decoration: none; */
 }
 
-/* Styling for narrow screens */
-@media only screen and (max-width: 600px) {
-	.page-section {
-		outline: 2px solid lime;
-		outline-offset: -2px;
-	}
-	.page-item {
-		outline: 2px dashed black;
-		outline-offset: -2px;
-	}
-
-	.page {
-
-	}
-}
-
 /* PRINT */
 @media print {
 	html, body {
