@@ -8,7 +8,7 @@
 			<img class="h100" src="/2023/05/images/camping-hike.jpeg" alt="" data-caption="Myself, Emile, Seth, and Pete hiking in Twin Lakes, CO on our camping trip!" style="object-position: center 60%;">
 			<div class="title">
 				<h1>Zach's Mission Update</h1>
-				<h4 class="italic">US Air Force Academy <span class="no-style"> | </span>May + Summer 2023</h4>
+				<h4 class="italic">Colorado Mesa University<span class="no-style"> | </span>May + Summer 2023</h4>
 			</div>
 		</div>
 	</div>
@@ -30,11 +30,11 @@
 		<div class="page-item double text-justify">
 			<h2 class="italic">Dear Friends,</h2>
 			<p>
-			What a year it has been! I hope that you've had a good summer! Thank you for your generosity in accompanying through all of the ups and downs of my first year on mission with FOCUS. In this update I'm excited to share with you how my time at the Air Force Academy finished up, my summer, and what I'm looking forward to this coming school year!
+			What a year it has been! I hope that you've had a good summer! Thank you for your generosity in accompanying through all of the ups and downs of my first year on mission with FOCUS. In this update I'm excited to share with you how my time at the Air Force Academy finished up, my summer, and what I'm looking forward to this year at Colorado Mesa!
 			</p>
 			<h4>Leaving the Academy</h4>
 			<p>
-			It was very hard to say goodbye to the cadets I've grown close to over this past year, but because of that we valued the time we had left together more. Before finals, my bible studies wrapped up with a send-off talk and games, we had a party for our final SPIRE meeting, and I got to join the airsoft club for one last game. During finals week, we hosted events every day to give the cadets a break from studying. For our last hurrah after finals I planned a camping trip with 3 other guys, and got dinner with some others the evening before leaving to Nebraska for summer training!
+			It was very hard to say goodbye to the cadets I've grown close to over this past year, but because of that we valued the time we had left together even more. Before finals, my bible studies wrapped up with a send-off talk and games, we had a party for our final SPIRE meeting, and I got to join the airsoft club for one last game. During finals week, we hosted events every day to give the cadets a break from studying. After finals I planned a camping trip with 3 other guys, and had dinner with some others the evening before driving to Nebraska for summer training!
 			</p>
 		</div>
 	</div>
@@ -42,13 +42,6 @@
 
 <!-- PAGE TWO -->
 <div class="page">
-	<!-- QUOTE -->
-	<!-- <div class="page-section _5">
-		<div class="page-item text-center center-center">
-			<h4 class="italic">QUOTE</h4>
-		</div>
-	</div> -->
-
 	<!-- PARAGRAPH / IMAGES -->
 	<div class="page-section _70">
 		<!-- TEXT -->
@@ -59,10 +52,10 @@
 			</p>
 			<h4>Moving to Grand Junction</h4>
 			<p>
-				After training, I spent some time in California continuing to raise support, and this past week I've moved to Grand Junction where I'll be serving this year. I love this town and I've been enjoying my time with my teammate Brian! He took me on a tour of the Colorado Mesa University campus and our Newman house, and I can't wait for the rest of our team to get here and our fall outreach to start!<br>
-			<!-- </p>
-			<p> -->
-				In the coming weeks, we will be attending a retreat as a team, preparing for the school year, and finally starting fall outreach, where we spend lots of time meeting students and inviting them into our bible studies and the CMU Catholic community! Please pray for our efforts, and I can't wait to tell you all about it!
+			After training, I spent some time in California continuing to raise support, and this past week I've moved to Grand Junction where I'll be serving this year. I love this town and I've been enjoying my time with my teammate Brian! He showed me around the Colorado Mesa University campus and our Newman house, and I can't wait for the rest of our team to get here and our fall outreach to start!
+			</p>
+			<p>
+			In the coming weeks, we will be attending a retreat as a team, preparing for the school year, and finally starting fall outreach, where we spend lots of time meeting students and inviting them into our bible studies and the CMU Catholic community! Please pray for our efforts, and I can't wait to share with you all the impact your prayers have in the coming months!
 			</p>
 		</div>
 		<!-- PHOTO STACK -->
@@ -83,19 +76,18 @@
 		<div class="page-item double text-right">
 			<h6 class="italic text-boxed">THANK YOU</h6>
 			<p class="">
-				Thank you!
+				Thank you for supporting the work of FOCUS and my small part in it. I am excited to walk with you this next  year!
 			</p>
-			<p>
-				In Christ Jesus, Zach
-			</p>
+			<p>In Christ Jesus, Zach</p>
 		</div>
 		<div class="page-item">
-			<img class="h100" src="/2023/05/images/training-self.jpeg" alt="" style="object-position: 30% 50%;">
+			<img class="h100" src="/2023/05/images/training-self.jpeg" alt="" style="object-position: 30% 50%;" data-caption="Thank you for supporting me on mission!">
 		</div>
 		<div class="page-item double">
 			<h6 class="italic text-boxed">PLEASE PRAY</h6>
 			<ul class="normal">
-				<li>For...</li>
+				<li>For my team to be united in friendship with Christ and one another</li>
+				<li>For the students we have yet to meet and those who do not know the love of Jesus</li>
 			</ul>
 		</div>
 	</div>
@@ -124,30 +116,46 @@
 
 <!-- PAGE THREE -->
 <div class="page">
-	<!-- HEADER -->
-	<div class="page-section _50">
+	<!-- CAMPING STORY -->
+	<div class="page-section _30">
 		<div class="page-item text-justify">
-			<h2 class="text-center">Camping Trip Story</h2>
+			<h2 class="text-left">Camping Trip Story</h2>
 			<p>
-			My favorite time was after finals, when I went on a camping trip with Pete, Seth, and Emile. We had good conversations and fun exploring God’s creation, but the biggest blessing of the trip was finding our campsite. We checked out a couple that we had looked up in advance, but they were all closed or nonexistent. We were driving around a lake passing closed site after closed site, and I was starting to think that the trip was ruined and we’d have to go back home. Mostly just to distract myself from this, I suggested that we should pray a decade of the Rosary and ask for an open campsite. Just a few minutes after we finished, we found an almost empty campsite with amazing spots next to the lake! We were all surprised by how quickly our prayers were answered!
+			I had a great time going camping with Pete, Seth, and Emile after their finals ended. We had good conversations and fun exploring God’s creation, but the biggest blessing of the trip was finding our campsite. We checked a couple that we had looked up in advance, but they were all closed or nonexistent. We ended up at a lake passing closed site after closed site, and I was starting to think that the trip was ruined and we’d have to go back home. Mostly just to distract myself from this, I suggested that we should pray one decade of the Rosary and ask for an open campsite. Just a few minutes after we finished, we found an almost empty campsite with amazing spots next to the lake! We joyfully remembered this answer to our prayers the whole trip!
 			</p>
 		</div>
 	</div>
 	<!-- PHOTOS - Camping -->
-	<div class="page-section _50">
+	<div class="page-section _25">
 		<div class="page-item">
-			<img class="h90" src="/2023/05/images/camping-fire.jpeg" alt="" style="object-position: 50% center">
+			<img class="h80" src="/2023/05/images/camping-fire.jpeg" alt="" style="object-position: 50% center">
 			<p class="caption">Nothing like sitting around a campfire with friends!</p>
 		</div>
 		<div class="page-item">
-			<img class="h90" src="/2023/05/images/camping-sunset.jpeg" alt="" style="object-position: 20% 50%">
+			<img class="h80" src="/2023/05/images/camping-sunset.jpeg" alt="" style="object-position: 20% 50%">
 			<p class="caption">We interrupted our dinner to run down to the lake for the sunset!</p>
+		</div>
+	</div>
+	<!-- GOSPEL REFLECTION -->
+	<div class="page-section _45">
+		<div class="page-item text-justify">
+			<h2 class="text-right">Gospel Reflection</h2>
+			<h4 class="italic">...When Jesus saw him and knew that he had been lying there a long time, he said to him, "Do you want to be healed?" The sick man answered him, "Sir, I have no man to put me into the pool when the water is troubled, and while I am going another steps down before me."... - <a href="https://www.biblegateway.com/passage/?search=John+5%3A1-18&version=RSVCE" target="_blank">John 5:1-18 (click to see full passage)</a></h4>
+			<p>
+			This passage was something God led me to at training, during our silent retreat. What stuck out to me was that when Jesus healed the man, He went away briefly, and the man didn't know who healed him when the pharisees questioned him. Like the paralyzed man, we all need the healing that Jesus alone provides, but sometimes we can forget that it was Jesus that healed us or that we are in need of His healing. Moreover, the enemy of our souls wants us to not see Him working in us and to believe that perhaps He hasn't been. I wanted to share this because it's a helpful reminder to me to remember the ways the Lord has worked in my life, and to thank Him for them, so that when I am uncertain about how He is working in the present I can point to Him still. I hope that it can help you also to remember the healing that Christ has done and is doing in your own life!
+			</p>
 		</div>
 	</div>
 </div>
 
 <!-- PAGE FOUR -->
 <div class="page">
+	<!-- CAMPING STORY -->
+	<div class="page-section _5">
+		<div class="page-item text-center center-center">
+			<h2>More Photos!</h2>
+		</div>
+	</div>
 	<!-- PHOTOS - Coworkers -->
 	<div class="page-section _25">
 		<div class="page-item">
@@ -168,7 +176,7 @@
 		</div>
 		<div class="page-item">
 			<img class="h80" src="/2023/05/images/spire-volley.jpeg" alt="" style="object-position: 50% center">
-			<p class="caption">Playing volleyball during our last SPIRE!</p>
+			<p class="caption">We had a super fun volleyball match during our last SPIRE!</p>
 		</div>
 		<div class="page-item">
 			<img class="h80" src="/2023/05/images/spire-grill.jpeg" alt="" style="object-position: 50% center">
@@ -177,10 +185,10 @@
 	</div>
 
 	<!-- PHOTOS - TacSim -->
-	<div class="page-section _25">
+	<div class="page-section _20">
 		<div class="page-item">
 			<img class="h90" src="/2023/05/images/airsoft-final.jpeg" alt="" style="object-position: 50% center">
-			<p class="caption">My last time playing Airsoft with the TacSim club. From left to right: Sam, Pete, and myself.</p>
+			<p class="caption">My last time playing Airsoft with the cadets. From left to right: Sam, Pete, and myself.</p>
 		</div>
 	</div>
 
