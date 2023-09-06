@@ -150,7 +150,7 @@
 
 <!-- PAGE FOUR -->
 <div class="page">
-	<!-- CAMPING STORY -->
+	<!-- HEADING -->
 	<div class="page-section _5">
 		<div class="page-item text-center center-center">
 			<h2>More Photos!</h2>

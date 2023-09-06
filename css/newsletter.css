@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 body { background-color: #FAFAFA; }
 /* Dark Mode */
@@ -20,6 +20,12 @@ body { background-color: #FAFAFA; }
 	aspect-ratio: 8.5 / 11 !important; /* width / height */
 	height: 100vw; /* This is required because safari is too dumb to calc inside percents without a defined height*/
 }
+/* Experimenting with different page heights */
+/* .page._50 {
+	--pHeight: 0.5;
+	aspect-ratio: 8.5 / calc(11 * var(--pHeight)) !important;
+	height: calc(100vw * var(--pHeight));
+} */
 
 /* CLASS: page-section */
 
@@ -219,10 +225,6 @@ p.small, .caption, ol, ul {
 	line-height: 125%;
 }
 
-p.large {
-	font-size: 2vw;
-}
-
 ol.normal, ul.normal {
 	font-size: 1.683vw;
 	line-height: 140%;
@@ -240,7 +242,7 @@ ol.normal, ul.normal {
 .italic { font-style: italic; }
 .no-style { font-style: normal; }
 .no-decor { text-decoration: none; }
-.underline {border-bottom: 0.5px solid black;}
+.underline {border-bottom: 2px solid black;}
 
 .opensans { font-family: "Open Sans";}
 .cardo { font-family: "Cardo";}
@@ -250,6 +252,9 @@ ol.normal, ul.normal {
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
+.text-large {
+	font-size: 2vw;
+}
 
 .text-boxed {
 	background-color: var(--box-bg-color) !important; 
@@ -299,7 +304,7 @@ a {
 
 	p, body, ol.normal, ul.normal { font-size: 2.2vw; }
 	p.small, .caption, ol, ul { font-size: 1.8vw; }
-	p.large { font-size: 2.4vw; }
+	.text-large { font-size: 2.4vw; }
 }
 
 /* BORDERS */
