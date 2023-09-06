@@ -32,7 +32,7 @@
 			<p>
 			What a year it has been! I hope that you've had a good summer so far! Thank you for your generosity in accompanying me through all of the ups and downs of my first year on mission with FOCUS. In this update I'm excited to share with you how my time at the Air Force Academy finished up, my summer, and what I'm looking forward to this year at Colorado Mesa!
 			</p>
-			<h4>Leaving the Academy</h4>
+			<h4 class="text-right">Leaving the Academy</h4>
 			<p>
 			It was very hard to say goodbye to the cadets I've grown close to over this past year, but because of that we valued the time we had left together even more. Before finals, my bible studies wrapped up with a send-off talk and games, we had a party for our final SPIRE meeting, and I got to join the airsoft club for one last game. During finals week, we hosted events every day to give the cadets a break from studying. After finals I planned a camping trip with 3 other guys, and had dinner with some others the evening before driving to Nebraska for summer training!
 			</p>

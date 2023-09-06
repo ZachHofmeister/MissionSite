@@ -74,10 +74,11 @@ body { background-color: #FAFAFA; }
 	padding: 0 2%;
 	/* overflow: hidden; */
 }
-.page-item.double { flex: 2 2 0; }
-.page-item.triple { flex: 3 3 0; }
-.page-item.quad { flex: 4 4 0; }
-.page-item.quint {flex: 5 5 0;}
+.page-item.double, .page-item.w2 { flex: 2 2 0; }
+.page-item.triple, .page-item.w3 { flex: 3 3 0; }
+.page-item.quad, .page-item.w4 { flex: 4 4 0; }
+.page-item.w5 {flex: 5 5 0;}
+.page-item.w6 {flex: 6 6 0;}
 
 .page-item.vert-center, .page-item.center-center {
 	display: flex;
@@ -92,6 +93,24 @@ body { background-color: #FAFAFA; }
 	height: 100%;
 	padding: 0 2vw;
 }
+/* A cool little outline effect, maybe develop more later! */
+.outline-br {
+	box-shadow: 3px 3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-bl {
+	box-shadow: -3px 3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-tr {
+	box-shadow: 3px -3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-tl {
+	box-shadow: -3px -3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+
 .nopad { padding: 0; }
 
 .page-item img {
