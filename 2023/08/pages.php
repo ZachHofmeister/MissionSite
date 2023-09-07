@@ -55,7 +55,7 @@
 	<!-- PARAGRAPH / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/08/images/squad-walking.jpeg" alt="">
+			<img class="h90" src="/2023/08/images/squad-walking.jpeg" alt="" style="object-position: 50% 80%;" data-caption=" to do some outreach">
 			<p class="caption text-large">Walking with students to campus</p>
 		</div>
 		<div class="page-item">
@@ -85,7 +85,7 @@
 		<div class="page-item">
 			<h2>Prayer Requests</h2>
 			<ul class="text-large">
-				<li>For my bible study men (Gabe, Drew, Robert, Elijah, Dylan, and Tyler) and our growing friendships</li>
+				<li>For the men in my Bible study (Gabe, Drew, Robert, Elijah, Dylan, and Tyler) and our growing friendships</li>
 				<li>For our student leaders and the example we set for them</li>
 				<li>For healing for Avery, the sister of one of our students</li>
 			</ul>
@@ -96,7 +96,7 @@
 				<p class="text-large">
 					I cannot believe how much success and joy we have had in starting this semester. God is answering YOUR prayers for us! Thank you so much for being a partner in the mission!
 				</p>
-				<p class="text-large">In Christ Jesus, Zach</p>
+				<p class="text-large">God bless you, Zach</p>
 			</div>
 		</div>
 	</div>
@@ -148,11 +148,11 @@
 	<div class="page-section _30">
 		<div class="page-item">
 			<img class="h80" src="/2023/08/images/nerf-1.jpeg" alt="" style="object-position: 50% 20%;">
-			<p class="caption text-large">The Newman house seems to break out into Nerf wars a lot...</p>
+			<p class="caption text-large">The Newman house seems to break out into Nerf gun wars a lot...</p>
 		</div>
 		<div class="page-item">
 			<img class="h80" src="/2023/08/images/nerf-2.jpeg" alt="">
-			<p class="caption text-large">...I may be responsible for them some of the time</p>
+			<p class="caption text-large">...I was not responsible for starting this one though</p>
 		</div>
 	</div>
 
