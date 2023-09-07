@@ -1,7 +1,4 @@
 <?php
-// Initialize the session
-session_start();
-
 // Include config file
 require_once('config.php');
  
@@ -26,12 +23,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<!-- NAVBAR -->
 	<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
 
-	<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to the site.</h1>
+	<!-- Display username -->
+	<h1><?php
+		echo htmlspecialchars($_SESSION["username"]);
+	?></h1>
+	<!-- Display role (admin/user) -->
+	<h3><?php
+		echo "Role: " . ($_SESSION["is_admin"]? "Admin" : "User");
+	?></h3>
+	<!-- Admin page link if admin -->
 	<?php
-		if($_SESSION["is_admin"] == 1) {
-			echo "<h2>You are an administrator.</h2>";
+		if ($_SESSION["is_admin"]) {
+			echo "<p><a href='admin.php'>Go To Admin Panel</a></p>";
 		}
 	?>
+	<!-- Logout link -->
     <p>
         <a href="logout.php">Log Out</a>
     </p>

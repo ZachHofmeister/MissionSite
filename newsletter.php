@@ -1,16 +1,15 @@
+<?php
+	//Require config file
+	require_once('config.php');
+	//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
+	include(ROOT_PATH . '/includes/get-newsletter-dir.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<?php
-		require_once('config.php');
-		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
-		include(ROOT_PATH . '/includes/get-newsletter-dir.php');
-	?>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<?php 
-			// echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">'
-			include(NEWSLETTER_DIR . '/head.php');
-		?>
+		<?php include(NEWSLETTER_DIR . '/head.php');?>
 		<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
 		<link rel="stylesheet" type="text/css" href="/css/lightbox.css">
 		<link rel="stylesheet" type="text/css" href="/css/navbar.css">
@@ -19,7 +18,15 @@
 	<body>
 		<!-- NAVBAR -->
 		<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
+
+		<!-- ADMIN TOOLS -->
+		<?php 
+			if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]) {
+				include(ROOT_PATH . '/includes/newsletter-tools.php');
+			}
+		?>
 		
+		<!-- PAGES -->
 		<?php include(NEWSLETTER_DIR . '/pages.php'); ?>
 
 		<!-- LIGHTBOX -->

@@ -1,11 +1,14 @@
 <!-- https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php -->
 <?php
-//THIS DISABLES REGISTRATION - COMMENT THIS OUT TO ENABLE
-header("location: index.php");
-exit();
 
 // Include config file
 require_once('config.php');
+
+//THIS DISABLES REGISTRATION FOR NON-ADMIN - COMMENT THIS OUT TO ENABLE
+if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] == false) {
+	header("location: /");
+	exit();
+}
 
 // Define variables and initialize with empty values
 $username = $email = $password = $confirm_password = "";
