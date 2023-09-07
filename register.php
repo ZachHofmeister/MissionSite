@@ -1,5 +1,9 @@
 <!-- https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php -->
 <?php
+//THIS DISABLES REGISTRATION - COMMENT THIS OUT TO ENABLE
+header("location: index.php");
+exit();
+
 // Include config file
 require_once('config.php');
 
@@ -117,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			// Attempt to execute the prepared statement
 			if(mysqli_stmt_execute($stmt)) {
 				// Redirect to login page
-				// header("location: login.php");
+				header("location: login.php");
 			} else {
 				echo "Oops! Something went wrong. Please try again later.";
 			}

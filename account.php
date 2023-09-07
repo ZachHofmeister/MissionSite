@@ -27,6 +27,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
 
 	<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to the site.</h1>
+	<?php
+		if($_SESSION["is_admin"] == 1) {
+			echo "<h2>You are an administrator.</h2>";
+		}
+	?>
     <p>
         <a href="logout.php">Log Out</a>
     </p>
