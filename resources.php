@@ -49,8 +49,5 @@
 				<h2>Coming soon!</h2>
 			</div>
 		</div>
-
-		<!-- JAVASCRIPT-->
-		<script src="/js/navbar.js"></script>
 	</body>
 </html>

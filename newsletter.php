@@ -31,9 +31,5 @@
 
 		<!-- LIGHTBOX -->
 		<?php include(ROOT_PATH . '/includes/lightbox.php'); ?>
-
-		<!-- JAVASCRIPT -->
-		<script src="/js/navbar.js"></script>
-		<script src="/js/lightbox.js"></script>
 	</body>
 </html>

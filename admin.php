@@ -26,6 +26,9 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	<!-- Display user id -->
 	<h3>id: <?php echo $_SESSION["id"];?></h3>
 
+	<!-- Register page -->
+	<p><a href="/register.php">Register new user</a></p>
+
 	<!-- List of newsletters -->
 	<style>
 		table, th, td {

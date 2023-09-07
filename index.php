@@ -20,8 +20,5 @@
 		<!-- RECENT POSTS -->
 		<?php include(ROOT_PATH . '/includes/recent-posts.php'); ?>
 	</div>
-
-	<!-- JAVASCRIPT -->
-	<script src="/js/navbar.js"></script>
 </body>
 </html>
