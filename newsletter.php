@@ -19,8 +19,8 @@
 		<!-- NAVBAR -->
 		<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
 
-		<!-- ADMIN TOOLS -->
-		<?php 
+		<?php
+			//Admin tools
 			if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]) {
 				include(ROOT_PATH . '/includes/newsletter-tools.php');
 			}
