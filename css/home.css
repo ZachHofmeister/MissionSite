@@ -26,22 +26,38 @@
 	}
 }
 
-/* LAYOUT */
-
-h1, h2, h3, h4, h5, h6, p, ol, ul {
-	margin: 0%;
-	margin-bottom: 2%;
-}
-
-hr {
-	border-color: inherit;
-}
+/* TAGS */
 
 body {
 	background-color: var(--bg-color);
 	color: var(--tx-color);
 	font-family: 'Open Sans';
 }
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0%;
+	margin-bottom: 2%;
+}
+
+a {
+	color: var(--ac-color);
+	text-decoration: none;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th {font-weight: bold;}
+th, td {
+	padding: 5px 5px;
+}
+
+hr {
+	border-color: inherit;
+}
+
+/* CLASSES AND IDS */
 
 #main {
 	/* SIZE */
@@ -55,61 +71,37 @@ body {
 	border: 1px solid var(--main-br-color);
 }
 
-.section {
-	margin-bottom: 5vh;
-}
-
-.section.w50 {
-	width: 50vw;
-}
-
-.section.bordered {
-	border: 1px solid var(--br-color);
-	border-radius: 10px;
-	overflow: hidden;
-	padding: 20px;
-}
-
-.section.padded {
-	padding: 0 20px;
-}
-
-.hcenter {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* TYPOGRAPHY CLASSES */
-
-.bold {
-	font-weight: bold;
-}
-
-.italic {
-	font-style: italic;
-}
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
 
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
 
-a {
-	color: var(--ac-color);
-	text-decoration: none;
+.section {margin-bottom: 5vh;}
+.section.w50 {width: 50vw;}
+.section.bordered {
+	border: 1px solid var(--br-color);
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 20px;
+}
+.section.padded {padding: 0 20px;}
+
+.hcenter {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Hover underline effects */
-
 .hover-underline {
 	display: inline-block;
 	position: relative;
 }
-
 .hover-underline:hover {
 	text-decoration: none;
 }
-
 /*:after adds content after the selection*/
 .hover-underline:after {
 	content: ''; /*no text, just line*/
@@ -123,7 +115,6 @@ a {
 	transform-origin: bottom right;
 	transition: transform 0.25s ease;
 }
-
 .hover-underline:hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
