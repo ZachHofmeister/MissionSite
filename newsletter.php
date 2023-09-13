@@ -20,8 +20,26 @@
 		<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
 
 		<?php
-			//Admin tools
-			if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]) {
+			if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
+				return;
+			}
+			//Toggle editing button
+			function toggleEditing() {
+				// Store date value
+				$date = $_GET['date'];
+				// Redirect
+				if (isset($_GET["editing"])) {
+					header('location: /newsletter.php?date='.$date);
+				} else {
+					header('location: /newsletter.php?date='.$date.'&editing=1');
+				}
+			}
+		?>
+
+		<?php
+			//Admin tools if admin and requested in URL
+			if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]
+			&& isset($_GET["editing"]) && $_GET["editing"] ) {
 				include(ROOT_PATH . '/includes/newsletter-tools.php');
 			}
 		?>
