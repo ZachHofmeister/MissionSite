@@ -23,6 +23,7 @@
 		return;
 	}
 	// echo '<h1 style="color:white;">' . '/' . $date->format('Y/m') . '/include.php' . '</h1>' ;
+	define('NEWSLETTER_EDITION', $date->format('Y-m-d'));
 	define('NEWSLETTER_DIR', $newsletter_dir);
 	define('NEWSLETTER_DIR_REL', '/' . $date_str);
 ?>

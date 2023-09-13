@@ -10,6 +10,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<?php include(NEWSLETTER_DIR . '/head.php');?>
+		<!-- <link rel="stylesheet" type="text/css" href="/css/home.css/"> -->
 		<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
 		<link rel="stylesheet" type="text/css" href="/css/lightbox.css">
 		<link rel="stylesheet" type="text/css" href="/css/navbar.css">
@@ -34,13 +35,10 @@
 					header('location: /newsletter.php?date='.$date.'&editing=1');
 				}
 			}
-		?>
 
-		<?php
 			//Admin tools if admin and requested in URL
-			if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]
-			&& isset($_GET["editing"]) && $_GET["editing"] ) {
-				include(ROOT_PATH . '/includes/newsletter-tools.php');
+			if (isset($_GET["editing"]) && $_GET["editing"] ) {
+				include(ROOT_PATH . '/includes/newsletter-editor.php');
 			}
 		?>
 		

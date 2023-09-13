@@ -1,0 +1,76 @@
+<?php
+// Initialize session
+session_start();
+
+// If not admin, exit
+if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
+	exit();
+}
+
+// Include config file
+require_once('config.php');
+
+// Retrieve newsletter based on edition
+$query = 'SELECT *
+FROM newsletters
+WHERE edition = "'.NEWSLETTER_EDITION.'"';
+$result = $conn->query($query);
+$newsletter = $result->fetch_assoc();
+
+?>
+
+<div style="background-color: white; border: 1px solid black;">
+	<h2 style="text-align: left;">Post Details</h2>
+	<form action="/api/newsletters.php" method="put">
+		<?php echo NEWSLETTER_EDITION; ?>
+		<div>
+			<label>ID</label>
+			<input type="text" name="id" value="<?php echo $newsletter['id']?>" readonly>
+			<span class="error-msg"><?php echo $id_err; ?></span>
+		</div>
+		<div>
+			<label>Title</label>
+			<input type="text" name="title" value="<?php echo $newsletter['title']?>">
+			<span class="error-msg"><?php echo $title_err; ?></span>
+		</div>
+		<div>
+			<label>Blurb</label>
+			<textarea name="blurb" rows="4" cols="50"><?php echo $newsletter['blurb']?></textarea>
+			<span class="error-msg"><?php echo $blurb_err; ?></span>
+		</div>  
+		<div>
+			<label>URL</label>
+			<input type="text" name="url" value="<?php echo $newsletter['url']?>">
+			<span class="error-msg"><?php echo $url_err; ?></span>
+		</div>
+		<div>
+			<label>Image URL</label>
+			<input type="text" name="img_url" value="<?php echo $newsletter['img_url']?>">
+			<span class="error-msg"><?php echo $img_url_err; ?></span>
+		</div>
+		<div>
+			<label>Edition</label>
+			<input type="date" name="edition"  value="<?php echo $newsletter['edition']?>">
+			<span class="error-msg"><?php echo $edition_err; ?></span>
+		</div>
+		<div>
+			<label>Author</label>
+			<input type="text" name="author"  value="<?php echo $newsletter['author']?>">
+			<span class="error-msg"><?php echo $author_err; ?></span>
+		</div>
+		<div>
+			<label>Published</label>
+			<input type="checkbox" name="published" <?php echo ($newsletter['published']? 'value = "true" checked' : '') ?>>
+			<span class="error-msg"><?php echo $published_err; ?></span>
+		</div>
+		<div>
+			<label>Published Date</label>
+			<input type="date" name="published_date" value="<?php echo $newsletter['published_date']?>">
+			<span class="error-msg"><?php echo $published_date_err; ?></span>
+		</div>
+		<div>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</div>
+	</form>
+</div>
