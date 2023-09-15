@@ -3,6 +3,18 @@
 	require_once('config.php');
 	//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
 	include(ROOT_PATH . '/includes/get-newsletter-dir.php');
+
+	//Toggle editing button
+	function toggleEditing() {
+		// Store date value
+		$date = $_GET['date'];
+		// Redirect
+		if (isset($_GET["editing"])) {
+			header('location: /newsletter.php?date='.$date);
+		} else {
+			header('location: /newsletter.php?date='.$date.'&editing=1');
+		}
+	}
 ?>
 
 <!DOCTYPE html>
@@ -21,25 +33,11 @@
 		<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
 
 		<?php
-			if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
-				return;
-			}
-			//Toggle editing button
-			function toggleEditing() {
-				// Store date value
-				$date = $_GET['date'];
-				// Redirect
-				if (isset($_GET["editing"])) {
-					header('location: /newsletter.php?date='.$date);
-				} else {
-					header('location: /newsletter.php?date='.$date.'&editing=1');
-				}
-			}
-
-			//Admin tools if admin and requested in URL
-			if (isset($_GET["editing"]) && $_GET["editing"] ) {
-				include(ROOT_PATH . '/includes/newsletter-editor.php');
-			}
+		//Admin tools if admin and requested in URL
+		if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]
+		&& isset($_GET["editing"]) && $_GET["editing"]) {
+			include(ROOT_PATH . '/includes/newsletter-editor.php');
+		}
 		?>
 		
 		<!-- PAGES -->

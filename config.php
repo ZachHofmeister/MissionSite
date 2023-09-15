@@ -14,25 +14,25 @@ session_start();
 // Constant ROOT_PATH, used for creating paths
 define ('ROOT_PATH', realpath(dirname(__FILE__)));
 
-// Read paths file to get path to database creds
-$pathsJson = file_get_contents(ROOT_PATH . "/.paths.json");
-$paths = json_decode($pathsJson, true);
+// // Read paths file to get path to database creds
+// $pathsJson = file_get_contents(ROOT_PATH . "/.paths.json");
+// $paths = json_decode($pathsJson, true);
 
-// Read database creds file
-$json = file_get_contents($paths['creds']);
-$creds = json_decode($json, true);
+// // Read database creds file
+// $json = file_get_contents($paths['creds']);
+// $creds = json_decode($json, true);
 
-// Database creds
-$host = $creds['host'] ?? null;
-$user = $creds['username'] ?? null;
-$pass = $creds['password'] ?? null;
-$db = $creds['schema'] ?? null;
-$port = $creds['port'] ?? null;
+// // Database creds
+// $host = $creds['host'] ?? null;
+// $user = $creds['username'] ?? null;
+// $pass = $creds['password'] ?? null;
+// $db = $creds['schema'] ?? null;
+// $port = $creds['port'] ?? null;
 
-// connect to database
-$conn = mysqli_connect($host, $user, $pass, $db, $port);
-if (!$conn) {
-	die("Error");
-	// die("Error connecting to database: " . mysqli_connect_error());
-}
+// // connect to database
+// $conn = mysqli_connect($host, $user, $pass, $db, $port);
+// if (!$conn) {
+// 	die("Error");
+// 	// die("Error connecting to database: " . mysqli_connect_error());
+// }
 ?>

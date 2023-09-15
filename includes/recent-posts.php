@@ -1,12 +1,7 @@
 <div class="section post-container" id="recent-posts">
 	<?php
-		// $date_format = "%M %d, %Y";
-		$query = 'SELECT *, DATE_FORMAT(published_date, "%m/%d/%Y") AS nice_date
-			FROM newsletters
-			WHERE published = 1
-			ORDER BY published_date DESC';
-		$result = $conn->query($query);
-		$newsletters = $result->fetch_all(MYSQLI_ASSOC);
+		require_once ROOT_PATH . "/db/newsletters.php";
+		$newsletters = getAllNewsletters();
 
 		foreach($newsletters as $row) {
 			$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
