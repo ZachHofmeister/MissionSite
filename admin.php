@@ -17,7 +17,7 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link href="css/home.css" type="text/css" rel="stylesheet">
 	<link href="css/navbar.css" type="text/css" rel="stylesheet">
-	<link href="css/modal.css" type="text/css" rel="stylesheet">
+	<!-- <link href="css/modal.css" type="text/css" rel="stylesheet"> -->
 	<script src="https://kit.fontawesome.com/43ec7226a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -42,7 +42,7 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 		</tr>
 	<?php
 	require_once ROOT_PATH . "/db/newsletters.php";
-	$newsletters = getAllNewsletters();
+	$newsletters = getAllNewsletters(false);
 
 	foreach($newsletters as $row) {
 		$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
@@ -51,7 +51,7 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 				<td><a href="'.$nl_url.'">'.$row['title'].'</a></td>
 				<td>'.$row['edition'].'</td>
 				<td>'.($row['published']? "Yes":"No").'</td>
-				<td><a class="modal-open">Edit</a></td>
+				<td><a href="'.$nl_url.'&editing=1">Edit</a></td>
 			</tr>
 		';
 	}
@@ -68,7 +68,8 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 		<td>'.$row['id'].'</td>
 	</tr>
 	*/
-	include_once(ROOT_PATH."/includes/modal-post-details.php");
+	// MODAL
+	// include_once(ROOT_PATH."/includes/modal-post-details.php");
 	?>
 	<table>
 </body>

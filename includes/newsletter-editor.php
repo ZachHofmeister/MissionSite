@@ -7,14 +7,32 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	exit();
 }
 
-require_once ROOT_PATH . "/db/newsletters.php";
-$newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
+if ($_SERVER["REQUEST_METHOD"] == "PUT") {
+	// Processing form data when form is submitted
+
+	// require_once ROOT_PATH . "/db/newsletters.php";
+	// $newsletter = Newsletter::fromArray($_PUT);
+	// echo "ID: $newsletter->id";
+	// Attempt to update newsletter
+	// if(registerUser($username, $email, $password)) {
+	// 	// Redirect to login page
+	// 	header("location: login.php");
+	// } else {
+	// 	echo "Oops! Something went wrong. Please try again later.";
+	// }
+} else if ($_SERVER["REQUEST_METHOD"] == "GET") {
+	// Default page loading operation, $newsletter is used to fill out the form
+	
+	require_once ROOT_PATH . "/db/newsletters.php";
+	$newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
+}
 
 ?>
 
 <div style="background-color: white; border: 1px solid black;">
 	<h2 style="text-align: left;">Post Details</h2>
-	<form action="/api/newsletters.php" method="put">
+	<form action="/db/newsletters.php" method="post">
+		<input type="hidden" name="_method" value="PUT"/>
 		<div>
 			<label>ID</label>
 			<input type="text" name="id" value="<?php echo $newsletter->id; ?>" readonly>
@@ -52,7 +70,7 @@ $newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
 		</div>
 		<div>
 			<label>Published</label>
-			<input type="checkbox" name="published" <?php echo ($newsletter->published? 'value = "true" checked' : '') ?>>
+			<input type="checkbox" name="published" value="true" <?php echo ($newsletter->published? 'checked' : '') ?>>
 			<span class="error-msg"><?php echo $published_err; ?></span>
 		</div>
 		<div>

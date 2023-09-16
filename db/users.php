@@ -55,7 +55,6 @@ function registerUser($username, $email, $plain_password) {
 	$hashed_password = password_hash($plain_password, PASSWORD_DEFAULT);
 	$args = array($username, $email, $hashed_password);
 	$stmt = $db->run($sql, $args);
-	echo "hello!" . $stmt->errno;
 	return $stmt->errno? false : true; // return false if there's an error, true otherwise
 }
 

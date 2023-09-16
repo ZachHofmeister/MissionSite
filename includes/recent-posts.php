@@ -5,7 +5,6 @@
 
 		foreach($newsletters as $row) {
 			$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
-			// echo $nl_url;
 			echo '
 				<a href="' . $nl_url . '">
 					<div class="post">
