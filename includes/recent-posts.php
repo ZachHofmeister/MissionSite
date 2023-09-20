@@ -3,17 +3,16 @@
 		require_once ROOT_PATH . "/db/newsletters.php";
 		$newsletters = getAllNewsletters();
 
-		foreach($newsletters as $row) {
-			$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
+		foreach($newsletters as $nl) {
 			echo '
-				<a href="' . $nl_url . '">
+				<a href="' . $nl->getUrl() . '">
 					<div class="post">
-						<img class="post-img" src="' . $row['img_url'] . '" alt="">
+						<img class="post-img" src="' . $nl->img_url . '" alt="">
 						<div class="post-body">
-							<h2 class="post-title">' . $row['title'] . '</h2>
-							<h6 class="post-details">Published ' . $row['nice_date'] . ' by ' . $row['author'] . '</h6>
+							<h2 class="post-title">' . $nl->title . '</h2>
+							<h6 class="post-details">Published ' . $nl->prettyDate() . ' by ' . $nl->author . '</h6>
 							<p class="post-blurb">
-								' . $row['blurb'] . '
+								' . $nl->blurb . '
 								<strong>...</strong>
 							</p>
 						</div>

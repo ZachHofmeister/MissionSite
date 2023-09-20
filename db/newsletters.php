@@ -12,14 +12,14 @@ class Newsletter {
 
 	function __construct($id, $title, $blurb, $url, $img_url, $edition, $author, $published, $published_date) {
 		$this->id = $id;
-		$this->title = $title;
-		$this->blurb = $blurb;
-		$this->url = $url;
-		$this->img_url = $img_url;
-		$this->edition = $edition;
-		$this->author = $author;
+		$this->title = $title?: "no title";
+		$this->blurb = $blurb?: "no blurb";
+		$this->url = $url?: "no url";
+		$this->img_url = $img_url?: "no img_url";
+		$this->edition = $edition?: "0000-00-00";
+		$this->author = $author?: "no author";
 		$this->published = $published;
-		$this->published_date = $published_date;
+		$this->published_date = $published_date?: "0000-00-00";
 	}
 
 	// Create from database row
@@ -53,9 +53,15 @@ class Newsletter {
 		return $url;
 	}
 
+	// Returns published date in American format
+	function prettyDate() {
+		$date = DateTime::createFromFormat('Y-m-d', $this->published_date);
+		return $date->format("m/d/Y");
+	}
+
 	// Database Functions
 
-	// Retrieve newsletter from db based on edition
+	// GET newsletter from database, by edition
 	public static function fetchByEdition ($edition) {
 		require_once "database.php";
 		$db = new Database();
@@ -73,7 +79,7 @@ class Newsletter {
 		}
 	}
 
-	// Update the newsletter in the database
+	// PUT update the newsletter in the database
 	public function update() {
 		require_once "database.php";
 		$db = new Database();
@@ -87,32 +93,56 @@ class Newsletter {
 	}
 }
 
+// GET all newsletters from database
 function getAllNewsletters($only_published = true) {
 	require_once "database.php";
 	$db = new Database();
 
-	$sql = 'SELECT *, DATE_FORMAT(published_date, "%m/%d/%Y") AS nice_date
-		FROM newsletters'.($only_published? ' WHERE published = 1 ': ' ').'ORDER BY published_date DESC';
+	$sql = 'SELECT * FROM newsletters'
+		.($only_published? ' WHERE published = 1 ': ' ')
+		.'ORDER BY published_date DESC';
 	$stmt = $db->run($sql);
 	$result = $stmt->get_result();
 	if ($result->num_rows > 0) {
-		$newsletters = $result->fetch_all(MYSQLI_ASSOC);
+		$newsletters_raw = $result->fetch_all(MYSQLI_ASSOC);
+		$newsletters = array();
+		foreach($newsletters_raw as $row) {
+			array_push($newsletters, Newsletter::fromArray($row));
+		}
 		return $newsletters;
 	} else {
 		echo "Error: could not fetch any newsletters";
 	}
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") { // HTML only supports GET and POST
-	if ($_POST["_method"] == "PUT") {
-		// Update newsletter
-		$newsletter = Newsletter::fromArray($_POST);
-		// echo $newsletter->published;
+// POST a new newsletter to the database
+function createNewsletter() {
+	require_once "database.php";
+	$db = new Database();
 
+	$sql = 'INSERT INTO newsletters (title) VALUES (\'New Newsletter\')';
+	$stmt = $db->run($sql);
+	// If no error in creation
+	return $stmt->errno == 0; //return true if there is no error
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") { // HTML form only supports GET and POST
+	if (isset($_POST["_method"]) && $_POST["_method"] == "PUT") {
+		// Update newsletter
+
+		$newsletter = Newsletter::fromArray($_POST);
 		// Attempt to update newsletter
 		if($newsletter->update()) {
 			// Redirect back to editing newsletter
 			header("location: ".$newsletter->getUrl()."&editing=1");
+		} else {
+			echo "Oops! Something went wrong. Please try again later.";
+		}
+	} else { //else, actually a POST
+		// Attempt to create a newsletter
+		if(createNewsletter()) {
+			// Redirect back to admin page
+			header("location: /admin.php");
 		} else {
 			echo "Oops! Something went wrong. Please try again later.";
 		}

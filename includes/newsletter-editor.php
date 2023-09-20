@@ -7,25 +7,8 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	exit();
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "PUT") {
-	// Processing form data when form is submitted
-
-	// require_once ROOT_PATH . "/db/newsletters.php";
-	// $newsletter = Newsletter::fromArray($_PUT);
-	// echo "ID: $newsletter->id";
-	// Attempt to update newsletter
-	// if(registerUser($username, $email, $password)) {
-	// 	// Redirect to login page
-	// 	header("location: login.php");
-	// } else {
-	// 	echo "Oops! Something went wrong. Please try again later.";
-	// }
-} else if ($_SERVER["REQUEST_METHOD"] == "GET") {
-	// Default page loading operation, $newsletter is used to fill out the form
-	
-	require_once ROOT_PATH . "/db/newsletters.php";
-	$newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
-}
+require_once ROOT_PATH . "/db/newsletters.php";
+$newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
 
 ?>
 

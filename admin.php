@@ -32,6 +32,11 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	<p><a href="/logout.php">Logout</a></p>
 
 	<h3>Post management</h3>
+	<!-- Add Newsletter Button -->
+	<form action="/db/newsletters.php" method="post">
+		<input type="submit" value="Create New Newsletter">
+	</form>
+	
 	<!-- List of newsletters -->
 	<table>
 		<tr>
@@ -44,14 +49,13 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	require_once ROOT_PATH . "/db/newsletters.php";
 	$newsletters = getAllNewsletters(false);
 
-	foreach($newsletters as $row) {
-		$nl_url = '/newsletter.php?date=' . DateTime::createFromFormat('Y-m-d', $row['edition'])->format('Y-m');
+	foreach($newsletters as $nl) {
 		echo '
 			<tr>
-				<td><a href="'.$nl_url.'">'.$row['title'].'</a></td>
-				<td>'.$row['edition'].'</td>
-				<td>'.($row['published']? "Yes":"No").'</td>
-				<td><a href="'.$nl_url.'&editing=1">Edit</a></td>
+				<td><a href="'.$nl->getUrl().'">'.$nl->title.'</a></td>
+				<td>'.$nl->edition.'</td>
+				<td>'.($nl->published? "Yes":"No").'</td>
+				<td><a href="'.$nl->getUrl().'&editing=1">Edit</a></td>
 			</tr>
 		';
 	}

@@ -28,7 +28,7 @@ class User {
 		);
 	}
 
-	// Retrieve newsletter from db based on edition
+	// GET newsletter from db, based on username
 	public static function fetchByUsername ($username) {
 		require_once "database.php";
 		$db = new Database();
@@ -47,6 +47,7 @@ class User {
 	}
 }
 
+// POST new user to DB
 function registerUser($username, $email, $plain_password) {
 	require_once "database.php";
 	$db = new Database();
@@ -58,6 +59,7 @@ function registerUser($username, $email, $plain_password) {
 	return $stmt->errno? false : true; // return false if there's an error, true otherwise
 }
 
+// QUERY if user with username exists in the database
 function usernameExists($username) {
 	require_once "database.php";
 	$db = new Database();
@@ -76,6 +78,7 @@ function usernameExists($username) {
 	}
 }
 
+// QUERY if user with email exists in the database
 function emailExists($email) {
 	require_once "database.php";
 	$db = new Database();
@@ -93,23 +96,5 @@ function emailExists($email) {
 		return true;
 	}
 }
-
-// function getAllNewsletters() {
-// 	require_once "database.php";
-// 	$db = new Database();
-
-// 	$sql = 'SELECT *, DATE_FORMAT(published_date, "%m/%d/%Y") AS nice_date
-// 		FROM newsletters
-// 		WHERE published = 1
-// 		ORDER BY published_date DESC';
-// 	$stmt = $db->run($sql);
-// 	$result = $stmt->get_result();
-// 	if ($result->num_rows > 0) {
-// 		$newsletters = $result->fetch_all(MYSQLI_ASSOC);
-// 		return $newsletters;
-// 	} else {
-// 		echo "Error: could not fetch any newsletters";
-// 	}
-// }
 
 ?>
