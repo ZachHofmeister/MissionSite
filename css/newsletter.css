@@ -133,7 +133,6 @@ body { background-color: #FAFAFA; }
 .photo-item {
 	flex: 1 1 0;
 	height: 0;
-	padding: .5%;
 }
 .photo-item.double { flex: 2 2 0; }
 .photo-item.triple { flex: 3 3 0; }

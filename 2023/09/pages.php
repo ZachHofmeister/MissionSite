@@ -19,33 +19,33 @@
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2023/08/images/team-retreat.jpeg" alt="" style="object-position: 50% 50%;">
+			<img class="h100" src="/2023/09/images/moab-rosary.jpeg" alt="" style="object-position: 50% 70%;" data-caption="Myself, Kylee, Allison, Keegan, Jacky, and Sophie enjoying the nature in Moab after praying a rosary together">
 		</div>
 	</div>
 
 	<!-- PARAGRAPH / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/08/images/faith-fair.jpeg" alt="">
+			<div class="box">
+				<h2 class="italic">Dear Friends,</h2>
+				<p class="text-large">I hope you've had a great September! </p>
+			</div>
+		</div>
+		<div class="page-item">
+			<img class="photo-item h90" src="/2023/09/images/slack-1.jpeg" alt="">
+			<p class="caption text-large">CAPTION</p>
+		</div>
+	</div>
+
+	<!-- PARAGRAPH / PHOTO -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="photo-item h90" src="/2023/09/images/slack-2.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 		<div class="page-item text-right">
-			<div class="box">
-				<h2 class="italic">Dear Friends,</h2>
-				<p class="text-large">Paragraph</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- PARAGRAPH / PHOTO -->
-	<div class="page-section _30">
-		<div class="page-item">
-			<h2>Fall Outreach</h2>
-			<p class="text-large">Paragraph</p>
-		</div>
-		<div class="page-item">
-			<img class="h90" src="/2023/08/images/club-fair.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
+			<h2 class="italic">Dear Friends,</h2>
+			<p class="text-large">I hope you've had a great September!</p>
 		</div>
 	</div>
 </div>
@@ -55,7 +55,7 @@
 	<!-- PARAGRAPH / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/08/images/squad-walking.jpeg" alt="" style="object-position: 50% 80%;">
+			<img class="h90" src="/2023/09/images/star-wars.jpeg" alt="" style="object-position: 50% 80%;">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 		<div class="page-item">
@@ -69,11 +69,11 @@
 	<!-- PHOTOS -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/08/images/chapel-prayer.jpeg" alt="">
+			<img class="h90" src="/2023/09/images/un-matched.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>	
 		<div class="page-item">
-			<img class="h90" src="/2023/08/images/unmatched-game.jpeg" alt="">
+			<img class="h90" src="/2023/09/images/friday-fun.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 	</div>
@@ -107,7 +107,7 @@
 		</div>
 		<div class="page-item vert-center">
 			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2023/08/images/focus-logo.png" alt="FOCUS logo">
+				<img class="contain no-lightbox" src="/2023/09/images/focus-logo.png" alt="FOCUS logo">
 			</a>
 		</div>
 		<div class="page-item double text-right vert-center">
@@ -131,23 +131,11 @@
 	<!-- PHOTOS-->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2023/08/images/first-day.jpeg" alt="">
+			<img class="h80" src="/2023/09/images/first-day.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2023/08/images/second-day.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-	</div>
-
-	<!-- PHOTOS-->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2023/08/images/nerf-1.jpeg" alt="" style="object-position: 50% 20%;">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2023/08/images/nerf-2.jpeg" alt="">
+			<img class="h80" src="/2023/09/images/second-day.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 	</div>
@@ -155,11 +143,23 @@
 	<!-- PHOTOS-->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2023/08/images/nite-hike-1.jpeg" alt="">
+			<img class="h80" src="/2023/09/images/nerf-1.jpeg" alt="" style="object-position: 50% 20%;">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2023/08/images/nite-hike-2.jpeg" alt="">
+			<img class="h80" src="/2023/09/images/nerf-2.jpeg" alt="">
+			<p class="caption text-large">CAPTION</p>
+		</div>
+	</div>
+
+	<!-- PHOTOS-->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2023/09/images/nite-hike-1.jpeg" alt="">
+			<p class="caption text-large">CAPTION</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2023/09/images/nite-hike-2.jpeg" alt="">
 			<p class="caption text-large">CAPTION</p>
 		</div>
 	</div>
