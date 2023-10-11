@@ -166,13 +166,16 @@
 
 <!-- PAGE 4 -->
 <div class="page _50">
-	<div class="page-section _15">
+	<!-- Header -->
+	<div class="page-section _20">
 		<div class="page-item center-center">
 			<h3>FOCUS National News</h3>
-			<p>Come to the SEEK conference this January and see God's work in action!  <a href="https://seek.focus.org/" target="_blank">Learn more here.</a></p>
+			<p class="text-large text-center">Come to the SEEK conference this January and see God's work in action! <br><a href="https://seek.focus.org/" target="_blank">Learn more here.</a></p>
 		</div>
 	</div>
-	<div class="page-section _85">
+	
+	<!-- Image -->
+	<div class="page-section _80">
 		<div class="page-item">
 			<a href="https://seek.focus.org/" target="_blank"><img class="photo-item no-lightbox h100" src="/2023/09/images/sep-focus-insert.png" alt=""></a>
 		</div>
