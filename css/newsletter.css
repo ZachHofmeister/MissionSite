@@ -10,6 +10,13 @@ body { background-color: #FAFAFA; }
 
 /* CLASS: page */
 
+.page { --pHeight: 1.0; }
+/* Experimenting with different page heights */
+.page._10 { --pHeight: 0.1; }
+.page._20 { --pHeight: 0.2; }
+.page._30 { --pHeight: 0.3; }
+.page._40 { --pHeight: 0.4; }
+.page._50 { --pHeight: 0.5; }
 .page {
 	/* COLOR */
 	color: var(--tx-color) !important;
@@ -17,15 +24,9 @@ body { background-color: #FAFAFA; }
 	/* LAYOUT */
 	margin: 0 auto 4vw;
 	overflow: hidden;
-	aspect-ratio: 8.5 / 11 !important; /* width / height */
-	height: 100vw; /* This is required because safari is too dumb to calc inside percents without a defined height*/
+	aspect-ratio: 8.5 / calc(11 * var(--pHeight)) !important; /* width / height */
+	height: calc(100vw * var(--pHeight)); /* This is required because safari is too dumb to calc inside percents without a defined height*/
 }
-/* Experimenting with different page heights */
-/* .page._50 {
-	--pHeight: 0.5;
-	aspect-ratio: 8.5 / calc(11 * var(--pHeight)) !important;
-	height: calc(100vw * var(--pHeight));
-} */
 
 /* CLASS: page-section */
 
@@ -231,10 +232,8 @@ ol.normal, ul.normal {
 
 .caption {
 	color: var(--caption-color) !important;
-
 	font-family: "Cardo";
 	text-align: center;
-	margin-top: 1%;
 }
 
 .bold { font-weight: bold; }

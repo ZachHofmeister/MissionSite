@@ -19,63 +19,105 @@
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2023/09/images/moab-rosary.jpeg" alt="" style="object-position: 50% 70%;" data-caption="Myself, Kylee, Allison, Keegan, Jacky, and Sophie enjoying the nature in Moab after praying a rosary together">
+			<img class="h100" src="/2023/09/images/moab-rosary.jpeg" alt="" style="object-position: 50% 70%;" data-caption="Myself, Kylee, Allison, Keegan, Jacky, and Sophie enjoying the nature in Moab after praying a rosary together. The landscape there felt very appropriate for reflecting on the Resurrection of Jesus that morning!">
 		</div>
 	</div>
 
-	<!-- PARAGRAPH / PHOTO -->
+	<!-- INTRO / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
 			<div class="box">
 				<h2 class="italic">Dear Friends,</h2>
-				<p class="text-large">I hope you've had a great September! </p>
+				<p class="text-large">I hope that you had a great September! Thank you for being a part of this mission! This month, God has blessed me with getting to grow closer to our student leaders and the men in my Bible study. I'm excited to share about it with you!</p>
 			</div>
 		</div>
 		<div class="page-item">
-			<img class="photo-item h90" src="/2023/09/images/slack-1.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
+			<img class="photo-item h100" src="/2023/09/images/moab-song.jpeg" alt="">
 		</div>
 	</div>
 
-	<!-- PARAGRAPH / PHOTO -->
+	<!-- MOAB / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="photo-item h90" src="/2023/09/images/slack-2.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
+			<img class="photo-item h80" src="/2023/09/images/moab-fire.jpeg" alt="">
+			<p class="caption text-large">Singing praise and worship songs around the fire in Moab</p>
 		</div>
 		<div class="page-item text-right">
-			<h2 class="italic">Dear Friends,</h2>
-			<p class="text-large">I hope you've had a great September!</p>
+			<h3>Moab Camping Trip</h3>
+			<p class="text-large">At the start of September we invited some students to come camping in Moab for a weekend. It was a great opportunity to get to know some of them better, hear about their journeys in faith, and be in awe of God's beautiful creation together!</p>
 		</div>
 	</div>
 </div>
 
 <!-- PAGE TWO -->
 <div class="page">
-	<!-- PARAGRAPH / PHOTO -->
+	<!-- BIBLE STUDIES -->
+	<div class="page-section _50">
+		<div class="page-item">
+			<h3>Bible Studies</h3>
+			<p class="text-large">
+				My freshmen Bible study has been going very well this month! We are walking through <a href="https://focusequip.org/the-crux-2020/" target="_blank">The Crux</a> study, which focuses on answering important questions like "Why did God create us?", "What did Jesus' death accomplish?", and "What does He want for our lives?". It has been great to see them encounter some of these questions for the first time and walk through Scripture with them. I've also been getting lunch with them one-on-one to hear where they're at in their faith!
+			</p>
+		</div>
+		<div class="page-item photo-stack">
+			<div class="photo-item">
+				<img class="photo-item h70" src="/2023/09/images/unmatched.jpeg" alt="">
+				<p class="caption text-large">Playing unmatched with Ace, Brian, and Gabe - one of my Bible study guys</p>
+			</div>
+			<div class="photo-item">
+				<img class="photo-item h80" src="/2023/09/images/leaders-study.jpeg" alt="">
+				<p class="caption text-large">Bible study for our student leaders</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- WELCOME RETREAT -->
+	<div class="page-section _50">
+		<div class="page-item photo-stack">
+			<div class="photo-item">
+				<img class="photo-item h80" src="/2023/09/images/welcome-mass-2.jpeg" alt="">
+				<p class="caption text-large">Mass on the Welcome retreat</p>
+			</div>
+			<div class="photo-item">
+				<img class="photo-item h100" src="/2023/09/images/welcome-mass-1.jpeg" alt="" data-caption="'Jesus took bread, said the blessing, broke it, and giving it to his disciples said, 'Take and eat; this is my body.' - Matthew 26:26">
+			</div>
+		</div>
+		<div class="page-item text-right">
+			<h3>Welcome Retreat</h3>
+			<p class="text-large">Towards the end of the month we had the welcome retreat for the new freshmen. For the retreat we camped, enjoyed a day at a lake, prayed together and had a priest come celebrate Mass for us on Saturday night! One of the biggest blessings of the retreat for me was getting to have Gabe and Drew from my Bible study attend, even though they weren't planning on coming initially. Afterwards they both shared how they encountered God during the retreat with the group!</p>
+		</div>
+	</div>
+</div>
+
+<!-- PAGE THREE -->
+<div class="page">
+	<!-- HIGHLIGHTS + PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/09/images/star-wars.jpeg" alt="" style="object-position: 50% 80%;">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-		<div class="page-item">
-			<h2 class="text-right">Other Highlights</h2>
+			<h3>Other Highlights</h3>
 			<ul class="text-large">
-				<li>...</li>
+				<li>Taking swing dance classes with Olivia, a student</li>
+				<li>Watching Star Wars at the Newman house</li>
+				<li>Golfing with Brian and Matthew (I'm awful at it)</li>
+				<li>Saying hi to Shayla, a student from the Air Force Academy, when she had a swim meet at CMU</li>
 			</ul>
 		</div>
+		<div class="page-item">
+			<img class="photo-item h80" src="/2023/09/images/slackline.jpeg" alt="">
+			<p class="caption text-large">Slacklining has been a great activity to meet students on campus!</p>
+		</div>	
 	</div>
 
 	<!-- PHOTOS -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h90" src="/2023/09/images/un-matched.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
+			<img class="photo-item h80" src="/2023/09/images/welcome-group.jpeg" alt="">
+			<p class="caption text-large">Our group for the Welcome retreat</p>
 		</div>	
 		<div class="page-item">
-			<img class="h90" src="/2023/09/images/friday-fun.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
+			<img class="h80" src="/2023/09/images/welcome-hacky.jpeg" alt="">
+			<p class="caption text-large">Ally, Drew, Gabe, and myself playing hackysack</p>
+		</div>	
 	</div>
 
 	<!-- PRAYER REQUESTS / THANK YOU -->
@@ -83,16 +125,19 @@
 		<div class="page-item">
 			<h2>Prayer Requests</h2>
 			<ul class="text-large">
-				<li>For...</li>
+				<li>For the men in my Bible study: Gabe, Drew, Robert, Elijah, Dylan, Nick, and Barrett and Tyler who I am inviting</li>
+				<li>For our Gospel invitations this month</li>
+				<li>For our <a href="https://seek.focus.org/" target="_blank">SEEK</a> and mission trip invitations</li>
+				<li>For boldness in outreach</li>
 			</ul>
 		</div>
 		<div class="page-item text-large text-right">
 			<div class="box">
 				<h2 class="italic">THANK YOU!</h2>
 				<p class="text-large">
-					Thank you!
+					Thank you for making our mission at Colorado Mesa possible by your prayers and support for me! I am so blessed to be on mission with you!
 				</p>
-				<p class="text-large">God bless you, Zach</p>
+				<p class="text-large">In Christ Jesus, Zach</p>
 			</div>
 		</div>
 	</div>
@@ -119,48 +164,17 @@
 	</div>
 </div>
 
-<!-- PAGE THREE -->
-<div class="page">
-	<!-- HEADING -->
-	<div class="page-section _5">
-		<div class="page-item text-center center-center">
-			<h2>More Photos!</h2>
+<!-- PAGE 4 -->
+<div class="page _50">
+	<div class="page-section _15">
+		<div class="page-item center-center">
+			<h3>FOCUS National News</h3>
+			<p>Come to the SEEK conference this January and see God's work in action!  <a href="https://seek.focus.org/" target="_blank">Learn more here.</a></p>
 		</div>
 	</div>
-	
-	<!-- PHOTOS-->
-	<div class="page-section _30">
+	<div class="page-section _85">
 		<div class="page-item">
-			<img class="h80" src="/2023/09/images/first-day.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2023/09/images/second-day.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-	</div>
-
-	<!-- PHOTOS-->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2023/09/images/nerf-1.jpeg" alt="" style="object-position: 50% 20%;">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2023/09/images/nerf-2.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-	</div>
-
-	<!-- PHOTOS-->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2023/09/images/nite-hike-1.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2023/09/images/nite-hike-2.jpeg" alt="">
-			<p class="caption text-large">CAPTION</p>
+			<a href="https://seek.focus.org/" target="_blank"><img class="photo-item no-lightbox h100" src="/2023/09/images/sep-focus-insert.png" alt=""></a>
 		</div>
 	</div>
 </div>
