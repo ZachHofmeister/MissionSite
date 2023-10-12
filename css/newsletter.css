@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 body {
 	background-color: #FAFAFA;
@@ -13,6 +13,13 @@ body {
 
 /* CLASS: page */
 
+.page { --pHeight: 1.0; }
+/* Experimenting with different page heights */
+.page._10 { --pHeight: 0.1; }
+.page._20 { --pHeight: 0.2; }
+.page._30 { --pHeight: 0.3; }
+.page._40 { --pHeight: 0.4; }
+.page._50 { --pHeight: 0.5; }
 .page {
 	/* COLOR */
 	color: var(--tx-color) !important;
@@ -20,8 +27,8 @@ body {
 	/* LAYOUT */
 	margin: 0 auto 4vw;
 	overflow: hidden;
-	aspect-ratio: 8.5 / 11; /* width / height */
-	height: 100vw; /* This is required because safari is too dumb to calc inside percents without a defined height*/
+	aspect-ratio: 8.5 / calc(11 * var(--pHeight)) !important; /* width / height */
+	height: calc(100vw * var(--pHeight)); /* This is required because safari is too dumb to calc inside percents without a defined height*/
 }
 
 /* CLASS: page-section */
@@ -44,7 +51,7 @@ body {
 .page-section._80 { height: 80%; }
 .page-section._75 { height: 75%; }
 .page-section._70 { height: 70%; }
-.page-section.twothird { height: 66.6%; }
+.page-section.twothird { height: calc(200%/3); }
 .page-section._65 { height: 65%; }
 .page-section._60 { height: 60%; }
 .page-section._55 { height: 55%; }
@@ -53,16 +60,16 @@ body {
 .page-section._45 { height: 45%; }
 .page-section._40 { height: 40%; }
 .page-section._35 { height: 35%; }
-.page-section.third { height: 33.3%; }
+.page-section.third { height: calc(100%/3); }
 .page-section._30 { height: 30%; }
 .page-section._25,
 .page-section.quarter { height: 25%; }
 .page-section._20 { height: 20%; }
-.page-section.sixth { height: 16.6%; }
+.page-section.sixth { height: calc(100%/6); }
 .page-section._15 { height: 15%; }
 .page-section.eighth {height: 12.5%; }
 .page-section._10 { height: 10%; }
-.page-section.twelfth { height: 8.3%; }
+.page-section.twelfth { height: calc(100%/12); }
 .page-section.sixteenth {height: 6.25%; }
 .page-section._5 { height: 5%; }
 
@@ -77,9 +84,11 @@ body {
 	padding: 0 2%;
 	/* overflow: hidden; */
 }
-.page-item.double { flex: 2 2 0; }
-.page-item.triple { flex: 3 3 0; }
-.page-item.quad { flex: 4 4 0; }
+.page-item.double, .page-item.w2 { flex: 2 2 0; }
+.page-item.triple, .page-item.w3 { flex: 3 3 0; }
+.page-item.quad, .page-item.w4 { flex: 4 4 0; }
+.page-item.w5 {flex: 5 5 0;}
+.page-item.w6 {flex: 6 6 0;}
 
 .page-item.vert-center, .page-item.center-center {
 	display: flex;
@@ -88,7 +97,31 @@ body {
 }
 .page-item.center-center { align-items: center; }
 .page-item.vert-center *, .page-item.center-center * { margin: 0; }
-.page-item.nopad { padding: 0; }
+.box {
+	background-color: var(--box-bg-color) !important; 
+	color: var(--box-tx-color) !important;
+	height: 100%;
+	padding: 0 2vw;
+}
+/* A cool little outline effect, maybe develop more later! */
+.outline-br {
+	box-shadow: 3px 3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-bl {
+	box-shadow: -3px 3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-tr {
+	box-shadow: 3px -3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+.outline-tl {
+	box-shadow: -3px -3px 0px 0px black;
+	outline: 1px solid var(--page-color);
+}
+
+.nopad { padding: 0; }
 
 .page-item img {
 	width: 100%;
@@ -104,7 +137,6 @@ body {
 .photo-item {
 	flex: 1 1 0;
 	height: 0;
-	padding: .5%;
 }
 .photo-item.double { flex: 2 2 0; }
 .photo-item.triple { flex: 3 3 0; }
@@ -154,6 +186,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0%;
 	margin-bottom: 2%;
 }
+h1:first-of-type {color: var(--title-tx-color) !important;}
 h1:not(:first-of-type), h2, h3, h4, h5, h6 { color: var(--h-color) !important; }
 h1 { font-size: 4vw; }
 h2 { font-size: 3vw; }
@@ -161,6 +194,10 @@ h3 { font-size: 2.1vw; }
 h4 { font-size: 1.7vw; /* letter-spacing: -0.5px; */ }
 h5 { font-size: 1.5vw; /* letter-spacing: -0.5px; */ }
 h6 { font-size: 1.3vw; }
+
+.box h1, .box h2 {
+	color: var(--box-tx-color) !important;
+}
 
 p { color: var(--p-color) !important; }
 
@@ -198,21 +235,27 @@ ol.normal, ul.normal {
 
 .caption {
 	color: var(--caption-color) !important;
-
 	font-family: "Cardo";
 	text-align: center;
-	margin-top: 1%;
 }
 
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 .no-style { font-style: normal; }
 .no-decor { text-decoration: none; }
+.underline {border-bottom: 2px solid black;}
+
+.opensans { font-family: "Open Sans";}
+.cardo { font-family: "Cardo";}
+.spaced { letter-spacing: 0.25rem;}
 
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
+.text-large {
+	font-size: 2vw;
+}
 
 .text-boxed {
 	background-color: var(--box-bg-color) !important; 
@@ -294,6 +337,7 @@ a {
 
 	p, body, ol.normal, ul.normal { font-size: 2.2vw; }
 	p.small, .caption, ol, ul { font-size: 1.8vw; }
+	.text-large { font-size: 2.4vw; }
 }
 
 /* BORDERS */

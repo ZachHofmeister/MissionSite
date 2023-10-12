@@ -22,8 +22,9 @@ Array.from(images).forEach(img => {
 			if (captionElement && captionElement.classList.contains("caption")) {
 				lightboxCaption.innerText = captionElement.innerText;
 				lightboxCaption.style.display = "block";
-			} else if ("caption" in img.dataset) {
-				lightboxCaption.innerText = img.dataset.caption;
+			}
+			if ("caption" in img.dataset) {
+				lightboxCaption.innerText += img.dataset.caption;
 				lightboxCaption.style.display = "block";
 			}
 		}
