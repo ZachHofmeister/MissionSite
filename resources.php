@@ -45,8 +45,16 @@
 				<h2>Books</h2>
 			</div> -->
 
-			<div class="section padded text-center">
+			<!-- <div class="section padded text-center">
 				<h2>Coming soon!</h2>
+			</div> -->
+
+			<div class="section bordered">
+				<h2>Books</h2>
+				<ul>
+					<li><i><a href="https://www.amazon.com/Meditations-Advent-Christmas-INCARNATION-INFANCY-CHRIST-ebook/dp/B07693BZXB/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank">Incarnation, Birth, and Infancy of Jesus Christ</a></i> by St. Alphonsus Liguori<br>- I read this for Advent in 2022 and am reading it again, great short meditations for anyone to pray with every day leading up to and during Christmas. Plus, <u>it's only $1</u> on the Kindle app!</li>
+					<li><i>The Lord of the Rings</i> trilogy by J.R.R. Tolkein</li>	
+				</ul>
 			</div>
 		</div>
 	</body>
