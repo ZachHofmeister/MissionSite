@@ -12,12 +12,12 @@ class Newsletter {
 
 	function __construct($id, $title, $blurb, $url, $img_url, $edition, $author, $published, $published_date) {
 		$this->id = $id;
-		$this->title = $title?: "no title";
-		$this->blurb = $blurb?: "no blurb";
-		$this->url = $url?: "no url";
-		$this->img_url = $img_url?: "no img_url";
+		$this->title = $title?: "";
+		$this->blurb = $blurb?: "";
+		$this->url = $url?: "";
+		$this->img_url = $img_url?: "";
 		$this->edition = $edition?: "0000-00-00";
-		$this->author = $author?: "no author";
+		$this->author = $author?: "";
 		$this->published = $published;
 		$this->published_date = $published_date?: "0000-00-00";
 	}
