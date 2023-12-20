@@ -17,6 +17,10 @@ body { background-color: #FAFAFA; }
 .page._30 { --pHeight: 0.3; }
 .page._40 { --pHeight: 0.4; }
 .page._50 { --pHeight: 0.5; }
+.page._60 { --pHeight: 0.6; }
+.page._70 { --pHeight: 0.7; }
+.page._80 { --pHeight: 0.8; }
+.page._90 { --pHeight: 0.9; }
 .page {
 	/* COLOR */
 	color: var(--tx-color);
@@ -26,6 +30,11 @@ body { background-color: #FAFAFA; }
 	overflow: hidden;
 	aspect-ratio: 8.5 / calc(11 * var(--pHeight)); /* width / height */
 	height: calc(100vw * var(--pHeight)); /* This is required because safari is too dumb to calc inside percents without a defined height*/
+}
+
+.page._5x7 {
+	aspect-ratio: 7 / 5; /* width / height */
+	height: 60vw;
 }
 
 /* CLASS: page-section */
@@ -118,7 +127,7 @@ body { background-color: #FAFAFA; }
 	outline: 1px solid var(--page-color);
 }
 
-.nopad { padding: 0; }
+.nopad { padding: 0 !important; }
 
 .page-item img {
 	width: 100%;
