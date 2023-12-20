@@ -29,7 +29,6 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 
 	<h3>Actions</h3>
 	<p><a href="/register.php">Register new user</a></p>
-	<p><a href="/logout.php">Logout</a></p>
 
 	<h3>Post management</h3>
 	<!-- Add Newsletter Button -->

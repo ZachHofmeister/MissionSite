@@ -42,21 +42,23 @@ body {
 .navbar * {
 	text-decoration: none;
 	color: var(--nav-tx-color);
+	white-space: nowrap;
 }
 
 .navbar-items {
 	display: flex;
 	gap: 20px;
 	margin-left: auto;
+	flex-wrap: wrap;
 }
 
 .navbar-link {
-	/* padding: 16px; */
-	padding: 12px 4vw;
-	/* border: 1px solid red; */
+	padding: 12px 20px;
+
 	-webkit-transition: background-color 0.15s;
 	-ms-transition: background-color 0.15s;
 	transition: background-color 0.15s;
+	/* outline: 1px solid red; */
 }
 
 /* On devices that support hover, do hover effect */

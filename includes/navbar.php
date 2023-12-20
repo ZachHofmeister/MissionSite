@@ -19,18 +19,6 @@
 					Account
 				</div></a>
 				";
-				if ($_SESSION["is_admin"]) {
-					echo "
-					<a href='/admin.php'><div class='navbar-link'>
-						Admin Panel
-					</div></a>
-					";
-				}
-				echo "
-				<a href='/logout.php'><div class='navbar-link'>
-					Logout
-				</div></a>
-				";
 			}
 		?>
 	</nav>
