@@ -42,7 +42,7 @@ body {
 .navbar * {
 	text-decoration: none;
 	color: var(--nav-tx-color);
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 .navbar-items {
@@ -71,7 +71,6 @@ body {
 .navbar-toggle {
 	display: none;
 	z-index: 1000;
-	/* background-color: var(--nav-bg-color); */
 }
 
 /* Styling for narrow screens */
@@ -92,17 +91,10 @@ body {
 	}
 
 	.navbar-toggle {
+		display: initial;
 		align-self: flex-end;
 		position: absolute;
 		cursor: pointer;
-
-		display: flex;
-		align-items: center;
-	}
-
-	.navbar-toggle div {
-		width: 0;
-		visibility: hidden;
 	}
 }
 
