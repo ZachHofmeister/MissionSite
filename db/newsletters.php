@@ -25,17 +25,16 @@ class Newsletter {
 	// Create from database row
 	public static function fromArray($arr) {
 		// check if published or not + filter convert to boolean int
-		$published = isset($arr["published"])? (int)filter_var($arr["published"], FILTER_VALIDATE_BOOLEAN) : 0;
 		return new Newsletter(
-			$arr["id"], 
-			$arr["title"], 
-			$arr["blurb"], 
-			$arr["url"], 
-			$arr["img_url"], 
-			$arr["edition"], 
-			$arr["author"], 
-			$published,
-			$arr["published_date"]
+			isset($arr["id"])? $arr["id"] : "", 
+			isset($arr["title"])? $arr["title"] : "", 
+			isset($arr["blurb"])? $arr["blurb"] : "", 
+			isset($arr["url"])? $arr["url"] : "", 
+			isset($arr["img_url"])? $arr["img_url"] : "", 
+			isset($arr["edition"])? $arr["edition"] : "", 
+			isset($arr["author"])? $arr["author"] : "", 
+			isset($arr["published"])? (int)filter_var($arr["published"], FILTER_VALIDATE_BOOLEAN) : 0,
+			isset($arr["published_date"])? $arr["published_date"] : ""
 		);
 	}
 
@@ -91,7 +90,25 @@ class Newsletter {
 		$stmt = $db->run($sql, $args);
 		return $stmt->errno? false : true; // return false if there's an error, true otherwise
 	}
+
+	public function delete() {
+		require_once "database.php";
+		$db = new Database();
+		$sql = 'DELETE FROM newsletters
+			WHERE id=?';
+		$args = array($this->id);
+		$stmt = $db->run($sql, $args);
+		return $stmt->errno? false : true; // return false if there's an error, true otherwise
+	}
 }
+
+// function debug_to_console($data) {
+//     $output = $data;
+//     if (is_array($output))
+//         $output = implode(',', $output);
+
+//     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+// }
 
 // GET all newsletters from database
 function getAllNewsletters($only_published = true) {
@@ -127,16 +144,27 @@ function createNewsletter() {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // HTML form only supports GET and POST
-	if (isset($_POST["_method"]) && $_POST["_method"] == "PUT") {
-		// Update newsletter
+	if (isset($_POST["_method"])) {
+		if ($_POST["_method"] == "PUT") {
+			// Update newsletter
 
-		$newsletter = Newsletter::fromArray($_POST);
-		// Attempt to update newsletter
-		if($newsletter->update()) {
-			// Redirect back to editing newsletter
-			header("location: ".$newsletter->getUrl()."&editing=1");
-		} else {
-			echo "Oops! Something went wrong. Please try again later.";
+			$newsletter = Newsletter::fromArray($_POST);
+			// Attempt to update newsletter
+			if($newsletter->update()) {
+				// Redirect back to editing newsletter
+				header("location: ".$newsletter->getUrl()."&editing=1");
+			} else {
+				echo "Oops! Something went wrong. Please try again later.";
+			}
+		} else if ($_POST["_method"] == "DELETE") {
+			// Delete newsletter
+			$newsletter = Newsletter::fromArray($_POST);
+			// Attempt to delete newsletter
+			if($newsletter->delete()) {
+				header("location: /admin.php");
+			} else {
+				echo "Oops! Something went wrong. Please try again later.";
+			}
 		}
 	} else { //else, actually a POST
 		// Attempt to create a newsletter

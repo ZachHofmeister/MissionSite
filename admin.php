@@ -43,6 +43,7 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 			<th>Edition</th>
 			<th>Published?</th>
 			<th>Edit Details</th>
+			<th>Delete</th>
 		</tr>
 	<?php
 	require_once ROOT_PATH . "/db/newsletters.php";
@@ -55,6 +56,13 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 				<td>'.$nl->edition.'</td>
 				<td>'.($nl->published? "Yes":"No").'</td>
 				<td><a href="'.$nl->getUrl().'&editing=1">Edit</a></td>
+				<td>
+				<form action="/db/newsletters.php" method="post">
+				<input type="hidden" name="_method" value="DELETE"/>
+				<input type="hidden" name="id" value="'.$nl->id.'"/>
+				<input type="submit" value="DELETE">
+				</form>
+				</td>
 			</tr>
 		';
 	}
