@@ -27,9 +27,15 @@
 	$db = $creds['schema'] ?? null;
 	$port = $creds['port'] ?? null;
 
-	$conn = mysqli_connect($host, $user, $pass, $db, $port);
-	if (!$conn) {
-		die("Error");
-		// die("Error connecting to database: " . mysqli_connect_error());
+	$conn = null;
+
+	try {
+		$conn = mysqli_connect($host, $user, $pass, $db, $port);
+	} catch (Exception $e) {
+		// echo "Exception: " . $e;
+		if (!$conn) {
+			die("Error");
+			// die("Error connecting to database: " . mysqli_connect_error());
+		}
 	}
 ?>
