@@ -57,6 +57,7 @@ body { background-color: #FAFAFA; }
 .page-section._80 { height: 80%; }
 .page-section._75 { height: 75%; }
 .page-section._70 { height: 70%; }
+.page-section._66,
 .page-section.twothird { height: calc(200%/3); }
 .page-section._65 { height: 65%; }
 .page-section._60 { height: 60%; }

@@ -4,20 +4,20 @@
 	--color-mav-white: #EBF5EE; /* MAV white */
 	--color-mav-black: #262E2F; /* MAV black */
 
-	--color-1: #e0edc5;
-	--color-2: #8DA9C4;
-	--color-3: #C16E70;
+	--color-1: #EBCFB2;
+	--color-2: #297373;
+	--color-3: #443850;
 
 	--page-color: var(--color-1);
 	/* --title-bg-color: var(--color-2); */
-	--title-tx-color: var(--color-mav-black);
+	--title-tx-color: var(--color-3);
 	/* --title-tx-sub: var(--color-mav-white); */
-	--tx-color: var(--color-mav-black);
+	--tx-color: var(--color-3);
 	--h-color: var(--color-3);
 	/* --p-color: ; */
 	/* --caption-color: var(--color-5); */
 	--box-bg-color: var(--color-2);
-	--box-tx-color: var(--color-mav-black);
+	--box-tx-color: var(--color-mav-white);
 }
 
 /* BORDERS */
