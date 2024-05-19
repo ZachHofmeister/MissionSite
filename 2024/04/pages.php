@@ -33,7 +33,7 @@
 			<div class="box">
 				<h2 class="italic">Dear Friends,</h2>
 				<p class="text-large">
-					I pray that you all are doing well! I am excited to share about how God has been working in our lives these last two months of the semester, and to also share about my hopes for this next year of mission at CMU!
+					Happy Pentecost! I pray that you all are doing well! I am excited to share about how God has been working in our lives these last two months of the semester, and to also share about my hopes for this next year of mission at CMU!
 				</p>
 			</div>
 		</div>
