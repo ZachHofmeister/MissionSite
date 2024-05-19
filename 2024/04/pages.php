@@ -140,7 +140,7 @@
 		<div class="page-item">
 			<!-- <h3>Old Friends and New</h3> -->
 			<p class="text-large">
-				My teammate Jacky will be staying here next year too, but we will sadly be saying goodbye to Brian and Ally. Our new teammates next year will be my friend Joseph, who I went to school with, and Claire, who is friends with Jacky! Please keep us all in your prayers as we make this transition!
+				My teammate Jacky will be staying here next year too, but we will sadly be saying goodbye to Brian and Ally. Our new teammates next year will be my friend Joseph, who I went to school with, and Clare, who is friends with Jacky! Please keep us all in your prayers as we make this transition!
 			</p>
 		</div>
 	</div>
@@ -194,7 +194,7 @@
 			<h2>Please Pray...</h2>
 			<ul class="text-large">
 				<li>For all the disciples at CMU Mesa, especially for the Holy Spirit to fill them and guide them over summer</li>
-				<li>For our current team: Jacky, Ally, and Brian, and our new teammates Joe and Claire</li>
+				<li>For our current team: Jacky, Ally, and Brian, and our new teammates Joe and Clare</li>
 				<li>For the students who God wants to reach next year and beyond through our work of evangelization, and for our perseverance</li>
 			</ul>
 		</div>
