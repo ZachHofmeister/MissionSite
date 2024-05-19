@@ -9,7 +9,7 @@
 		</div>
 		<div class="page-item vert-center text-center w6">
 			<h1 class="cardo">The Mission at Mesa</h1>
-			<h5 class="italic">Zach Hofmeister<span class="no-style"> | </span>Colorado Mesa University<span class="no-style"> | </span>April-May 2024</h5>
+			<h5 class="italic">Zach Hofmeister<span class="no-style"> | </span>Colorado Mesa University<span class="no-style"> | </span>April + May 2024</h5>
 		</div>
 		<div class="page-item vert-center">
 			<img class="contain no-lightbox" src="/2024/04/images/cmu-logo.png" alt="CMU logo">
