@@ -43,7 +43,7 @@
 	<div class="page-section _30">
 		<div class="page-item">
 			<img class="h80" src="/2024/08/images/hike.jpeg" alt="" >
-			<p class="caption text-large">Me, Drew, and Nick on a hike in the Colorado National Monument!</p>
+			<p class="caption text-large">Me, Drew, and Nick on a hike in the Colorado National Monument</p>
 		</div>
 		<div class="page-item">
 			<h3>Old Friends</h3>
@@ -58,7 +58,7 @@
 <div class="page _50">
 	<div class="page-section _15">
 		<div class="page-item center-center">
-			<h2>Meet our new team!</h>
+			<h2>Meet The New Team!</h>
 		</div>
 	</div>
 	<div class="page-section _85">
@@ -99,7 +99,7 @@
 
 	<div class="page-section _15">
 		<div class="page-item">
-			<h3>Prayer intentions</h3>
+			<h3>Prayer Intentions</h3>
 			<p class="text-large">Please pray for Keegan who is recovering from a motorcycle accident concussion, for all of our students we are inviting to SEEK, and for an increase in courage to share the faith with those who need it most!</p>
 		</div>
 	</div>
