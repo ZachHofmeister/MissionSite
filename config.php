@@ -31,10 +31,15 @@ $pass = $creds['password'] ?? null;
 $db = $creds['schema'] ?? null;
 $port = $creds['port'] ?? null;
 
-// connect to database
-$conn = mysqli_connect($host, $user, $pass, $db, $port);
-if (!$conn) {
-	die("Error");
-	// die("Error connecting to database: " . mysqli_connect_error());
-}
+	$conn = null;
+
+	try {
+		$conn = mysqli_connect($host, $user, $pass, $db, $port);
+	} catch (Exception $e) {
+		// echo "Exception: " . $e;
+		if (!$conn) {
+			die("Error");
+			// die("Error connecting to database: " . mysqli_connect_error());
+		}
+	}
 ?>
