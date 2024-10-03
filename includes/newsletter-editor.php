@@ -58,8 +58,13 @@ $newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
 		</div>
 		<div>
 			<label>Published Date</label>
-			<input type="date" name="published_date" value="<?php echo $newsletter->published_date; ?>">
+			<input type="date" name="published_date" value=<?php echo $newsletter->published_date; ?>>
 			<span class="error-msg"><?php echo $published_date_err; ?></span>
+		</div>
+		<div>
+			<label for="content_html">HTML Content</label>
+			<textarea name="content_html" id="content_html" rows="40" cols="80"><?php echo trim($newsletter->content_html); ?></textarea>
+			<span class="error-msg"><?php echo $content_html_err; ?></span>
 		</div>
 		<div>
 			<input type="submit" value="Submit">

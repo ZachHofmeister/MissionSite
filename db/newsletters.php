@@ -9,32 +9,35 @@ class Newsletter {
 	public $author;
 	public $published;
 	public $published_date;
+	public $content_html;
 
-	function __construct($id, $title, $blurb, $url, $img_url, $edition, $author, $published, $published_date) {
+	function __construct($id, $title, $blurb, $url, $img_url, $edition, $author, $published, $published_date, $content_html) {
 		$this->id = $id;
-		$this->title = $title?: "";
-		$this->blurb = $blurb?: "";
-		$this->url = $url?: "";
-		$this->img_url = $img_url?: "";
-		$this->edition = $edition?: "0000-00-00";
-		$this->author = $author?: "";
+		$this->title = $title?? "";
+		$this->blurb = $blurb?? "";
+		$this->url = $url?? "";
+		$this->img_url = $img_url?? "";
+		$this->edition = $edition?? "0000-00-00";
+		$this->author = $author?? "";
 		$this->published = $published;
-		$this->published_date = $published_date?: "0000-00-00";
+		$this->published_date = $published_date?? "0000-00-00";
+		$this->content_html = $content_html?? "";
 	}
 
 	// Create from database row
 	public static function fromArray($arr) {
 		// check if published or not + filter convert to boolean int
 		return new Newsletter(
-			isset($arr["id"])? $arr["id"] : "", 
-			isset($arr["title"])? $arr["title"] : "", 
-			isset($arr["blurb"])? $arr["blurb"] : "", 
-			isset($arr["url"])? $arr["url"] : "", 
-			isset($arr["img_url"])? $arr["img_url"] : "", 
-			isset($arr["edition"])? $arr["edition"] : "", 
-			isset($arr["author"])? $arr["author"] : "", 
-			isset($arr["published"])? (int)filter_var($arr["published"], FILTER_VALIDATE_BOOLEAN) : 0,
-			isset($arr["published_date"])? $arr["published_date"] : ""
+			$arr["id"] ?? "", 
+			$arr["title"] ?? "", 
+			$arr["blurb"] ?? "", 
+			$arr["url"] ?? "", 
+			$arr["img_url"] ?? "", 
+			$arr["edition"] ?? "", 
+			$arr["author"] ?? "", 
+			(int)filter_var($arr["published"], FILTER_VALIDATE_BOOLEAN) ?? 0,
+			$arr["published_date"] ?? "",
+			$arr["content_html"] ?? ""
 		);
 	}
 
@@ -84,9 +87,9 @@ class Newsletter {
 		$db = new Database();
 
 		$sql = 'UPDATE newsletters
-			SET title=?, blurb=?, url=?, img_url=?, edition=?, author=?, published=?, published_date=?
+			SET title=?, blurb=?, url=?, img_url=?, edition=?, author=?, published=?, published_date=?, content_html=?
 			WHERE id=?';
-		$args = array($this->title, $this->blurb, $this->url, $this->img_url, $this->edition, $this->author, $this->published, $this->published_date, $this->id);
+		$args = array($this->title, $this->blurb, $this->url, $this->img_url, $this->edition, $this->author, $this->published, $this->published_date, $this->content_html, $this->id);
 		$stmt = $db->run($sql, $args);
 		return $stmt->errno? false : true; // return false if there's an error, true otherwise
 	}
