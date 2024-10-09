@@ -1,3 +1,8 @@
+<?php 
+// Include config file
+require_once(__DIR__.'/../config.php');
+?>
+
 <nav class="navbar" id="navbar">
 	<a href="/"><div class="navbar-link navbar-title">
 		Zach's Mission Updates

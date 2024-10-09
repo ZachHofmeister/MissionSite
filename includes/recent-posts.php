@@ -1,8 +1,13 @@
+<?php 
+// Include config file
+require_once(__DIR__.'/../config.php');
+
+require_once ROOT_PATH . "/db/newsletters.php";
+$newsletters = getAllNewsletters();
+?>
+
 <div class="section post-container" id="recent-posts">
 	<?php
-		require_once ROOT_PATH . "/db/newsletters.php";
-		$newsletters = getAllNewsletters();
-
 		foreach($newsletters as $nl) {
 			echo '
 				<a href="' . $nl->getUrl() . '">

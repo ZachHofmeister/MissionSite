@@ -1,4 +1,7 @@
 <?php
+// Include config file
+require_once(__DIR__.'/../config.php');
+
 class Newsletter {
 	public $id;
 	public $title;
@@ -65,8 +68,7 @@ class Newsletter {
 
 	// GET newsletter from database, by edition
 	public static function fetchByEdition ($edition) {
-		require_once "database.php";
-		$db = new Database();
+		global $db;
 
 		$sql = 'SELECT *
 			FROM newsletters
@@ -83,8 +85,7 @@ class Newsletter {
 
 	// PUT update the newsletter in the database
 	public function update() {
-		require_once "database.php";
-		$db = new Database();
+		global $db;
 
 		$sql = 'UPDATE newsletters
 			SET title=?, blurb=?, url=?, img_url=?, edition=?, author=?, published=?, published_date=?, content_html=?
@@ -95,8 +96,8 @@ class Newsletter {
 	}
 
 	public function delete() {
-		require_once "database.php";
-		$db = new Database();
+		global $db;
+
 		$sql = 'DELETE FROM newsletters
 			WHERE id=?';
 		$args = array($this->id);
@@ -115,8 +116,7 @@ class Newsletter {
 
 // GET all newsletters from database
 function getAllNewsletters($only_published = true) {
-	require_once "database.php";
-	$db = new Database();
+	global $db;
 
 	$sql = 'SELECT * FROM newsletters'
 		.($only_published? ' WHERE published = 1 ': ' ')
@@ -137,8 +137,7 @@ function getAllNewsletters($only_published = true) {
 
 // POST a new newsletter to the database
 function createNewsletter() {
-	require_once "database.php";
-	$db = new Database();
+	global $db;
 
 	$sql = 'INSERT INTO newsletters (title) VALUES (\'New Newsletter\')';
 	$stmt = $db->run($sql);
@@ -147,6 +146,10 @@ function createNewsletter() {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // HTML form only supports GET and POST
+	// If not admin, exit
+	if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
+		exit();
+	}
 	if (isset($_POST["_method"])) {
 		if ($_POST["_method"] == "PUT") {
 			// Update newsletter

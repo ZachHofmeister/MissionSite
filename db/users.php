@@ -1,4 +1,7 @@
 <?php
+// Include config file
+require_once(__DIR__.'/../config.php');
+
 class User {
 	public $id;
 	public $username;
@@ -30,8 +33,7 @@ class User {
 
 	// GET newsletter from db, based on username
 	public static function fetchByUsername ($username) {
-		require_once "database.php";
-		$db = new Database();
+		global $db;
 
 		$sql = 'SELECT * 
 			FROM users 
@@ -49,8 +51,8 @@ class User {
 
 // POST new user to DB
 function registerUser($username, $email, $plain_password) {
-	require_once "database.php";
-	$db = new Database();
+	global $db;
+
 	$sql = 'INSERT INTO users (username, email, password)
 		VALUES (?, ?, ?)';
 	$hashed_password = password_hash($plain_password, PASSWORD_DEFAULT);
@@ -61,8 +63,8 @@ function registerUser($username, $email, $plain_password) {
 
 // QUERY if user with username exists in the database
 function usernameExists($username) {
-	require_once "database.php";
-	$db = new Database();
+	global $db;
+
 	$sql = 'SELECT id FROM users WHERE username = ?';
 	$args = array($username);
 	$stmt = $db->run($sql, $args);
@@ -80,8 +82,8 @@ function usernameExists($username) {
 
 // QUERY if user with email exists in the database
 function emailExists($email) {
-	require_once "database.php";
-	$db = new Database();
+	global $db;
+
 	$sql = 'SELECT id FROM users WHERE email = ?';
 	$args = array($email);
 	$stmt = $db->run($sql, $args);

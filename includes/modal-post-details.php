@@ -1,6 +1,6 @@
-<?php
-// Initialize the session
-session_start();
+<?php 
+// Include config file
+require_once(__DIR__.'/../config.php');
 
 // If not admin, end
 if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
