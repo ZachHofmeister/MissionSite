@@ -138,7 +138,7 @@
 	<div class="page-section _15">
 		<div class="page-item">
 			<h3>Prayer Intentions</h3>
-			<p class="text-large">Please pray for our students to be on fire to share the faith with their friends, for Olivia and Sophie as they interview for FOCUS, for Robert to go to SEEK, for our mission trip invitations, and for Allison and I in our relationship</p>
+			<p class="text-large">Please pray for our students to be on fire to share the faith with their friends, for Olivia and Sophie as they interview for FOCUS, for Robert to go to SEEK, for our mission trip invitations, and for Allison and I in our relationship.</p>
 		</div>
 	</div>
 
