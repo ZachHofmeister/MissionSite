@@ -5,21 +5,21 @@
 	<!-- HEADER -->
 	<div class="page-section _10">
 		<div class="page-item vert-center">
-			<img class="contain no-lightbox" src="/2024/09/images/focus-logo.png" alt="FOCUS logo">
+			<img class="contain no-lightbox" src="/2024/11/images/focus.png" alt="FOCUS logo">
 		</div>
 		<div class="page-item vert-center text-center w4 nopad">
 			<h1 class="cardo">The Mission at Mesa</h1>
-			<h6 class="italic" style="white-space: nowrap;">Zach Hofmeister<span class="no-style"> | </span>Colorado Mesa University<span class="no-style"> | </span>September + October 2024</h6>
+			<h6 class="italic" style="white-space: nowrap;">Zach Hofmeister<span class="no-style"> | </span>Colorado Mesa University<span class="no-style"> | </span>November + December 2024</h6>
 		</div>
 		<div class="page-item vert-center">
-			<img class="contain no-lightbox" src="/2024/09/images/cmu-logo.png" alt="CMU logo">
+			<img class="contain no-lightbox" src="/2024/11/images/cmu.png" alt="CMU logo">
 		</div>
 	</div>
 
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2024/09/images/retreat-group.jpeg" alt="" style="object-position: 50% 50%;" data-caption="Our awesome group on the welcome retreat!">
+			<img class="h100" src="/2024/11/images/mass.jpeg" alt="" style="object-position: 50% 30%;" data-caption="A group of some of the guys after weekday Mass one morning">
 		</div>
 	</div>
 
@@ -28,25 +28,27 @@
 		<div class="page-item">
 			<div class="box">
 				<h2 class="italic">Dear Friends,</h2>
-				<p class="text-large">I hope that you have been doing well this Autumn! I'm excited to catch you up on some of the ways that God has been working in our lives here on mission at CMU in September and October!</p>
+				<p class="text-large">
+					I hope that you had a great Thanksgiving with family and are enjoying the season of Advent! As you prepare your heart for Christ's coming, take a seat by the fire and reflect with me on this past month-and-a-half of mission!
+				</p>
 			</div>
 		</div>
 		<div class="page-item">
-			<img class="photo-item h80" src="/2024/09/images/retreat-mass.jpeg" alt="" style="object-position: 50% 50%">
-			<p class="caption text-large">Getting ready for Mass on the welcome retreat</p>
+			<img class="photo-item h80" src="/2024/11/images/thankful.jpeg" alt="" style="object-position: 50% 50%">
+			<p class="caption text-large">Our outreach activity asking people about what they are thankful for</p>
 		</div>
 	</div>
 
 	<!-- Paragraph + Image -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/retreat-rosary2.jpeg" alt="" >
-			<p class="caption text-large">Robert, Brenden, and Elijah after a rosary walk</p>
+			<img class="h80" src="/2024/11/images/michelle.jpeg" alt="" >
+			<p class="caption text-large">Our huge group that saw the <a href="https://focus.org/michelleduppong/" target="_blank">Michelle Duppong</a> documentary in theaters</p>
 		</div>
 		<div class="page-item">
-			<h3>Welcome Retreat</h3>
+			<h3>Bible Study Wrap-Ups</h3>
 			<p class="text-medium">
-				Midway through September we had our Welcome retreat. It was a great opportunity for all of us to slow down, set aside distractions to pray, and grow in fellowship. Fr. Carl offered the Mass, we hiked and prayed the rosary, and Joe and I gave a talk to the men on <a href="https://www.usccb.org/topics/youth-and-young-adult-ministries/blessed-pier-giorgio-frassati" target="_blank">Bl. Pier Giorgio</a> and making Christ the focus of our lives.
+				After finishing the Crux, I started the <a href="https://focusequip.org/life-in-christ/" target="_blank">Life in Christ</a> Bible study with my group. So far, we've been talking about what it means to call ourselves disciples in the modern day, and how we practice discipleship through prayer and fellowship. I also shared the Gospel with Dylan and John over lunch, and invited them to enter discipleship too!
 			</p>
 		</div>
 	</div>
@@ -57,103 +59,106 @@
 	<!-- header -->
 	<div class="page-section _10">
 		<div class="page-item center-center">
-			<p class="text-large text-center"><i>They said to each other, “Did not our hearts burn within us while he talked to us on the road, while he opened to us the scriptures?</i> - Luke 24:32</p>
+			<p class="text-large text-center"><i>But you are not in darkness, brethren, for that day to surprise you like a thief. For you are all sons of light and sons of the day.</i> - <a href="https://www.biblegateway.com/passage/?search=1%20Thessalonians%205&version=RSVCE" target="_blank">1 Thessalonians 5:4-5</a></p>
 		</div>
 	</div>
 
 	<!-- photo-text -->
 	<div class="page-section _30">
 		<div class="page-item text-right">
-			<h3>Bible Studies</h3>
-			<p class="text-medium">
-				We've had three men's Bible studies going so far - one of them being led by a student which is a first for our campus! My Bible study has a mixture of new guys and ones from last year, and we've just finished <a href="https://focusequip.org/the-crux-2020/" target="_blank">the Crux</a> - a Bible study on the Gospel message, knowing the heart of God for us, and responding to Him.
-			</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2024/09/images/retreat-hike.jpeg" alt="" data-caption=". John, Gabe, and Drew are in my Bible study!">
-			<p class="caption text-large">Victoria, John, Gabe, Prado, Drew, and Lorenzo hiking on the retreat</p>
-		</div>
-	</div>
-	
-	<!-- photo-text -->
-	<div class="page-section _60">
-		<div class="page-item photo-stack">
-			<div class="photo-item">
-				<img class="h80" src="/2024/09/images/climbing.jpeg" alt="" >
-				<p class="caption text-large">At the climbing gym with Sydney, Barrett, and Jeanette</p>
-			</div>
-			<div class="photo-item">
-				<img class="photo-item h80" src="/2024/09/images/outreach.jpeg" alt="" style="object-position: 50% 50%;">
-				<p class="caption text-large">Meeting people on campus giving out hot chocolate</p>
-			</div>
-		</div>
-		<div class="page-item">
 			<h3>Discipleship Update</h3>
 			<p class="text-medium">
-				I am leading the same 7 guys in discipleship and overjoyed by the ways they are living out their faith more deeply than ever before. I am coaching 4 of them to start their own Bible studies, and I see all of them regularly coming to the chapel to spend time with our Lord. At Easter, 2 of them will be confirmed and 1 will be entering the Church! Praise God!<br>
-				One of my favorite moments was combining both groups to discuss and model sharing our testimonies, and then hearing all of them share with the group. Some were nervous, but they shared from their hearts and it was so beautiful to hear concretely how the Lord has worked and is working in their lives. I am so excited for them to share their stories on campus.
+				In our discipleship meetings, I invited 3 more guys to take seriously Christ's call for us to be on mission with Him, and to do that through intentional friendship and starting Bible studies. Gabe, Drew, Barrett, and Nick will be preparing to start their own studies next semester over the break! I'm so excited for them to take this big step!
+			</p>
+		</div>
+		<div class="page-item">
+			<img class="photo-item h80" src="/2024/11/images/plates.jpeg" alt="" style="object-position: 50% 50%;" data-caption=" We wrote down sins and obstacles to sharing the Gospel on the plates, and I think you can figure out the rest.">
+			<p class="caption text-large">We made a men's trip to the desert with plates, sharpies, and baseball bats...</p>
 		</div>
 	</div>
 
 	<!-- photo-text -->
 	<div class="page-section _30">
-		<div class="page-item text-right">
-			<h3>SEEK and our Mission Trip</h3>
+		<div class="page-item">
+			<img class="h80" src="/2024/11/images/birthday.jpeg" alt="">
+			<p class="caption text-large">The guys surprised me and celebrated my birthday with cake at discipleship :)</p>
+		</div>
+		<div class="page-item">
+			<h3>Recruitment Weekend</h3>
 			<p class="text-medium">
-			Paragraph
+				I got to help with a FOCUS recruitment weekend in November, and it was so rejuvenating. This year has honestly been stressful for me, and it was great to take a step back, see friends, talk with people discerning God's call to mission, and pray in a refreshed way. The Lord gave me a lot of peace and clarity in prayer that weekend!
 			</p>
 		</div>
-		
+	</div>
+
+	<!-- photos -->
+	<div class="page-section _25">
+		<div class="page-item">
+			<img class="photo-item h80" src="/2024/11/images/recruitment.jpeg" alt="" >
+			<p class="caption text-large">My group that I accompanied through their interviews with FOCUS</p>
+		</div>
+		<div class="page-item">
+			<img class="photo-item h80" src="/2024/11/images/mishes.jpeg" alt="" >
+			<p class="caption text-large">Olivia and Sophie (left) both accepted offers from FOCUS to be missionaries next year! We are so excited for them and the students they will serve!</p>
+		</div>
 	</div>
 </div>
 
 <!-- PAGE 3 -->
 <div class="page">
-	<!-- photos -->
-	<div class="page-section _25">
-		<div class="page-item">
-			<img class="photo-item h80" src="/2024/09/images/friday.jpeg" alt="" >
-			<p class="caption text-large">Going to Dairy Queen after our monthly first Friday Adoration night</p>
+
+	<!-- photo-text -->
+	<div class="page-section _30">
+		<div class="page-item text-right">
+			<h3>Advent and Christmas Plans</h3>
+			<p class="text-medium">
+				This Advent I've been praying with preparation for Christ's coming at the end of our lives and the world, and talking about that with our students (see verse above). We're also having an Upper Room meeting over break with our disciples to encourage them in this. I'm also excited for the SEEK conference with them in January!
+			</p>
 		</div>
 		<div class="page-item">
-			<img class="photo-item h80" src="/2024/09/images/wave.jpeg" alt="" >
-			<p class="caption text-large">Getting sodas with Kylie, Cate, Ben, and Ryan</p>
+			<img class="photo-item h80" src="/2024/11/images/shooting.jpeg" alt="" style="object-position: 50% 50%;">
+			<p class="caption text-large">I enjoyed a spontaneous shooting range trip with some of the men</p>
 		</div>
 	</div>
 
 	<!-- Other highlights -->
-	<div class="page-section _25">
+	<div class="page-section _20">
 		<div class="page-item">
-			<h3>SEEK and Mission Trip Invites</h3>
-			<p class="text-medium">
-				We also had info nights / parties to invite students to the lifechanging <a href="https://seek.focus.org/" target="_blank">SEEK conference</a> in January and our mission trip to Mexico in the spring! God has blessed our efforts abundantly - we have nearly 50 students signed up for SEEK! I am so excited to go with them!
-			</p>
+			<img class="h80" src="/2024/11/images/xmas.jpeg" alt="" >
+			<p class="caption text-large">The Mesa Catholic Christmas party</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/mission.jpeg" alt="" >
-			<p class="caption text-large">Kylee beautifully shared her testimony from our mission trip last year</p>
+			<h3>Other Highlights</h3>
+			<ul class="text-medium">
+				<li>Acquiring a snack for Bible study and fried chicken with Drew</li>
+				<li>My Thanksgiving trip to Michigan and Ohio to meet more of Allison's family</li>
+				<li>High intensity team bonding time playing the board game Pandemic</li>
+			</ul>
 		</div>
 	</div>
 
+	<!-- PRAYER INTENTIONS -->
 	<div class="page-section _15">
 		<div class="page-item">
-			<h3>Prayer Intentions</h3>
-			<p class="text-large">Please pray for our students to be on fire to share the faith with their friends, for Olivia and Sophie as they interview for FOCUS, for Robert to go to SEEK, for our mission trip invitations, and for Allison and I in our relationship.</p>
+			<h3>Prayer Requests</h3>
+			<p class="text-large">
+				Please pray for Olivia and Sophie as they prepare for full-time mission, for our student Bible study leaders, and for many graces to be poured out on us through the SEEK conference Jan 1-5th. Please share any prayer intentions you have too!
+			</p>
 		</div>
 	</div>
 
-	<!-- PRAYER REQUESTS / THANK YOU -->
+	<!-- PHOTO / THANK YOU -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2024/09/images/mom-sister.jpeg" alt="" style="object-position: 50% 90%;">
-			<p class="caption text-large">My mom and sister came for a weekend; it was such a gift!</p>
+			<img class="photo-item h80" src="/2024/11/images/engagement.jpeg" alt="" style="object-position: 50% 50%;" data-caption=" And a clue for the observant...">
+			<p class="caption text-large">Have a Merry Christmas!</p>
 		</div>
 		<div class="page-item text-medium">
 			<div class="box">
 				<h2 class="italic">THANK YOU!</h2>
-				<p class="text-large">Thank you so much for accompanying me on mission these months through your prayers and support! I am praying for you!</p>
+				<p class="text-large">I am so grateful to be on this mission at Colorado Mesa with you. Thank you for helping to fulfill the great commission!</p>
 				<p class="text-medium text-right">
-					In Christ, Zach
+					Christmas blessings, Zach
 				</p>
 			</div>
 		</div>
@@ -169,7 +174,7 @@
 		</div>
 		<div class="page-item text-left vert-center" style="padding: 0;">
 			<a href="https://www.focus.org" target="_blank" style="padding: 0 4%;">
-				<img class="contain no-lightbox" src="/2024/09/images/focus-logo.png" alt="FOCUS logo">
+				<img class="contain no-lightbox" src="/2024/11/images/focus.png" alt="FOCUS logo">
 			</a>
 		</div>
 		<div class="page-item text-left vert-center" style="padding: 0;">
@@ -190,57 +195,57 @@
 	<!-- photos -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/wedding-dance.jpeg" alt="" >
-			<p class="caption text-large">My first-year team director, Mikayla, married Zion, a former cadet!</p>
+			<img class="h80" src="/2024/11/images/ben.jpeg" alt="" >
+			<p class="caption text-large">Hanging out with Ben while we take Christmas card photos</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/wedding-table.jpeg" alt="" >
-			<p class="caption text-large">Me and my former teammates at Zion and Mikayla's wedding</p>
+			<img class="h80" src="/2024/11/images/catan.jpeg" alt="" >
+			<p class="caption text-large">A game of Settlers of Catan with Dylan, Gabe, Mason, and me</p>
 		</div>
 	</div>
 
 	<!-- photos -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/breck.jpeg" alt="" >
-			<p class="caption text-large">I got to spend a weekend with my team from last year + Allison and Brenna!</p>
+			<img class="h80" src="/2024/11/images/haircut.jpeg" alt="" >
+			<p class="caption text-large">Nadine buzzed my teammate Joe's hair, since we made it to 50 SEEK signups!</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/halloween.jpeg" alt="" data-caption=" Jacky is a bald eagle, Clare is Lady Liberty, Joe is the American flag, and I am Uncle Sam.">
-			<p class="caption text-large">Our team in our USA-themed halloween costumes!</p>
+			<img class="h80" src="/2024/11/images/keegan.jpeg" alt="" data-caption=" Jacky is a bald eagle, Clare is Lady Liberty, Joe is the American flag, and I am Uncle Sam.">
+			<p class="caption text-large">Joe, me, and Keegan at Allison's birthday party</p>
 		</div>
 	</div>
 	
 	<!-- photos -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/retreat-rosary1.jpeg" alt="" >
-			<p class="caption text-large">Olivia, Brenna, Nick, Miranda, and Bridget on the retreat</p>
+			<img class="h80" src="/2024/11/images/karaoke.jpeg" alt="" >
+			<p class="caption text-large">Joe and Gabe singing "All I Want For Christmas Is You" karaoke</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2024/09/images/allison.jpeg" alt="" >
-			<p class="caption text-large">Allison and I on a date to see the fall colors</p>
+			<img class="h80" src="/2024/11/images/chickfila.jpeg" alt="" >
+			<p class="caption text-large">I ran into Jeanette at Chick Fil A</p>
 		</div>
 	</div>
 </div>
 
 <!-- Page 5 -->
- <div class="page _60">
+<div class="page _50">
 	<div class="page-section _10">
 		<div class="page-item center-center">
-			<h2>Go watch this incredible movie!!!</h2>
+			<h2>Pause your Hallmark movies!</h2>
 		</div>
 	</div>
 	<div class="page-section _30">
 		<div class="page-item">
 			<p class="text-medium">
-				Michelle Duppong was a farmgirl from North Dakota who had a deep awareness of Christ's love and thirst for us and lived completely for Him, to her death at the age of 31. She has had a huge impact on how I live mission, and I will be seeing it with students in November. Her life will inspire you as well! It's in theaters nationwide for one night only this may be the only opportunity to watch it for a while! Click the image for more information.
+				If you didn't get a chance to see the incredible <a href="https://focus.org/michelleduppong/" target="_blank">documentary about the servant of God Michelle Duppong</a>, or want to share it with family this Christmas, it is now available to stream on EWTN for free! Michelle Duppong entered eternal life on December 25, 2015. This is a great advent movie to prepare ourselves if Christ calls us also to stand before Him this Christmas. I hope you get the chance to watch it!
 			</p>
 		</div>
 	</div>
 	<div class="page-section _60">
 		<div class="page-item">
-			<a href="https://focus.org/michelleduppong/" target="_blank"><img class="h100 no-lightbox" src="/2024/09/images/michelle.png " alt="" style="object-position: 50% 50%;"></a>
+			<a href="https://focus.org/michelleduppong/" target="_blank"><img class="h100 no-lightbox" src="/2024/11/images/insert.png " alt="" style="object-position: 50% 50%;"></a>
 		</div>
 	</div>
  </div>

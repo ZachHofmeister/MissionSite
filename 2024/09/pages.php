@@ -94,17 +94,6 @@
 				One of my favorite moments was combining both groups to discuss and model sharing our testimonies, and then hearing all of them share with the group. Some were nervous, but they shared from their hearts and it was so beautiful to hear concretely how the Lord has worked and is working in their lives. I am so excited for them to share their stories on campus.
 		</div>
 	</div>
-
-	<!-- photo-text -->
-	<div class="page-section _30">
-		<div class="page-item text-right">
-			<h3>SEEK and our Mission Trip</h3>
-			<p class="text-medium">
-			Paragraph
-			</p>
-		</div>
-		
-	</div>
 </div>
 
 <!-- PAGE 3 -->
