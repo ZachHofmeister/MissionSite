@@ -150,7 +150,7 @@
 	<!-- PHOTO / THANK YOU -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2024/11/images/engagement.jpeg" alt="" style="object-position: 50% 50%;" data-caption=" And a clue for the observant...">
+			<img class="photo-item h90" src="/2024/11/images/engagement.jpeg" alt="" style="object-position: 50% 50%;" data-caption=" And a clue for the observant...">
 			<p class="caption text-large">Have a Merry Christmas!</p>
 		</div>
 		<div class="page-item text-medium">
