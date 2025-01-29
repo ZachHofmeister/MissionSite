@@ -211,7 +211,7 @@
 			<p class="caption text-large">Nadine buzzed my teammate Joe's hair, since we made it to 50 SEEK signups!</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2024/11/images/keegan.jpeg" alt="" data-caption=" Jacky is a bald eagle, Clare is Lady Liberty, Joe is the American flag, and I am Uncle Sam.">
+			<img class="h80" src="/2024/11/images/keegan.jpeg" alt="">
 			<p class="caption text-large">Joe, me, and Keegan at Allison's birthday party</p>
 		</div>
 	</div>
