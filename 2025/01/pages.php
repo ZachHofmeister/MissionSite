@@ -178,3 +178,24 @@
 		</div>
 	</div>
 </div>
+
+<!-- News Insert -->
+<div class="page _50">
+	<div class="page-section _10">
+		<div class="page-item center-center">
+			<h2>You Are Invited To Join This Bible Study!</h2>
+		</div>
+	</div>
+	<div class="page-section _15">
+		<div class="page-item">
+			<p class="text-large">
+				Want to encounter God in scripture? Want to experience a FOCUS Bible study? Curtis Martin and Dr. Edward Sri are leading online Bible studies for everyone!
+			</p>
+		</div>
+	</div>
+	<div class="page-section _70">
+		<div class="page-item">
+			<a href="https://focusequip.org/messiah/" target="_blank"><img class="h100 no-lightbox" src="/2025/01/images/news.png " alt="" style="object-position: 50% 50%;"></a>
+		</div>
+	</div>
+ </div>
