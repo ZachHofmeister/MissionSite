@@ -1,0 +1,40 @@
+:root {
+	--color-1: #4a4a4a;
+	--color-2: #75bcd9;
+	--color-3: #f8f1ef;
+	--color-4: #bbacd4;
+
+
+	--page-color: var(--color-1);
+
+	--title-tx-color: var(--color-2);
+	--h-color: var(--color-2);
+
+	--tx-color: var(--color-4);
+
+	--box-bg-color: var(--color-4);
+	--box-tx-color: var(--color-1);
+
+}
+
+/* BORDERS */
+
+/* .page-section {
+	outline: 1px solid rgba(0, 0, 0, .05);
+	outline-offset: -1px;
+}
+
+.page-item {
+	outline: 1px dashed rgba(0, 0, 0, .05);
+	outline-offset: -1px;
+} */
+
+/* h1, h2, h3, h4, h5, h6, p, ul, ol {
+	outline: 2px dashed blue;
+	outline-offset: -2px;
+} */
+
+/* img {
+	outline: 1px dashed rgba(255, 0, 0, .5);
+	outline-offset: -1px;
+} */
