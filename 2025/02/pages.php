@@ -19,14 +19,14 @@
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2025/02/images/dinner.jpeg" alt="" style="object-position: 50% 60%;" data-caption="Most of our students after the dinner we catered at SEEK!">
+			<img class="h100" src="/2025/02/images/recap.jpeg" alt="" style="object-position: 50% 50%;" data-caption="Most of our students after the dinner we catered at SEEK!">
 		</div>
 	</div>
 
 	<!-- INTRO / PHOTO -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="photo-item h90" src="/2025/02/images/flag.jpeg" alt="" style="object-position: 50% 50%">
+			<img class="photo-item h90" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
@@ -48,7 +48,7 @@
 			</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/dudes.jpeg" alt="" >
+			<img class="h80" src="/2025/02/images/.jpeg" alt="" >
 			<p class="caption text-large">caption</p>
 		</div>
 	</div>
@@ -66,11 +66,11 @@
 	<!-- photos -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/02/images/bananas.jpeg" alt="" >
+			<img class="photo-item h80" src="/2025/02/images/.jpeg" alt="" >
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/02/images/group.jpeg" alt="" >
+			<img class="photo-item h80" src="/2025/02/images/.jpeg" alt="" >
 			<p class="caption text-large">caption</p>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 	<!-- Missionary Summit -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/02/images/summit.jpeg" alt="" style="object-position: 50% 50%;">
+			<img class="photo-item h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
@@ -98,7 +98,7 @@
 			</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/exodus.jpeg" alt="" data-caption=". LtR: Dylan, Keegan, Barrett, Tony, John, Jorge, Christian, Elijah, Joe, and Nick.">
+			<img class="h80" src="/2025/02/images/.jpeg" alt="" data-caption=". LtR: Dylan, Keegan, Barrett, Tony, John, Jorge, Christian, Elijah, Joe, and Nick.">
 			<p class="caption text-large">caption</p>
 		</div>
 	</div>
@@ -110,7 +110,7 @@
 	<!-- photo-text -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="photo-item h90" src="/2025/02/images/barrett.jpeg" alt="" style="object-position: 50% 50%;">
+			<img class="photo-item h90" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
@@ -124,11 +124,11 @@
 	<!-- Pics -->
 	<div class="page-section _20">
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/concert.jpeg" alt="" style="object-position: 50% 50%;" data-caption=". It was a lot of fun to be up at the front of the concert with a priest! Lots of people came up and wanted to know where his parish was.">
+			<img class="h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;" data-caption=". It was a lot of fun to be up at the front of the concert with a priest! Lots of people came up and wanted to know where his parish was.">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/robert.jpeg" alt="" style="object-position: 50% 30%;">
+			<img class="h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 30%;">
 			<p class="caption text-large">caption</p>
 		</div>
 	</div>
@@ -146,7 +146,7 @@
 	<!-- PHOTO / THANK YOU -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/02/images/kiln.jpeg" alt="" style="object-position: 50% 50%;">
+			<img class="photo-item h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item text-medium">

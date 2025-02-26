@@ -1,20 +1,18 @@
 :root {
-	--color-1: #4a4a4a;
-	--color-2: #75bcd9;
-	--color-3: #f8f1ef;
-	--color-4: #bbacd4;
+	--page-color: #f9eeee;
 
+	--title-tx-color: #126357;
+	--h-color: var(--title-tx-color);
 
-	--page-color: var(--color-1);
+	--tx-color: #908272;
 
-	--title-tx-color: var(--color-2);
-	--h-color: var(--color-2);
+	--box-bg-color: #ffc6c5;
+	--box-tx-color: var(--title-tx-color);
 
-	--tx-color: var(--color-4);
+}
 
-	--box-bg-color: var(--color-4);
-	--box-tx-color: var(--color-1);
-
+img:not(.contain) {
+	display: none;
 }
 
 /* BORDERS */
