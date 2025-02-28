@@ -19,7 +19,7 @@
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2025/02/images/recap.jpeg" alt="" style="object-position: 50% 50%;" data-caption="Most of our students after the dinner we catered at SEEK!">
+			<img class="h100" src="/2025/02/images/recap.jpeg" alt="" style="object-position: 50% 50%;" data-caption="">
 		</div>
 	</div>
 
@@ -98,7 +98,7 @@
 			</p>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/.jpeg" alt="" data-caption=". LtR: Dylan, Keegan, Barrett, Tony, John, Jorge, Christian, Elijah, Joe, and Nick.">
+			<img class="h80" src="/2025/02/images/.jpeg" alt="">
 			<p class="caption text-large">caption</p>
 		</div>
 	</div>
@@ -124,7 +124,7 @@
 	<!-- Pics -->
 	<div class="page-section _20">
 		<div class="page-item">
-			<img class="h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;" data-caption=". It was a lot of fun to be up at the front of the concert with a priest! Lots of people came up and wanted to know where his parish was.">
+			<img class="h80" src="/2025/02/images/.jpeg" alt="" style="object-position: 50% 50%;">
 			<p class="caption text-large">caption</p>
 		</div>
 		<div class="page-item">
@@ -161,22 +161,7 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<div class="page-section _10">
-		<div class="page-item w2 text-right vert-center" style="padding: 0;">
-			<h4 style="padding: 0 2%;">
-				<a href="mailto:edward.hofmeister@focus.org" class="no-decor">edward.hofmeister@focus.org</a><br>
-				<a href="tel:+16196558686" class="no-decor">(619) 655-8686</a>
-			</h4>
-		</div>
-		<div class="page-item text-left vert-center" style="padding: 0;">
-			<a href="https://www.focus.org" target="_blank" style="padding: 0 4%;">
-				<img class="contain no-lightbox" src="/2025/02/images/focus.png" alt="FOCUS logo">
-			</a>
-		</div>
-		<div class="page-item text-left vert-center" style="padding: 0;">
-			
-		</div>
-	</div>
+	<?php include(ROOT_PATH . '/includes/newsletter-footer.php'); ?>
 </div>
 
 <!-- News Insert -->

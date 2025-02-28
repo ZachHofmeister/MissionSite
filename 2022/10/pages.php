@@ -120,7 +120,7 @@
 		</div>
 		<div class="page-item vert-center">
 			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2022/10/focus-logo.png" alt="FOCUS logo">
+				<img class="contain no-lightbox" src="/2022/10/focus.png" alt="FOCUS logo">
 			</a>
 		</div>
 		<div class="page-item double text-right vert-center">

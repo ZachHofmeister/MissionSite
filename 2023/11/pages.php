@@ -5,7 +5,7 @@
 	<!-- HEADER -->
 	<div class="page-section _10">
 		<div class="page-item vert-center">
-			<img class="contain no-lightbox" src="/2023/11/images/focus-logo.png" alt="FOCUS logo">
+			<img class="contain no-lightbox" src="/2023/11/images/focus.png" alt="FOCUS logo">
 		</div>
 		<div class="page-item vert-center text-center w6">
 			<h1 class="cardo">The Mission at Mesa</h1>
@@ -151,25 +151,7 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<div class="page-section _10">
-		<div class="page-item double text-left vert-center">
-			<h4>
-				***REMOVED***<br>
-				Grand Junction, CO 81501
-			</h4>
-		</div>
-		<div class="page-item vert-center">
-			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2023/10/images/focus-logo.png" alt="FOCUS logo">
-			</a>
-		</div>
-		<div class="page-item double text-right vert-center">
-			<h4>
-				<a href="tel:+16196558686" class="no-decor">(619) 655-8686</a><br>
-				<a href="mailto:edward.hofmeister@focus.org" class="no-decor">edward.hofmeister@focus.org</a>
-			</h4>
-		</div>
-	</div>
+	<?php include(ROOT_PATH . '/includes/newsletter-footer.php'); ?>
 </div>
 
 <!-- PAGE 4 -->
