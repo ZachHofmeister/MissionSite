@@ -4,10 +4,8 @@ require_once(__DIR__.'/../config.php');
 
 //Provides a verified NEWSLETTER_DIR constant
 function isValidDate($date, $format = 'Y-m-d') {
-	// echo $_GET['date'] . '<br>';
 	//HOTFIX: appending day to format and day of 01 to the date, fix for the 'feb 30' bug
 	$d = DateTime::createFromFormat($format, $date . '-01');
-	// echo $d->format('Y-m-d');;
 	return $d && $d->format($format) === $date . '-01'; //HOTFIX cont
 }
 

@@ -108,22 +108,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div>
                 <label>Username</label>
                 <input type="text" name="username">
-				<span class="error-msg"><?php echo $username_err; ?></span>
+				<span class="error-msg"><?php echo htmlspecialchars($username_err); ?></span>
             </div>
 			<div>
                 <label>Email</label>
                 <input type="text" name="email">
-				<span class="error-msg"><?php echo $email_err; ?></span>
+				<span class="error-msg"><?php echo htmlspecialchars($email_err); ?></span>
             </div>  
             <div>
                 <label>Password</label>
                 <input type="password" name="password">
-				<span class="error-msg"><?php echo $password_err; ?></span>
+				<span class="error-msg"><?php echo htmlspecialchars($password_err); ?></span>
             </div>
             <div>
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password">
-				<span class="error-msg"><?php echo $confirm_password_err; ?></span>
+				<span class="error-msg"><?php echo htmlspecialchars($confirm_password_err); ?></span>
             </div>
             <div>
                 <input type="submit" value="Submit">

@@ -25,7 +25,7 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	<?php include_once(ROOT_PATH . '/includes/navbar.php'); ?>
 
 	<!-- Display user id -->
-	<h3>user id: <?php echo $_SESSION["id"];?></h3>
+	<h3>user id: <?php echo htmlspecialchars($_SESSION["id"]);?></h3>
 
 	<h3>Actions</h3>
 	<p><a href="/register.php">Register new user</a></p>
@@ -52,14 +52,14 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	foreach($newsletters as $nl) {
 		echo '
 			<tr>
-				<td><a href="'.$nl->getUrl().'">'.$nl->title.'</a></td>
-				<td>'.$nl->edition.'</td>
+				<td><a href="'.$nl->getUrl().'">'.htmlspecialchars($nl->title).'</a></td>
+				<td>'.htmlspecialchars($nl->edition).'</td>
 				<td>'.($nl->published? "Yes":"No").'</td>
 				<td><a href="'.$nl->getUrl().'&editing=1">Edit</a></td>
 				<td>
 				<form action="/db/newsletters.php" method="post">
 				<input type="hidden" name="_method" value="DELETE"/>
-				<input type="hidden" name="id" value="'.$nl->id.'"/>
+				<input type="hidden" name="id" value="'.htmlspecialchars($nl->id).'"/>
 				<input type="submit" value="DELETE">
 				</form>
 				</td>

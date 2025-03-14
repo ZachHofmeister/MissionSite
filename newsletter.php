@@ -9,14 +9,14 @@ require_once 'config.php';
 		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
 		require_once ROOT_PATH . '/includes/get-newsletter-dir.php';
 		require_once ROOT_PATH . "/db/newsletters.php";
-		$newsletter = Newsletter::fetchByEdition( NEWSLETTER_EDITION);
+		$nl = Newsletter::fetchByEdition( NEWSLETTER_EDITION);
 		
 	?>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<?php
 			//Set page title (tab bar) from database
-			echo '<title>' . $newsletter->title . '</title>';
+			echo '<title>' . htmlspecialchars($nl->title) . '</title>';
 			//Link colors CSS
 			echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">';
 		?>
@@ -39,10 +39,10 @@ require_once 'config.php';
 		
 		<!-- PAGES -->
 		<?php
-			if (empty($newsletter->content_html)) {
+			if (empty($nl->content_html)) {
 				include(NEWSLETTER_DIR . '/pages.php');
 			} else {
-				echo $newsletter->content_html;
+				echo htmlspecialchars($nl->content_html); //todo change this so that approved script can be inserted into content, for now this is safer to prevent XSS
 			}
 		?>
 

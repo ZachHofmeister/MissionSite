@@ -14,10 +14,10 @@ $newsletters = getAllNewsletters();
 					<div class="post">
 						<img class="post-img" src="' . $nl->img_url . '" alt="">
 						<div class="post-body">
-							<h2 class="post-title">' . $nl->title . '</h2>
+							<h2 class="post-title">' . htmlspecialchars($nl->title) . '</h2>
 							<h6 class="post-details">Published ' . $nl->prettyDate() . ' by ' . $nl->author . '</h6>
 							<p class="post-blurb">
-								' . $nl->blurb . '
+								' . htmlspecialchars($nl->blurb) . '
 								<strong>...</strong>
 							</p>
 						</div>

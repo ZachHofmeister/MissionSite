@@ -33,7 +33,7 @@ class Newsletter {
 		return new Newsletter(
 			$arr["id"] ?? "", 
 			$arr["title"] ?? "", 
-			$arr["blurb"] ?? "", 
+			$arr["blurb"]?? "", 
 			$arr["url"] ?? "", 
 			$arr["img_url"] ?? "", 
 			$arr["edition"] ?? "", 
@@ -67,7 +67,7 @@ class Newsletter {
 	// Database Functions
 
 	// GET newsletter from database, by edition
-	public static function fetchByEdition ($edition) {
+	public static function fetchByEdition ($edition): Newsletter {
 		$db = Database::getInstance();
 
 		$sql = 'SELECT *
