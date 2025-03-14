@@ -3,15 +3,23 @@
 require_once(__DIR__.'/../config.php');
 
 class Database {
-	private $conn;
+	private mysqli $conn;
 
 	function __construct() {
 		// Read paths file to get path to database creds
-		$pathsJson = file_get_contents(ROOT_PATH . "/.paths.json");
+		$pathsFile = ROOT_PATH . "/.paths.json";
+		if (!file_exists($pathsFile)) {
+			die("Paths file not found.");
+		}
+		$pathsJson = file_get_contents($pathsFile);
 		$paths = json_decode($pathsJson, true);
 
 		// Read database creds file
-		$json = file_get_contents(ROOT_PATH ."/". $paths['creds']); // THIS WILL NEED TO BE CHANGED TO WORK WITH SERVER SETUP - maybe it has been
+		$credsFile = ROOT_PATH ."/". $paths['creds'];
+		if (!file_exists($credsFile)) {
+			die("Creds file not found.");
+		}
+		$json = file_get_contents($credsFile);
 		$creds = json_decode($json, true);
 
 		// Database creds
@@ -23,22 +31,27 @@ class Database {
 
 		// connect to database
 		try {
+			mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 			$this->conn = mysqli_connect($host, $user, $pass, $name, $port);
-		} catch (Exception $e) {
-			if (!$this->conn) {
-				die("Error");
-				// die("Error connecting to database: " . mysqli_connect_error());
-			}
+		} catch (mysqli_sql_exception $e) {
+			die("Database connection failed: " . $e->getMessage());
 		}
 	}
 
 	function __destruct() {
-		$this->conn->close();
+		if ($this->conn) {
+			$this->conn->close();
+		}
 	}
 
-	public function run($sql, $args = NULL) {
+	public function run($sql, $args = []) {
 		$stmt = $this->conn->prepare($sql);
-		$stmt->execute($args);
+		if ($stmt === false) {
+			die("SQL Error: " . $this->conn->error);
+		}
+		if (!empty($args)) {
+			$stmt->execute($args);
+		}
 		return $stmt;
 	}
 }

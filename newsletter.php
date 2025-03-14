@@ -9,7 +9,7 @@ require_once 'config.php';
 		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
 		require_once ROOT_PATH . '/includes/get-newsletter-dir.php';
 		require_once ROOT_PATH . "/db/newsletters.php";
-		$newsletter = Newsletter::fetchByEdition(edition: NEWSLETTER_EDITION);
+		$newsletter = Newsletter::fetchByEdition( NEWSLETTER_EDITION);
 		
 	?>
 	<head>
