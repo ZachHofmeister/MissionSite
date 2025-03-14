@@ -102,7 +102,7 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<?php include(ROOT_PATH . '/includes/newsletter-footer.php'); ?>
+	<div class="page-section _10" id="nl-footer"><script src="/js/nl-footer.js"></script></div>
 </div>
 
 <!-- PAGE THREE -->
