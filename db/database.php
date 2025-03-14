@@ -61,7 +61,7 @@ class Database {
 	// Prevent cloning (singleton pattern)
 	private function __clone() {}
 
-	private function __destruct() {
+	public function __destruct() {
 		if ($this->conn) {
 			$this->conn->close();
 		}
