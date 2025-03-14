@@ -67,7 +67,7 @@ class Newsletter {
 	// Database Functions
 
 	// GET newsletter from database, by edition
-	public static function fetchByEdition ($edition): Newsletter {
+	public static function fetchByEdition ($edition): ?Newsletter {
 		$db = Database::getInstance();
 
 		$sql = 'SELECT *
@@ -75,12 +75,15 @@ class Newsletter {
 			WHERE edition = ?';
 		$args = array($edition);
 		$stmt = $db->run($sql, $args);
-		$result = $stmt->get_result();
-		if ($result->num_rows > 0) {
-			return Newsletter::fromArray($result->fetch_assoc());
-		} else {
-			echo "Error: could not fetch any newsletters";
+		if (!$stmt) {
+			throw new Exception("fetchByEdition: Database query failed");
 		}
+		$result = $stmt->get_result();
+		if ($result && $result->num_rows > 0) {
+			return Newsletter::fromArray($result->fetch_assoc());
+		}
+
+		return null;
 	}
 
 	// PUT update the newsletter in the database
