@@ -45,13 +45,20 @@ a {
 }
 
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid var(--tx-color);
 	border-collapse: collapse;
 }
 th {font-weight: bold;}
 th, td {
 	padding: 5px 5px;
 }
+
+/* input {
+	background-color: var(--br-color);
+	color: var(--tx-color);
+	border: 1px solid var(--tx-color);
+	border-radius: 4px;
+} */
 
 hr {
 	border-color: inherit;

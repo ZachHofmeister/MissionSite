@@ -1,6 +1,6 @@
 <?php 
 // Include config file
-require_once('config.php');
+require_once 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,13 +9,16 @@ require_once('config.php');
 		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
 		require_once ROOT_PATH . '/includes/get-newsletter-dir.php';
 		require_once ROOT_PATH . "/db/newsletters.php";
-		$newsletter = Newsletter::fetchByEdition(NEWSLETTER_EDITION);
+		$newsletter = Newsletter::fetchByEdition(edition: NEWSLETTER_EDITION);
 		
 	?>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<?php
+			//Set page title (tab bar) from database
 			echo '<title>' . $newsletter->title . '</title>';
+			//Link colors CSS
+			echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">';
 		?>
 		<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
 		<link rel="stylesheet" type="text/css" href="/css/lightbox.css">

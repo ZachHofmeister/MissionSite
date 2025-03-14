@@ -1,7 +1,6 @@
 <?php
-// Description: Sets good PHP settings, starts session, and connects to DB
-
-error_reporting(E_ALL); // Error/Exception engine, always use E_ALL
+//Good PHP Settings
+error_reporting(error_level: E_ALL); // Error/Exception engine, always use E_ALL
 ini_set('ignore_repeated_errors', TRUE); // always use TRUE
 ini_set('display_errors', TRUE); // Error/Exception display, use FALSE only in production environment or real server. Use TRUE in development environment
 ini_set('log_errors', TRUE); // Error/Exception file logging engine.
@@ -18,5 +17,4 @@ define ('ROOT_PATH', realpath(dirname(__FILE__)));
 require_once ROOT_PATH . "/db/database.php";
 global $db;
 $db = new Database;
-
 ?>
