@@ -15,6 +15,4 @@ define ('ROOT_PATH', realpath(dirname(__FILE__)));
 
 //Open DB connection once
 require_once ROOT_PATH . "/db/database.php";
-global $db;
-$db = new Database;
 ?>

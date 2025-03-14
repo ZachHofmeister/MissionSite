@@ -3,9 +3,10 @@
 require_once(__DIR__.'/../config.php');
 
 class Database {
+	private static $instance = null; // Singleton instance
 	private mysqli $conn;
 
-	function __construct() {
+	private function __construct() {
 		// Read paths file to get path to database creds
 		$pathsFile = ROOT_PATH . "/.paths.json";
 		if (!file_exists($pathsFile)) {
@@ -38,10 +39,11 @@ class Database {
 		}
 	}
 
-	function __destruct() {
-		if ($this->conn) {
-			$this->conn->close();
+	public static function getInstance(): Database {
+		if (self::$instance === null) {
+			self::$instance = new Database();
 		}
+		return self::$instance;
 	}
 
 	public function run($sql, $args = []) {
@@ -49,10 +51,20 @@ class Database {
 		if ($stmt === false) {
 			die("SQL Error: " . $this->conn->error);
 		}
-		if (!empty($args)) {
-			$stmt->execute($args);
-		}
+		// if (!empty($args)) {
+			//bind param...
+		// }
+		$stmt->execute(params: $args);
 		return $stmt;
+	}
+
+	// Prevent cloning (singleton pattern)
+	private function __clone() {}
+
+	private function __destruct() {
+		if ($this->conn) {
+			$this->conn->close();
+		}
 	}
 }
 ?>

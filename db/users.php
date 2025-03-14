@@ -33,7 +33,7 @@ class User {
 
 	// GET newsletter from db, based on username
 	public static function fetchByUsername ($username) {
-		global $db;
+		$db = Database::getInstance();
 
 		$sql = 'SELECT * 
 			FROM users 
@@ -51,7 +51,7 @@ class User {
 
 // POST new user to DB
 function registerUser($username, $email, $plain_password) {
-	global $db;
+	$db = Database::getInstance();
 
 	$sql = 'INSERT INTO users (username, email, password)
 		VALUES (?, ?, ?)';
@@ -63,7 +63,7 @@ function registerUser($username, $email, $plain_password) {
 
 // QUERY if user with username exists in the database
 function usernameExists($username) {
-	global $db;
+	$db = Database::getInstance();
 
 	$sql = 'SELECT id FROM users WHERE username = ?';
 	$args = array($username);
@@ -82,7 +82,7 @@ function usernameExists($username) {
 
 // QUERY if user with email exists in the database
 function emailExists($email) {
-	global $db;
+	$db = Database::getInstance();
 
 	$sql = 'SELECT id FROM users WHERE email = ?';
 	$args = array($email);

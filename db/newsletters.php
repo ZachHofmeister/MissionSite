@@ -1,5 +1,5 @@
 <?php
-// Include config file
+// Require config file
 require_once(__DIR__.'/../config.php');
 
 class Newsletter {
@@ -68,7 +68,7 @@ class Newsletter {
 
 	// GET newsletter from database, by edition
 	public static function fetchByEdition ($edition) {
-		global $db;
+		$db = Database::getInstance();
 
 		$sql = 'SELECT *
 			FROM newsletters
@@ -85,7 +85,7 @@ class Newsletter {
 
 	// PUT update the newsletter in the database
 	public function update() {
-		global $db;
+		$db = Database::getInstance();
 
 		$sql = 'UPDATE newsletters
 			SET title=?, blurb=?, url=?, img_url=?, edition=?, author=?, published=?, published_date=?, content_html=?
@@ -96,7 +96,7 @@ class Newsletter {
 	}
 
 	public function delete() {
-		global $db;
+		$db = Database::getInstance();
 
 		$sql = 'DELETE FROM newsletters
 			WHERE id=?';
@@ -116,7 +116,7 @@ class Newsletter {
 
 // GET all newsletters from database
 function getAllNewsletters($only_published = true) {
-	global $db;
+	$db = Database::getInstance();
 
 	$sql = 'SELECT * FROM newsletters'
 		.($only_published? ' WHERE published = 1 ': ' ')
@@ -137,7 +137,7 @@ function getAllNewsletters($only_published = true) {
 
 // POST a new newsletter to the database
 function createNewsletter() {
-	global $db;
+	$db = Database::getInstance();
 
 	$sql = 'INSERT INTO newsletters (title) VALUES (\'New Newsletter\')';
 	$stmt = $db->run($sql);

@@ -66,19 +66,6 @@ if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 			</tr>
 		';
 	}
-	/*
-	<tr>
-		<td>'.$row['title'].'</td>
-		<td>'.$row['blurb'].'</td>
-		<td>'.$row['img_url'].'</td>
-		<td>'.$row['edition'].'</td>
-		<td>'.$row['author'].'</td>
-		<td>'.$row['published'].'</td>
-		<td>'.$row['published_date'].'</td>
-		<td><a href="'.$nl_url.'">'.$nl_url.'</a></td>
-		<td>'.$row['id'].'</td>
-	</tr>
-	*/
 	// MODAL
 	// include_once(ROOT_PATH."/includes/modal-post-details.php");
 	?>
