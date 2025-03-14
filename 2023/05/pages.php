@@ -93,25 +93,7 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<div class="page-section _10">
-		<div class="page-item double text-left vert-center">
-			<h5>
-				***REMOVED***<br>
-				Grand Junction, CO 81501
-			</h5>
-		</div>
-		<div class="page-item vert-center">
-			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2023/05/images/focus-logo.png" alt="FOCUS logo">
-			</a>
-		</div>
-		<div class="page-item double text-right vert-center">
-			<h5>
-				<a href="tel:+16196558686" class="no-decor">(619) 655-8686</a><br>
-				<a href="mailto:edward.hofmeister@focus.org" class="no-decor">edward.hofmeister@focus.org</a>
-			</h5>
-		</div>
-	</div>
+	<?php include(ROOT_PATH . '/includes/newsletter-footer.php'); ?>
 </div>
 
 <!-- PAGE THREE -->

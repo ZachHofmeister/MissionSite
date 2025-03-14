@@ -1,0 +1,38 @@
+:root {
+	--page-color: #f9eeee;
+
+	--title-tx-color: #126357;
+	--h-color: var(--title-tx-color);
+
+	--tx-color: #908272;
+
+	--box-bg-color: #ffc6c5;
+	--box-tx-color: var(--title-tx-color);
+
+}
+
+/* img:not(.contain) {
+	display: none;
+} */
+
+/* BORDERS */
+
+/* .page-section {
+	outline: 1px solid rgba(0, 0, 0, .05);
+	outline-offset: -1px;
+}
+
+.page-item {
+	outline: 1px dashed rgba(0, 0, 0, .05);
+	outline-offset: -1px;
+} */
+
+/* h1, h2, h3, h4, h5, h6, p, ul, ol {
+	outline: 2px dashed blue;
+	outline-offset: -2px;
+} */
+
+/* img {
+	outline: 1px dashed rgba(255, 0, 0, .5);
+	outline-offset: -1px;
+} */

@@ -265,6 +265,9 @@ ol.normal, ul.normal {
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
+.text-medium {
+	font-size: calc(1.83vw * var(--textScale));
+}
 .text-large {
 	font-size: calc(2vw * var(--textScale));
 }

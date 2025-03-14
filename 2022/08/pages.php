@@ -114,7 +114,7 @@
 			<p class="caption">Mass with the freshmen during their basic training</p>
 		</div>
 	</div>
-
+					
 	<!-- FOOTER -->
 	<div class="page-section sixteenth" style="margin-top: -1.5vw; background-color: var(--color-2);">
 		<div class="page-item double text-left vert-center">
@@ -125,7 +125,7 @@
 		</div>
 		<div class="page-item vert-center">
 			<a href="https://www.focus.org" target="_blank">
-				<img class="contain no-lightbox" src="/2022/08/focus-logo.png" alt="FOCUS logo">
+				<img class="contain no-lightbox" src="/2022/08/focus.png" alt="FOCUS logo">
 			</a>
 		</div>
 		<div class="page-item double text-right vert-center">
