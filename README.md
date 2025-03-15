@@ -6,8 +6,9 @@ See it live at [zachhofmeister.com](https://zachhofmeister.com)!
 
 <!-- [![website homepage with several posts](/github-images/site.mov)](https://zachhofmeister.com) -->
 
+#### Homepage
 [![website homepage with several posts](/github-images/home.png)](https://zachhofmeister.com)
-
+#### Newsletter
 [![website displaying newsletter](/github-images/newsletter.png)](https://zachhofmeister.com/newsletter.php?date=2025-02)
 
 
