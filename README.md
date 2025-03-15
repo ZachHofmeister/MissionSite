@@ -4,11 +4,11 @@ MissionSite is my interactive newsletter platform that I use to create and share
 
 See it live at [zachhofmeister.com](https://zachhofmeister.com)!
 
-[![website homepage with several posts](/github-images/site.mov)](https://zachhofmeister.com)
+<!-- [![website homepage with several posts](/github-images/site.mov)](https://zachhofmeister.com) -->
 
-<!-- [![website homepage with several posts](/github-images/home.png)](https://zachhofmeister.com)
+[![website homepage with several posts](/github-images/home.png)](https://zachhofmeister.com)
 
-[![website displaying newsletter](/github-images/newsletter.png)](https://zachhofmeister.com/newsletter.php?date=2025-02) -->
+[![website displaying newsletter](/github-images/newsletter.png)](https://zachhofmeister.com/newsletter.php?date=2025-02)
 
 
 ## Why did I build a website?
