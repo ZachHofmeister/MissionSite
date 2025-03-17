@@ -14,7 +14,7 @@ if (!isValidDate($_GET['date'])) {
 	echo '<h3 style="color:red !important;">Error: invalid date!</h3>';
 	return;
 }
-$date = DateTime::createFromFormat('Y-m-d', datetime: $_GET['date'] . '-01'); //HOTFIX cont
+$date = DateTime::createFromFormat('Y-m-d', $_GET['date'] . '-01'); //HOTFIX cont
 $date_str = $date->format('Y/m');
 $newsletter_dir = ROOT_PATH . '/' . $date_str;
 //Check if there is a valid path to newsletter dir
