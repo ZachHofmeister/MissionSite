@@ -51,10 +51,27 @@ class Database {
 		if ($stmt === false) {
 			die("SQL Error: " . $this->conn->error);
 		}
-		// if (!empty($args)) {
-			//bind param...
-		// }
-		$stmt->execute( $args);
+		
+		//Temp code to bind params
+		if (!empty($args)) {
+			$types = ''; 
+
+			foreach ($args as $arg) {
+				if (is_int($arg)) {
+					$types .= 'i'; // Integer
+				} elseif (is_double($arg)) {
+					$types .= 'd'; // Double/Float
+				} elseif (is_string($arg)) {
+					$types .= 's'; // String
+				} else {
+					$types .= 'b'; // Blob
+				}
+			}
+			
+			$stmt->bind_param($types, ...$args);
+		}
+
+		$stmt->execute();
 		return $stmt;
 	}
 
