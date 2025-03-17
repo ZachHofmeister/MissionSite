@@ -54,7 +54,7 @@ class Database {
 		// if (!empty($args)) {
 			//bind param...
 		// }
-		$stmt->execute(params: $args);
+		$stmt->execute( $args);
 		return $stmt;
 	}
 
