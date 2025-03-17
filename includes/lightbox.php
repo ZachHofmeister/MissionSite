@@ -7,3 +7,6 @@
 		<!-- <span class="lightbox-button" id="lightbox-prev"><</span> -->
 	</div>
 </div>
+
+<!-- JAVASCRIPT -->
+<script src="/js/lightbox.js"></script>

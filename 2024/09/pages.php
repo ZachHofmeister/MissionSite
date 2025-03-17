@@ -1,5 +1,29 @@
 <!-- Yours, O Lord, are the greatness, the power, the glory, the victory, and the majesty; for all that is in the heavens and on the earth is yours; yours is the kingdom, O Lord, and you are exalted as head above all. - 1 Chronicles 29:11 -->
 
+<style>
+	:root {
+		--color-mav-purple: #860037; /* Mavroon */
+		--color-mav-yellow: #FFBA05; /* MAV yellow */
+		--color-mav-white: #EBF5EE; /* MAV white */
+		--color-mav-black: #262E2F; /* MAV black */
+
+		--color-1: #FFFFDB;
+		--color-2: #709176;
+		--color-3: #956D71;
+
+		--page-color: var(--color-1);
+		/* --title-bg-color: var(--color-2); */
+		--title-tx-color: var(--color-3);
+		/* --title-tx-sub: var(--color-mav-white); */
+		--tx-color: var(--color-3);
+		--h-color: var(--color-2);
+		/* --p-color: ; */
+		/* --caption-color: var(--color-5); */
+		--box-bg-color: var(--color-2);
+		--box-tx-color: var(--color-mav-white);
+	}
+</style>
+
 <!-- PAGE 1 -->
 <div class="page">
 	<!-- HEADER -->
@@ -149,7 +173,7 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<?php include(ROOT_PATH . '/includes/newsletter-footer.php'); ?>
+	<div class="page-section _10" id="nl-footer"><script src="/js/nl-footer.js"></script></div>
 </div>
 
 <!-- PAGE 4 -->

@@ -1,15 +1,24 @@
+<?php 
+// Include config file
+require_once 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<?php
-		require_once('config.php');
 		//sets the NEWSLETTER_DIR and NEWSLETTER_DIR_REL constant
-		include(ROOT_PATH . '/includes/get-newsletter-dir.php');
+		require_once ROOT_PATH . '/includes/get-newsletter-dir.php';
+		require_once ROOT_PATH . "/db/newsletters.php";
+		$nl = Newsletter::fetchByEdition( NEWSLETTER_EDITION);
+		
 	?>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<?php 
-			// echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">'
-			include(NEWSLETTER_DIR . '/head.php');
+		<?php
+			//Set page title (tab bar) from database
+			echo '<title>' . htmlspecialchars($nl->title) . '</title>';
+			//Link colors CSS
+			echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">';
 		?>
 		<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
 		<link rel="stylesheet" type="text/css" href="/css/lightbox.css">
@@ -19,8 +28,23 @@
 	<body>
 		<!-- NAVBAR -->
 		<?php include(ROOT_PATH . '/includes/navbar.php'); ?>
+
+		<?php
+		//Admin tools if admin and requested in URL
+		if (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"]
+		&& isset($_GET["editing"]) && $_GET["editing"]) {
+			include(ROOT_PATH . '/includes/newsletter-editor.php');
+		}
+		?>
 		
-		<?php include(NEWSLETTER_DIR . '/pages.php'); ?>
+		<!-- PAGES -->
+		<?php
+			if (empty($nl->content_html)) {
+				include(NEWSLETTER_DIR . '/pages.php');
+			} else {
+				echo htmlspecialchars($nl->content_html); //todo change this so that approved script can be inserted into content, for now this is safer to prevent XSS
+			}
+		?>
 
 		<!-- LIGHTBOX -->
 		<?php include(ROOT_PATH . '/includes/lightbox.php'); ?>

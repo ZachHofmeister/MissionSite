@@ -1,7 +1,10 @@
+<?php
+// Include config file
+require_once('config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<!-- CONFIG INCLUDE -->
-	<?php require_once('config.php') ?>
 	<head>
 		<title>Zach's Mission Updates - Resources</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -57,8 +60,5 @@
 				</ul>
 			</div>
 		</div>
-
-		<!-- JAVASCRIPT-->
-		<script src="/js/navbar.js"></script>
 	</body>
 </html>

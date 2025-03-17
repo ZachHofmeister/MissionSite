@@ -1,18 +1,33 @@
-<div class="navbar" id="navbar">
+<?php 
+// Include config file
+require_once(__DIR__.'/../config.php');
+?>
+
+<nav class="navbar" id="navbar">
 	<a href="/"><div class="navbar-link navbar-title">
 		Zach's Mission Updates
 	</div></a>
 
-	<div onClick="return true" class="navbar-link navbar-toggle">
-		<i class="fa fa-bars"></i><div>M</div>
+	<div class="navbar-link navbar-toggle">
+		<div><i class="fa fa-bars"></i></div>
 	</div>
 
-	<nav class="navbar-items">
-		<!-- <a href="/"><div class="navbar-link">
-			About
-		</div></a> -->
+	<div class="navbar-items">
 		<a href="/resources.php"><div class="navbar-link">
 			Resources
 		</div></a>
-	</nav>
-</div>
+		<?php
+			// If logged in
+			if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
+				echo "
+				<a href='/account.php'><div class='navbar-link'>
+					Account
+				</div></a>
+				";
+			}
+		?>
+	</div>
+</nav>
+
+<!-- JAVASCRIPT -->
+<script src="/js/navbar.js"></script>
