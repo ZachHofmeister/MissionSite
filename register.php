@@ -4,7 +4,7 @@
 require_once('config.php');
 
 //THIS DISABLES REGISTRATION FOR NON-ADMIN - COMMENT THIS OUT TO ENABLE
-if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] == false) {
+if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] !== true) {
 	header("location: /");
 	exit();
 }

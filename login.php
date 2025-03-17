@@ -3,6 +3,10 @@
 
 // Include config file
 require_once('config.php');
+
+//THIS DISABLES LOGIN - COMMENT THIS OUT TO ENABLE
+header("location: /");
+exit();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -43,6 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		if(password_verify($password, $user->password)){
 			// Password is correct, so start a new session
 			session_start();
+			session_regenerate_id(true);
 			
 			// Store data in session variables
 			$_SESSION["loggedin"] = true;

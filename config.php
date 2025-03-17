@@ -7,8 +7,9 @@ ini_set('log_errors', TRUE); // Error/Exception file logging engine.
 ini_set('error_log', '/phpErrors/phpErrorLog-missionSite.log'); // Logging file path
 
 // Start a session
-if (session_status() === PHP_SESSION_NONE)
-    session_start();
+if (session_status() === PHP_SESSION_NONE) {
+	session_start();
+}
 
 // Constant ROOT_PATH, used for creating paths
 define ('ROOT_PATH', realpath(dirname(__FILE__)));
