@@ -4,13 +4,12 @@ MissionSite is my interactive newsletter platform that I use to create and share
 
 See it live at [zachhofmeister.com](https://zachhofmeister.com)!
 
-<!-- [![website homepage with several posts](/github-images/site.mov)](https://zachhofmeister.com) -->
+<!-- ![MissionSite](https://github.com/user-attachments/assets/172d8f5b-e0af-4344-812b-4869c9b06ba1) -->
 
 #### Homepage
-[![website homepage with several posts](/github-images/home.png)](https://zachhofmeister.com)
+<a href="https://zachhofmeister.com"><img width=75% alt="home" src="https://github.com/user-attachments/assets/7ffc13f7-3023-4fdd-9ac1-9fd313f165d8" /></a>
 #### Newsletter
-[![website displaying newsletter](/github-images/newsletter.png)](https://zachhofmeister.com/newsletter.php?date=2025-02)
-
+<a href="https://zachhofmeister.com/newsletter.php?date=2025-02"><img width=75% alt="newsletter" src="https://github.com/user-attachments/assets/a001b0db-0d3f-4ba5-a30b-5a00925102de" /></a>
 
 ## Why did I build a website?
 It all started because I didn't like creating newsletters on Canva and I wanted to see if I could make a website with pages that could be printed out and sent via paper as well as digitally. It is a fun project for me to work on in my free time to keep my web development skills sharp, and I enjoy coming up with new features and improving the site. Plus, I love that my mission partners can click on a photo and see it bigger in a lightbox, or that I can link to spiritual resources and Bible passages!
