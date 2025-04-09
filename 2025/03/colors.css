@@ -1,14 +1,13 @@
 :root {
-	--page-color: #f9eeee;
+	--page-color: #e9e8f8;
 
-	--title-tx-color: #126357;
+	--title-tx-color: #635b77;
 	--h-color: var(--title-tx-color);
 
-	--tx-color: #908272;
+	--tx-color: #8e93c3;
 
-	--box-bg-color: #ffc6c5;
+	--box-bg-color: #eff2f7;
 	--box-tx-color: var(--title-tx-color);
-
 }
 
 /* img:not(.contain) {
