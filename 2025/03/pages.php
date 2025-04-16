@@ -29,7 +29,7 @@
 			<div class="box">
 				<h2 class="italic">Dear Friends,</h2>
 				<p class="text-large">
-					I hope that you are doing well! This March was good, refreshing, and challenging all at the same time. Lent started and our campus had spring break and a mission trip! I'm excited to share the joys and struggles of mission with you.
+					I hope that you are doing well! This March was good, refreshing, and challenging all at the same time. Lent has started, and our campus had spring break and a mission trip! I'm excited to share the joys and struggles of mission with you.
 				</p>
 			</div>
 		</div>
