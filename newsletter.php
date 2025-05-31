@@ -10,13 +10,16 @@ require_once 'config.php';
 		require_once ROOT_PATH . '/includes/get-newsletter-dir.php';
 		require_once ROOT_PATH . "/db/newsletters.php";
 		$nl = Newsletter::fetchByEdition( NEWSLETTER_EDITION);
-		
 	?>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<?php
-			//Set page title (tab bar) from database
-			echo '<title>' . htmlspecialchars($nl->title) . '</title>';
+			//Set page title (tab bar) from database if it exists
+			if (!empty($nl)) {
+				echo '<title>' . htmlspecialchars($nl->title) . '</title>';
+			} else {
+				echo '<title>Newsletter</title>';
+			}
 			//Link colors CSS
 			echo '<link rel="stylesheet" type="text/css" href="' . NEWSLETTER_DIR_REL . '/colors.css">';
 		?>
