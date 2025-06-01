@@ -1,12 +1,12 @@
 :root {
-	--page-color: #e9e8f8;
+	--page-color: #feffff;
 
-	--title-tx-color: #635b77;
+	--title-tx-color: #385355;
 	--h-color: var(--title-tx-color);
 
-	--tx-color: #8e93c3;
+	--tx-color: #698f72;
 
-	--box-bg-color: #eff2f7;
+	--box-bg-color: #ffe4d6;
 	--box-tx-color: var(--title-tx-color);
 }
 
