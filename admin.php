@@ -3,7 +3,7 @@
 require_once('config.php');
 
 // If not admin, send to front page
-if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] !== true) {
+if (!isset($_SESSION["is_admin"]) || !$_SESSION["is_admin"]) {
 	header("location: /");
 	exit();
 }

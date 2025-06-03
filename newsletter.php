@@ -43,7 +43,11 @@ require_once 'config.php';
 		<!-- PAGES -->
 		<?php
 			if (empty($nl->content_html)) {
-				include(NEWSLETTER_DIR . '/pages.php');
+				if (file_exists(NEWSLETTER_DIR . '/pages.php')) {
+					include(NEWSLETTER_DIR . '/pages.php');
+				} else {
+					echo 'The file ' . NEWSLETTER_DIR . '/pages.php was not found.';
+				}
 			} else {
 				echo htmlspecialchars($nl->content_html); //todo change this so that approved script can be inserted into content, for now this is safer to prevent XSS
 			}

@@ -5,8 +5,8 @@
 require_once('config.php');
 
 //THIS DISABLES LOGIN - COMMENT THIS OUT TO ENABLE
-header("location: /");
-exit();
+// header("location: /");
+// exit();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){

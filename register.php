@@ -4,10 +4,10 @@
 require_once('config.php');
 
 //THIS DISABLES REGISTRATION FOR NON-ADMIN - COMMENT THIS OUT TO ENABLE
-if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] !== true) {
-	header("location: /");
-	exit();
-}
+// if (!isset($_SESSION["is_admin"]) || $_SESSION["is_admin"] !== true) {
+// 	header("location: /");
+// 	exit();
+// }
 
 // Define variables and initialize with empty values
 $username = $email = $password = $confirm_password = "";
