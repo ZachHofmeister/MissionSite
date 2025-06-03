@@ -54,7 +54,7 @@ class Database {
 		
 		//Temp code to bind params
 		if (!empty($args)) {
-			$types = ''; 
+			$types = '';
 
 			foreach ($args as $arg) {
 				if (is_int($arg)) {
