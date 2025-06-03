@@ -15,7 +15,7 @@ switch ($method) {
 		if (isset($_GET['id'])) {
 			$id = $_GET['id'];
 			$sql = 'SELECT * FROM newsletters WHERE id = ?';
-			$result = $db->run($sql, array($id), "s")->get_result();
+			$result = $db->run($sql, array($id))->get_result();
 			$newsletter = $result->fetch_assoc();
 			echo json_encode($newsletter);
 		}
