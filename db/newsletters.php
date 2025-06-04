@@ -20,10 +20,10 @@ class Newsletter {
 		$this->blurb = $blurb?? "";
 		$this->url = $url?? "";
 		$this->img_url = $img_url?? "";
-		$this->edition = $edition?? "0000-00-00";
+		$this->edition = $edition?? "2000-01-01";
 		$this->author = $author?? "";
 		$this->published = $published;
-		$this->published_date = $published_date?? "0000-00-00";
+		$this->published_date = $published_date?? "2000-01-01";
 		$this->content_html = $content_html?? "";
 	}
 
@@ -60,7 +60,11 @@ class Newsletter {
 
 	// Returns published date in American format
 	function prettyDate() {
-		$date = DateTime::createFromFormat('Y-m-d', $this->published_date);
+		$date_to_use = $this->edition;
+		if ($this->published) {
+			$date_to_use = $this->published_date;
+		}
+		$date = DateTime::createFromFormat('Y-m-d', $date_to_use);
 		return $date->format("m/d/Y");
 	}
 
@@ -126,21 +130,49 @@ function getAllNewsletters($only_published = true) {
 		.'ORDER BY published_date DESC';
 	$stmt = $db->run($sql);
 	$result = $stmt->get_result();
+	$newsletters = array();
 	if ($result->num_rows > 0) {
 		$newsletters_raw = $result->fetch_all(MYSQLI_ASSOC);
-		$newsletters = array();
 		foreach($newsletters_raw as $row) {
-			array_push($newsletters, Newsletter::fromArray($row));
+			// array_push($newsletters, values: Newsletter::fromArray($row));
+			$newsletters[] = Newsletter::fromArray($row);
 		}
-		return $newsletters;
 	} else {
 		echo "Error: could not fetch any newsletters";
 	}
+	return $newsletters;
+}
+
+function getAllNewslettersAPI() {
+	$url = "http://localhost:3300";
+	$endpoint = "/db/newsletter-api.php";
+	$ch = curl_init($url . $endpoint);
+
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+
+	$response = curl_exec($ch);
+
+	$newsletters = array();
+	if ($response === false) {
+		echo "GET Request Failed: " . curl_error($ch);
+		//Fallback on getAllNewsletters function for now
+		$newsletters = getAllNewsletters();
+	} else {
+		$data = json_decode($response, true);
+		foreach($data as $row) {
+			// array_push($newsletters, values: Newsletter::fromArray($row));
+			$newsletters[] = Newsletter::fromArray($row);
+		}
+	}
+	curl_close($ch);
+	return $newsletters;
 }
 
 // POST a new newsletter to the database
 function createNewsletter() {
 	$db = Database::getInstance();
+	//TODO: This should be a prepared statement
 
 	$sql = 'INSERT INTO newsletters (title) VALUES (\'New Newsletter\')';
 	$stmt = $db->run($sql);
