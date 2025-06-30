@@ -1,5 +1,23 @@
 <!-- Yours, O Lord, are the greatness, the power, the glory, the victory, and the majesty; for all that is in the heavens and on the earth is yours; yours is the kingdom, O Lord, and you are exalted as head above all. - 1 Chronicles 29:11 -->
 
+<?php 
+	$name = "Friends";
+
+	if (isset($_GET["name"])) {
+		$name = preg_replace("/[^a-zA-Z' -.]/", '', $_GET["name"]);
+		$name = trim(preg_replace('/\s+/', ' ', $name));
+		$name = ucwords(strtolower($name));
+		$name = preg_replace_callback(
+			"/(?:^|[ '-])([a-z])/",
+			function ($matches) {
+				return strtoupper($matches[0]);
+			},
+			$name
+		);
+		$name = htmlentities($name, ENT_QUOTES, 'UTF-8');
+	}
+?>
+
 <!-- PAGE 1 -->
 <div class="page">
 	<!-- HEADER -->
@@ -19,7 +37,7 @@
 	<!-- MAIN IMAGE -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h100" src="/2025/04/images/easter-vigil.jpeg" alt="" style="object-position: 50% 50%;" data-caption="Our students after the Easter vigil!">
+			<img class="h100" src="/2025/04/images/easter-vigil.jpeg" alt="" style="object-position: 50% 50%;" data-caption="Our students after the Easter vigil! The five in the middle with nametags were confirmed and/or received first Holy Communion!">
 		</div>
 	</div>
 
@@ -27,27 +45,27 @@
 	<div class="page-section _30">
 		<div class="page-item">
 			<div class="box">
-				<h2 class="italic">Dear Friends,</h2>
-				<p class="text-large">
-					I hope that you are doing well! This March was good, refreshing, and challenging all at the same time. Lent started, and our campus had spring break and a mission trip! I'm excited to share the joys and struggles of mission with you.
+				<h2 class="italic">Dear <?php echo htmlentities($name, ENT_QUOTES, 'UTF-8')?>,</h2>
+				<p class="text-medium">
+					This will be my last newsletter as a FOCUS missionary, and it seems like it's all gone way too fast. But God is so good, and I'm so thankful for all the blessings He's poured out on our campus this Easter season and this year. Thank you so much for being with me on mission!
 				</p>
 			</div>
 		</div>
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/04/images/ashwed.jpeg" alt="" style="object-position: 50% 50%">
-			<p class="caption text-large">One of our on-campus Ash Wednesday Masses - lots of new students came!</p>
+			<img class="photo-item h80" src="/2025/04/images/holyweek-2.jpeg" alt="" style="object-position: 50% 50%">
+			<p class="caption text-medium">We invited students to go on a hike on Holy Saturday</p>
 		</div>
 	</div>
 
-	<!-- Paragraph + Image -->
+	<!-- Holy Week -->
 	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h80" src="/2025/04/images/yucatan.jpeg" alt="" >
-			<p class="caption text-large">The Mesa group on the mission trip to Yucatan</p>
+			<img class="h70" src="/2025/04/images/holyweek-1.jpeg" alt="" data-caption=" It was a beautiful opportunity to enter into Jesus' suffering with Mary and to pray for our engagement.">
+			<p class="caption text-medium">We got to pray at the Our Lady of Guadalupe shrine on Holy Thursday - the some one where I proposed to Allison.</p>
 		</div>
 		<div class="page-item">
-			<h3>Mission Trip</h3>
-			<p class="text-medium">I was not part of the trip this year, but our students loved It! In Mexico, they got to teach catechism classes to kids, helped with a building project for a parish, and visited people in their homes to talk and pray with them. It was awesome to hear about it and see the impact it had, especially on Drew and Nick, who seem a little more outgoing!</p>
+			<h3>Holy Week</h3>
+			<p class="text-small">For Holy Week we were able to slow down and enter into more prayer and fasting with students leading to Easter. We had good conversations with those preparing to receive sacraments and in our discipleship groups, calling to mind how much we have received from Christ and His death for us. My favorite holy week tradition the students have at Mesa is making a 3am holy hour on Good Friday.</p>
 		</div>
 	</div>
 </div>
@@ -55,93 +73,234 @@
 <!-- PAGE 2 -->
 <div class="page">
 	<!-- quote -->
-	<div class="page-section _5">
+	<div class="page-section _10">
 		<div class="page-item center-center">
-			<h3 class="cardo text-center"><i>“He delivered me, because He delighted in me”</i> - <a href="https://www.biblegateway.com/passage/?search=Psalm%2018&version=RSVCE" target="_blank">Psalm 18:19</a></h3>
+			<h3 class="cardo text-center"><i>"Do not be afraid; for I know that you seek Jesus who was crucified. He is not here; for He has risen, as He said. Come, see the place where He lay."</i> - <a href="https://www.biblegateway.com/passage/?search=Matthew%2028&version=RSVCE" target="_blank">Matthew 28:5-6</a></h3>
 		</div>
 	</div>
 
-	<!-- SECTION -->
-	<div class="page-section _60">
+	<!-- Easter -->
+	<div class="page-section _30">
+		<div class="page-item text-right">
+			<h3>Easter - Christ Is Risen!</h3>
+			<p class="text-medium">We had 4 students receive sacraments at the Easter Vigil Mass. Robert and Elijah were confirmed, and Brenden and Miranda also received their first Communion! You could tell that the Holy Spirit was present in our community in the week of Easter and after; people were more joyful than usual and seemed to have a greater desire for prayer.</p>
+		</div>
 		<div class="page-item">
-			<h3>The Path of Mission Ahead</h3>
-			<p class="text-large">It's hard to believe, but we are about one month away from the end of the semester as I write this. This is my third year on mission with FOCUS, and it's been a difficult season of discerning where the Lord is calling me to go next year. Ultimately, I have decided I will be leaving staff with FOCUS this summer.</p>
-			<p class="text-large">I'm going to miss being on mission full-time, the close relationships with my students, and my team life that helps me to be rooted in prayer and joy. At the same time, I am excited to find a job where I can use and develop my talents with technology, have a normal schedule as I prepare to be married in September, and learn to be on mission in my workplace and parish.</p>
-			<p class="text-large">Preparing for this change has been really difficult for me, as I'm looking for what is to come and still trying to be fully engaged with the students the Lord has put in my life to share the Gospel with. At the same time, I am confident that it is the path the Lord is leading me on, and so it is good. Please pray for me to continue with confidence in Him, and to know how I can best witness to the Gospel in my time remaining.</p>
+			<img class="h80" src="/2025/04/images/easter-1.jpeg" alt="">
+			<p class="caption text-medium">Brenden, one of my disciples, receiving Jesus in the Eucharist for the first time at Easter</p>
 		</div>
 	</div>
 
-	<!-- Awakening Retreat -->
-	<div class="page-section _35">
+	<!-- Photos -->
+	<div class="page-section _30">
 		<div class="page-item">
-			<img class="h60" src="/2025/04/images/leaders.jpeg" alt="" style="object-position: 50% 15%;">
-			<p class="caption text-medium">Our Mesa Catholic leadership took an afternoon to pray and invite the Holy Spirit to lead us as we plan for the next school year. Some topics that arose were bringing the sacraments to more people, interfaith outreach, and growing the community!</p>
+			<img class="h80" src="/2025/04/images/easter-2.jpeg" alt="">
+			<p class="caption text-medium">Drew, me, Gabe, and Dylan being silly at brunch on Easter Sunday</p>
 		</div>
 		<div class="page-item">
-			<img class="h60" src="/2025/04/images/ocia.jpeg" alt="">
-			<p class="caption text-medium">I got brunch with some of the guys from the OCIA class one Sunday! At Easter, Robert, Elijah, and Brenden will be confirmed, and Brenden will also receive Jesus in the Eucharist for the first time! Praise God, and pray for them!</p>
+			<img class="h80" src="/2025/04/images/bstud.jpeg" alt="">
+			<p class="caption text-medium">The guys at my last Bible study meeting - Gabe led the last two himself!</p>
+		</div>
+	</div>
+
+	<!-- Graduations -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/camping-retreat.jpeg" alt="">
+			<p class="caption text-medium">Me, Gabe, Mason, Joe, and some more guys went on a camping retreat after Easter</p>
+		</div>
+		<div class="page-item">
+			<h3>Graduations & Conclusions</h3>
+			<p class="text-medium">After Easter, the semester began to wind down. We had final Bible studies, final discipleship meetings, and made plans for faithfulness over the summer. We got to spend a lot of quality time with our friends before saying goodbye to the ones moving on, which I am very grateful for. </p>
 		</div>
 	</div>
 </div>
 
 <!-- PAGE 3 -->
 <div class="page">
+	<!-- header -->
+	<div class="page-section _10">
+		<div class="page-item center-center text-center">
+			<h2 class="cardo">Students Becoming FOCUS Missionaries!</h2>
+			<p><i>"I tell you, lift up your eyes, and see how the fields are already white for harvest."</i> - <a href="https://www.biblegateway.com/passage/?search=John%204%3A34%2D36&version=RSVCE" target="_blank">John 4:35</a></p>
+		</div>
+	</div>
 
-	<!-- photo-text -->
+	<!-- Continue -->
+	<div class="page-section _30">
+		<div class="page-item w3 text-right">
+			<p class="text-medium">It is such a blessing to have not one, but two awesome students who are now new missionaries with FOCUS! This summer, they are preparing to go to other campuses by prayer and finding partners for their mission, as you have been for me. I would love to invite you to please prayerfully consider reaching out to them and supporting them as they go to reach souls for Christ!</p>
+		</div>
+		<div class="page-item w2">
+			<img class="h80" src="/2025/04/images/focus-grads.jpeg" alt="">
+			<p class="caption text-medium">Clare, Sophie, Olivia, Jacky, and I on graduation day! Check out Liv's awesome cap!</p>
+		</div>
+	</div>
+
+	<!-- Olivia -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/olivia.jpeg" alt="" style="object-position: 50% 50%;">
+			<p class="caption text-medium">Olivia on placement day - she'll be serving at Northern Arizona University!</p>
+		</div>
+		<div class="page-item">
+			<h3>Olivia Linnebur</h3>
+			<p class="text-medium">Olivia served as the president of Mesa Catholic this year and is so good at bringing Jesus into everything she does and leads. She's also an incredible chef and could probably fund her mission with a side coffee business if she were allowed to. <br><a href="https://focus.org/missionaries/olivia-linnebur/" target="_blank">Read Olivia's bio and support her here!</a></p>
+		</div>
+	</div>
+
+	<!-- Sophie -->
+	<div class="page-section _30">
+		<div class="page-item text-right">
+			<h3>Sophie Schnieders</h3>
+			<p class="text-medium">Sophie was a social media coordinator for Mesa Catholic and shot our engagement photos! She was also a member of the Alpha Sigma Alpha sorority and led a Bible study for her sisters. She has an outgoing heart for the Lord and is a great friend. <br><a href="https://focus.org/missionaries/sophie-schnieders/" target="_blank">Here is Sophie's bio and support link!</a></p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/nst-sophie.jpeg" alt="">
+			<p class="caption text-medium">Sophie with her teammates - she will be serving at the University of Washington!</p>
+		</div>
+	</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+	<!-- header -->
+	<div class="page-section _5">
+		<div class="page-item center-center text-center">
+			<h3 class="cardo">...And More Missionaries!</h3>
+		</div>
+	</div>
+
+	<!-- Robert -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h90" src="/2025/04/images/robert.jpeg" alt="">
+			<p class="caption text-medium">Me and Robert</p>
+		</div>
+		<div class="page-item">
+			<h3>Robert</h3>
+			<p class="text-small">Robert was inspired by his confirmation teacher, Ace, to serve as a missionary to kids and teens over the summer with a Catholic program called Totus Tuus. He's currently spending 8 weeks at 8 different Colordo parishes, sharing his testimony, leading camp activities, and running around with kids. I'm super proud of him and excited to hear how the Holy Sprit is working in and through him!</p>
+		</div>
+	</div>
+
+	<!-- CMU -->
+	<div class="page-section _30">
+		<div class="page-item text-right">
+			<h3>The New CMU Team</h3>
+			<p class="text-medium">At FOCUS summer training, Joe and Jacky welcomed Amanda and Mauricio - the two new first-year missionaries coming to Colorado Mesa in the fall! I'm excited to get to meet them in August.</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/nst-mesa.jpeg" alt="">
+			<p class="caption text-medium">Joe, Amanda, Mauricio, and Jacky on Placement Day at training</p>
+		</div>
+	</div>
+
+	<!-- USAFA -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h90" src="/2025/04/images/usafa.jpeg" alt="">
+			<p class="caption text-medium">The USAFA graduation ceremony at Falcon Stadium</p>
+		</div>
+		<div class="page-item">
+			<h3>Air Force Academy Graduation</h3>
+			<p class="text-medium">I went to 3 graduation ceremonies in May - one for CMU, the one for Allison's school, and for my first time the USAFA graduation! It was so awesome to watch Pete, Joe, Rod, James, and lots of other friends graduate from the Academy and move on to the next stages of their lives. Please keep them in your prayers!</p>
+		</div>
+	</div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+
+	<!-- PRAYER INTENTIONS -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<h3 class="text-right">Other Highlights</h3>
+			<h3>Prayer Requests</h3>
 			<ul class="text-medium">
-				<li>An awesome and open conversation with Nathan, a student who came up to our table on Ash Wednesday with questions about the Catholic faith</li>
-				<li>Going to Mass and confession with Robert and Elijah over spring break</li>
-				<li>Taking a weekend trip to Denver and Colorado Springs with the team</li>
+				<li>Please keep praying for Allison and I as we prepare for marriage this September</li>
+				<li>For joy and fruitfulness on mission for Olivia, Sophie, the new CMU team, and all of FOCUS as they share the good news of Jesus with the world</li>
+				<li>For the healing of an anonymous student</li>
 			</ul>
 		</div>
 		<div class="page-item">
-			<img class="h80" src="/2025/04/images/team.jpeg" alt="" style="object-position: 50% 50%;">
-			<p class="caption text-large">Our CMU team from last year reunited in Denver!</p>
+			<ul class="text-medium">
+				<li>For Gabe and Barrett who are leaving CMU, that they would find faithful Catholic friends who lead them to love the Lord</li>
+				<li>For Jacky and Joe as they stay on mission</li>
+				<li>For my job search, especially the discernment of God's will and courage to share the Gospel in every new setting</li>
+			</ul>
 		</div>
 	</div>
 
-	<!-- Pics -->
-	<div class="page-section _25">
-		<div class="page-item">
-			<img class="photo-item h80" src="/2025/04/images/springs.jpeg" alt="" style="object-position: 50% 50%;">
-			<p class="caption text-large">We got together with our FOCUS friends at Denver University</p>
-		</div>
-		<div class="page-item">
-			<img class="photo-item h80" src="/2025/04/images/cadets.jpeg" alt="" style="object-position: 50% 50%;">
-			<p class="caption text-large">I got to catch up with Pete and Joe from USAFA! Pray for them as they graduate this semester! ✈️</p>
-		</div>
-	</div>
-
-	<!-- PRAYER INTENTIONS -->
-	<div class="page-section _15">
-		<div class="page-item">
-			<h3>Prayer Requests</h3>
-			<p class="text-medium">
-				Please pray for Ace's health, for Brenden, Elijah, Robert, and Miranda as they receive the sacraments at Easter, for the men I am discipling, and for my job search and marriage prep! Thank you so much! Let me know how I can pray for you!
-			</p>
+	<!-- THANK YOU -->
+	<div class="page-section _40">
+		<div class="page-item text-medium">
+			<div class="box">
+				<h2 class="italic">Thank You For Everything</h2>
+				<p class="text-medium">I cannot thank you enough for your prayers over these past three years for me, my teammates, and my students. God loves it when we ask that others would come to know Him on earth, and I know your prayers have supported me and opened so many doors for Him. Thank you also for your financial support, past or present, that enabled me to encounter so many souls at Colorado Mesa and USAFA. This is the end of my mission with FOCUS, but it's not the end of the fruit that God has tended over these years through our prayers and work that we have shared. Above all, I am praying that you would continue to come to know Him and fall in love with Him more and more, and I ask that you would pray that for me as well. He loves us so much.</p>
+				<p class="text-medium text-right">
+					Until we meet again, Zach
+				</p>
+			</div>
 		</div>
 	</div>
 
 	<!-- PHOTO / THANK YOU -->
 	<div class="page-section _25">
 		<div class="page-item">
-			<img class="photo-item h80" src="/2025/04/images/allison.jpeg" alt="" style="object-position: 50% 17%;">
-			<p class="caption text-large">Have a blessed Holy Week and Easter!</p>
+			<img class="photo-item h80" src="/2025/04/images/lajolla.jpeg" alt="">
+			<p class="caption text-large">Goodbye from the '24-'25 CMU missionary team!</p>
 		</div>
-		<div class="page-item text-medium">
-			<div class="box">
-				<h2 class="italic">THANK YOU!</h2>
-				<p class="text-medium">Thank you for being on mission with me as I strive to finish this semester well! I look forward to reaching out to you and sharing more in the Easter season!</p>
-				<p class="text-medium text-right">
-					In His love, Zach
-				</p>
-			</div>
+		<div class="page-item">
+			<img class="photo-item h80" src="/2025/04/images/allison.jpeg" alt="">
+			<p class="caption text-large">Please pray for Allison and I as we prepare for our marriage!</p>
 		</div>
 	</div>
 	
 	<!-- FOOTER -->
 	<div class="page-section _10" id="nl-footer"><script src="/js/nl-footer.js"></script></div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page">
+	<!-- header -->
+	<div class="page-section _10">
+		<div class="page-item center-center">
+			<h2>More Photos!</h2>
+		</div>
+	</div>
+
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/trackmeet.jpeg" alt="" >
+			<p class="caption text-large">A group of us went to support our friends competing in a track meet 🏃🏻‍♂️</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/frcarl.jpeg" alt="" >
+			<p class="caption text-large">Father Carl came over on Divine Mercy Sunday and gave us a concert! 🎸</p>
+		</div>
+	</div>
+	
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/jacky.jpeg" alt="" >
+			<p class="caption text-large">We celebrated Jacky's birthday together 👑</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/minecraft.jpeg" alt="" >
+			<p class="caption text-large">My disciples invited me to go see the Minecraft movie with them 🍿</p>
+		</div>
+	</div>
+
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/holyweek-3.jpeg" alt="">
+			<p class="caption text-large">A fun picture from the Holy Saturday hike 🥾</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/guys.jpeg" alt="" >
+			<p class="caption text-large">One of the last times we had a lot of the guys together 🥲</p>
+		</div>
+	</div>
 </div>

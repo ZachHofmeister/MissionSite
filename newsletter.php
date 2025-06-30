@@ -42,11 +42,12 @@ require_once 'config.php';
 		
 		<!-- PAGES -->
 		<?php
-			if (empty($nl->content_html)) {
+			// if (empty($nl->content_html)) {
 				include(NEWSLETTER_DIR . '/pages.php');
-			} else {
-				echo htmlspecialchars($nl->content_html); //todo change this so that approved script can be inserted into content, for now this is safer to prevent XSS
-			}
+			// }
+			// else {
+			// 	echo htmlspecialchars($nl->content_html); //todo change this so that approved script can be inserted into content, for now this is safer to prevent XSS
+			// }
 		?>
 
 		<!-- LIGHTBOX -->
