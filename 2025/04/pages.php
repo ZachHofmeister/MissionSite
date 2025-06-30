@@ -61,7 +61,7 @@
 	<div class="page-section _30">
 		<div class="page-item">
 			<img class="h70" src="/2025/04/images/holyweek-1.jpeg" alt="" data-caption=" It was a beautiful opportunity to enter into Jesus' suffering with Mary and to pray for our engagement.">
-			<p class="caption text-medium">We got to pray at the Our Lady of Guadalupe shrine on Holy Thursday - the some one where I proposed to Allison.</p>
+			<p class="caption text-medium">We got to pray at the Our Lady of Guadalupe shrine on Holy Thursday - the same one where I proposed to Allison.</p>
 		</div>
 		<div class="page-item">
 			<h3>Holy Week</h3>
@@ -187,7 +187,7 @@
 	<div class="page-section _30">
 		<div class="page-item text-right">
 			<h3>The New CMU Team</h3>
-			<p class="text-medium">At FOCUS summer training, Joe and Jacky welcomed Amanda and Mauricio - the two new first-year missionaries coming to Colorado Mesa in the fall! I'm excited to get to meet them in August.</p>
+			<p class="text-medium">At FOCUS summer training, Joe and Jacky welcomed Amanda and Mauricio - two new first-year missionaries coming to Colorado Mesa in the fall! I'm excited to get to meet them in August.</p>
 		</div>
 		<div class="page-item">
 			<img class="h80" src="/2025/04/images/nst-mesa.jpeg" alt="">
@@ -203,12 +203,58 @@
 		</div>
 		<div class="page-item">
 			<h3>Air Force Academy Graduation</h3>
-			<p class="text-medium">I went to 3 graduation ceremonies in May - one for CMU, the one for Allison's school, and for my first time the USAFA graduation! It was so awesome to watch Pete, Joe, Rod, James, and lots of other friends graduate from the Academy and move on to the next stages of their lives. Please keep them in your prayers!</p>
+			<p class="text-medium">I went to 3 graduation ceremonies in May - CMU, Allison's school, and the USAFA graduation! It was so awesome to watch Pete, Joe, Rod, James, and many other friends graduate from the Academy and move on to the next stages of their lives. They are now enjoying a 60 day break before moving to their new jobs. Please keep them in your prayers!</p>
 		</div>
 	</div>
 </div>
 
 <!-- PAGE 5 -->
+<div class="page">
+	<!-- header -->
+	<div class="page-section _10">
+		<div class="page-item center-center">
+			<h2>More Photos!</h2>
+		</div>
+	</div>
+
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/trackmeet.jpeg" alt="" >
+			<p class="caption text-large">A group of us went to support our friends competing in a track meet 🏃🏻‍♂️</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/frcarl.jpeg" alt="" >
+			<p class="caption text-large">Father Carl came over for Divine Mercy Sunday and gave us a concert! 🎸</p>
+		</div>
+	</div>
+	
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/jacky.jpeg" alt="" >
+			<p class="caption text-large">We celebrated Jacky's birthday together 👑</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/minecraft.jpeg" alt="" >
+			<p class="caption text-large">My disciples invited me to go see the Minecraft movie with them 🍿</p>
+		</div>
+	</div>
+
+	<!-- photos -->
+	<div class="page-section _30">
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/holyweek-3.jpeg" alt="">
+			<p class="caption text-large">A fun picture from the Holy Saturday hike 🥾</p>
+		</div>
+		<div class="page-item">
+			<img class="h80" src="/2025/04/images/guys.jpeg" alt="" >
+			<p class="caption text-large">One of the last times we had a lot of the guys together 🥲</p>
+		</div>
+	</div>
+</div>
+
+<!-- PAGE 6 -->
 <div class="page">
 
 	<!-- PRAYER INTENTIONS -->
@@ -257,50 +303,4 @@
 	
 	<!-- FOOTER -->
 	<div class="page-section _10" id="nl-footer"><script src="/js/nl-footer.js"></script></div>
-</div>
-
-<!-- PAGE 6 -->
-<div class="page">
-	<!-- header -->
-	<div class="page-section _10">
-		<div class="page-item center-center">
-			<h2>More Photos!</h2>
-		</div>
-	</div>
-
-	<!-- photos -->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/trackmeet.jpeg" alt="" >
-			<p class="caption text-large">A group of us went to support our friends competing in a track meet 🏃🏻‍♂️</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/frcarl.jpeg" alt="" >
-			<p class="caption text-large">Father Carl came over on Divine Mercy Sunday and gave us a concert! 🎸</p>
-		</div>
-	</div>
-	
-	<!-- photos -->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/jacky.jpeg" alt="" >
-			<p class="caption text-large">We celebrated Jacky's birthday together 👑</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/minecraft.jpeg" alt="" >
-			<p class="caption text-large">My disciples invited me to go see the Minecraft movie with them 🍿</p>
-		</div>
-	</div>
-
-	<!-- photos -->
-	<div class="page-section _30">
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/holyweek-3.jpeg" alt="">
-			<p class="caption text-large">A fun picture from the Holy Saturday hike 🥾</p>
-		</div>
-		<div class="page-item">
-			<img class="h80" src="/2025/04/images/guys.jpeg" alt="" >
-			<p class="caption text-large">One of the last times we had a lot of the guys together 🥲</p>
-		</div>
-	</div>
 </div>
