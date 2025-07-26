@@ -24,8 +24,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
-      - name: Test the Docker image
-        run: MYSQL_ROOT_PASSWORD=test MYSQL_DATABASE=ms_db MYSQL_USER=admin MYSQL_PASSWORD=test docker compose up -d 
+      - name: Test the Docker build
+        run: MYSQL_ROOT_PASSWORD=test MYSQL_DATABASE=ms_db MYSQL_USER=admin MYSQL_PASSWORD=test docker compose up -d
+      - name: Stop the test
+        run: docker compose down
   push_to_registry:
     runs-on: self-hosted
     name: Push Docker image to Docker Hub
