@@ -21,6 +21,7 @@ jobs:
     - name: Build the Docker image
       run: MYSQL_ROOT_PASSWORD=test MYSQL_DATABASE=ms_db MYSQL_USER=admin MYSQL_PASSWORD=test docker compose build --no-cache --force-rm 
   test:
+    needs: build
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +30,7 @@ jobs:
       - name: Stop the test
         run: docker compose down
   push_to_registry:
+    needs: test
     runs-on: self-hosted
     name: Push Docker image to Docker Hub
     steps:
