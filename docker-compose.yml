@@ -63,6 +63,16 @@ services:
       - "${PHPMA_PORT}:80"
     depends_on:
       - mariadb
+  
+  cloudflare:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      TUNNEL_TOKEN_FILE: /run/secrets/cloudflare_token
+    secrets:
+      - cloudflare_token
+
 
 volumes:
   mariadb_data:
@@ -72,3 +82,5 @@ secrets:
     environment: DB_PASSWORD
   db_root_password:
     environment: DB_ROOT_PASSWORD
+  cloudflare_token:
+    environment: CLOUDFLARE_TUNNEL_TOKEN
