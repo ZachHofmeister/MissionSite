@@ -46,6 +46,7 @@ services:
       #maps the content of mariadb_data volume to the /var/lib/mysql of the container
       - mariadb_data:/var/lib/mysql
       #maps ./mariadb to location that will run all .sql files inside to initialize the database
+      #this will only init the database if the volume is being created (you can compose down, compose up -d --build, etc)
       - ./mariadb:/docker-entrypoint-initdb.d
 
   phpmyadmin:
@@ -58,7 +59,7 @@ services:
     secrets:
       - db_password
     ports:
-      #maps your pc port to the container port
+      #maps your host port to the container port
       - "${PHPMA_PORT}:80"
     depends_on:
       - mariadb
