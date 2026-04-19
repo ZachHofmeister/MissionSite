@@ -72,8 +72,3 @@ secrets:
     environment: DB_PASSWORD
   db_root_password:
     environment: DB_ROOT_PASSWORD
-
-# This is default behavior, so commented out but could be good to know. Would need to include network: - lamp_network for each
-# networks:
-#   lamp_network:
-#     driver: bridge
