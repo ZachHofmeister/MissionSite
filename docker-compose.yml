@@ -1,38 +1,78 @@
-# https://medium.com/@mikez_dg/how-to-set-up-a-simple-lamp-server-with-docker-images-in-2023-9b0e24476ec6
+# Reference: https://docs.docker.com/compose/gettingstarted/
+# Based on: https://dev.to/caffinecoder54/docker-compose-for-development-setting-up-a-complete-lamp-stack-16h2
 
 services:
+
   apache:
-    # image:   #check the php version you need for your project
-    build:
-      context: .
-      dockerfile: apache.dockerfile
+    build: ./apache
     restart: unless-stopped
     ports:
-      - "8084:80"    #this line maps your pc port to the container port
-    depends_on:
-      - mariadb    #this line links this container to the db container
+      #HOST_PORT : CONTAINER_PORT (maps container port 80 to .env specified port)
+      - "${APP_PORT}:80"
     volumes:
-      - ./html:/var/www/html    #this line maps the content of ./html in your pc to the /var/www/html of the container
+      #maps the content of ./www in your host to the /var/www/html of the container
+      - ./www:/var/www/html
+    depends_on:
+      - php
+      - mariadb
+
+  php:
+    build: ./php
+    restart: unless-stopped
+    volumes:
+      #maps the content of ./www in your host to the /var/www/html of the container
+      - ./www:/var/www/html
+    environment:
+      PHP_DB_HOST: mariadb
+      PHP_DB_NAME: ${DB_NAME}
+      PHP_DB_USER: ${DB_USER}
+      PHP_DB_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
 
   mariadb:
-    image: mariadb:11.7.2    #check the mariadb version you need for your project
+    #check the mariadb version you need for your project
+    image: mariadb:11.8
     restart: unless-stopped
-    ports:
-      - "33306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD_FILE: /run/secrets/db_password
+      MARIADB_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+    secrets:
+      - db_password
+      - db_root_password
     volumes:
-      - ./mariadb:/var/lib/mysql    #this line maps the content of ./mariadb in your pc to the /var/lib/mysql of the container
-      - ./init.sql:/docker-entrypoint-initdb.d/1.sql
+      #maps the content of mariadb_data volume to the /var/lib/mysql of the container
+      - mariadb_data:/var/lib/mysql
+      #maps ./mariadb to location that will run all .sql files inside to initialize the database
+      - ./mariadb:/docker-entrypoint-initdb.d
+
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin:5.2
     restart: unless-stopped
-    ports:
-      - "8085:80"    #this line maps your pc port to the container port
-    depends_on:
-      - mariadb    #this line links this container to the db container
     environment:
       PMA_HOST: mariadb
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    ports:
+      #maps your pc port to the container port
+      - "${PHPMA_PORT}:80"
+    depends_on:
+      - mariadb
+
+volumes:
+  mariadb_data:
+
+secrets:
+  db_password:
+    environment: DB_PASSWORD
+  db_root_password:
+    environment: DB_ROOT_PASSWORD
+
+# This is default behavior, so commented out but could be good to know. Would need to include network: - lamp_network for each
+# networks:
+#   lamp_network:
+#     driver: bridge

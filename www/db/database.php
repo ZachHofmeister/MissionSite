@@ -7,33 +7,22 @@ class Database {
 	private mysqli $conn;
 
 	private function __construct() {
-		// Read paths file to get path to database creds
-		$pathsFile = ROOT_PATH . "/.paths.json";
-		if (!file_exists($pathsFile)) {
-			die("Paths file not found.");
+		// Read database password file location from ENV (see docker-compose.yml)
+		$passFile = $_ENV['PHP_DB_PASSWORD_FILE'];
+		if (!file_exists($passFile)) {
+			die("DB password file not found.");
 		}
-		$pathsJson = file_get_contents($pathsFile);
-		$paths = json_decode($pathsJson, true);
-
-		// Read database creds file
-		$credsFile = ROOT_PATH ."/". $paths['creds'];
-		if (!file_exists($credsFile)) {
-			die("Creds file not found.");
-		}
-		$json = file_get_contents($credsFile);
-		$creds = json_decode($json, true);
 
 		// Database creds
-		$host = $creds['host'] ?? null;
-		$user = $creds['username'] ?? null;
-		$pass = $creds['password'] ?? null;
-		$name = $creds['schema'] ?? null;
-		$port = $creds['port'] ?? null;
+		$host = $_ENV['PHP_DB_HOST'] ?? null;
+		$user = $_ENV['PHP_DB_USER'] ?? null;
+		$pass = file_get_contents($passFile) ?? null;
+		$name = $_ENV['PHP_DB_NAME'] ?? null;
 
 		// connect to database
 		try {
 			mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-			$this->conn = mysqli_connect($host, $user, $pass, $name, $port);
+			$this->conn = mysqli_connect($host, $user, $pass, $name);
 		} catch (mysqli_sql_exception $e) {
 			die("Database connection failed: " . $e->getMessage());
 		}
