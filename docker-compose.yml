@@ -1,0 +1,88 @@
+# Reference: https://docs.docker.com/compose/gettingstarted/
+# Based on: https://dev.to/caffinecoder54/docker-compose-for-development-setting-up-a-complete-lamp-stack-16h2
+
+services:
+
+  apache:
+    build: ./apache
+    restart: unless-stopped
+    ports:
+      #HOST_PORT : CONTAINER_PORT (maps container port 80 to .env specified port)
+      - "${APP_BIND}:80"
+    volumes:
+      #maps the content of ./www in your host to the /var/www/html of the container
+      - ./www:/var/www/html:ro
+    depends_on:
+      - php
+      - mariadb
+
+  php:
+    build: ./php
+    restart: unless-stopped
+    volumes:
+      #maps the content of ./www in your host to the /var/www/html of the container
+      - ./www:/var/www/html:ro
+    environment:
+      PHP_DB_HOST: mariadb
+      PHP_DB_NAME: ${DB_NAME}
+      PHP_DB_USER: ${DB_USER}
+      PHP_DB_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+
+  mariadb:
+    #check the mariadb version you need for your project
+    image: mariadb:11.8
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD_FILE: /run/secrets/db_password
+      MARIADB_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+    secrets:
+      - db_password
+      - db_root_password
+    volumes:
+      #maps the content of mariadb_data volume to the /var/lib/mysql of the container
+      - mariadb_data:/var/lib/mysql
+      #maps ./mariadb to location that will run all .sql files inside to initialize the database
+      #this will only init the database if the volume is being created (you can compose down, compose up -d --build, etc)
+      - ./mariadb:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    ports:
+      #maps your host port to the container port
+      - "${PHPMA_BIND}:80"
+    depends_on:
+      - mariadb
+  
+  cloudflare:
+    image: cloudflare/cloudflared:2026.3.0
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      TUNNEL_TOKEN_FILE: /run/secrets/cloudflare_token
+    secrets:
+      - cloudflare_token
+    profiles:
+      - tunnel
+
+
+volumes:
+  mariadb_data:
+
+secrets:
+  db_password:
+    environment: DB_PASSWORD
+  db_root_password:
+    environment: DB_ROOT_PASSWORD
+  cloudflare_token:
+    environment: CLOUDFLARE_TUNNEL_TOKEN
