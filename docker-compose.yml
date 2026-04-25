@@ -72,6 +72,8 @@ services:
       TUNNEL_TOKEN_FILE: /run/secrets/cloudflare_token
     secrets:
       - cloudflare_token
+    profiles:
+      - tunnel
 
 
 volumes:
