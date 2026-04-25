@@ -1,8 +1,8 @@
 # MissionSite
 
-MissionSite is a newsletter web app that I built in my free time as a missionary with FOCUS, the Fellowship of Catholic University Students, to make my monthly updates to supporters more engaging and fun.
+MissionSite is a newsletter web app that I built to share monthly updates as a missionary with [FOCUS](https://focus.org) (The Fellowship of Catholic University Students). FOCUS missionaries serve in 200+ college campuses across the US, bringing the good news of the love of Jesus Christ and His Church to people in desparate need of love, hope, and faith.
 
-It is live at [zachhofmeister.com](https://zachhofmeister.com), or you can build it yourself with Docker.
+You can find the site live at [zachhofmeister.com](https://zachhofmeister.com), or you can build it yourself with Docker.
 
 <a href="https://zachhofmeister.com"><img width=75% alt="home" src="https://github.com/user-attachments/assets/7ffc13f7-3023-4fdd-9ac1-9fd313f165d8" /></a>
 
@@ -30,7 +30,7 @@ I use [Cloudflare's free tunnel service](https://developers.cloudflare.com/cloud
 In the Cloudflare dashboard, point the tunnel to http://apache:80, which is the location of the site as the Cloudflare service sees it.
 
 ## Purpose
-In my time as a missionary with FOCUS, I wanted to keep learning full-stack development in my free time. I had an idea that I could make a website that displays pages in US Letter format (8.5x11in), so that I could send them digitally or on paper. I got a lot of positive feedback from mission partners that they loved clicking on a photo to see it fullscreen, and that I can link to spiritual resources and Bible passages!
+In my time as a campus missionary, I wanted to keep learning full-stack development in my free time. I had an idea that I could make a website that displays pages in US Letter format (8.5x11in), so that I could send them digitally or on paper. I got a lot of positive feedback from mission partners that they loved clicking on a photo to see it fullscreen, and that I can link to spiritual resources and Bible passages!
 
 ## Architecture
 My original design for the website was just static HTML, CSS, and a little Javascript. That worked for a little while, but I was more interested in building a backend for the site. So, I converted the site to PHP and created a MariaDB database to store information on the newsletters.
