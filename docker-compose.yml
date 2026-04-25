@@ -8,10 +8,10 @@ services:
     restart: unless-stopped
     ports:
       #HOST_PORT : CONTAINER_PORT (maps container port 80 to .env specified port)
-      - "${APP_PORT}:80"
+      - "${APP_BIND}:80"
     volumes:
       #maps the content of ./www in your host to the /var/www/html of the container
-      - ./www:/var/www/html
+      - ./www:/var/www/html:ro
     depends_on:
       - php
       - mariadb
@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
     volumes:
       #maps the content of ./www in your host to the /var/www/html of the container
-      - ./www:/var/www/html
+      - ./www:/var/www/html:ro
     environment:
       PHP_DB_HOST: mariadb
       PHP_DB_NAME: ${DB_NAME}
@@ -60,12 +60,12 @@ services:
       - db_password
     ports:
       #maps your host port to the container port
-      - "${PHPMA_PORT}:80"
+      - "${PHPMA_BIND}:80"
     depends_on:
       - mariadb
   
   cloudflare:
-    image: cloudflare/cloudflared:latest
+    image: cloudflare/cloudflared:2026.3.0
     restart: unless-stopped
     command: tunnel run
     environment:
