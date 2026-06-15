@@ -12,7 +12,8 @@ The easiest way to run the app yourself is with [Docker Compose](https://www.doc
 
 ```bash
 # Clone the repo and change to its directory
-git clone https://github.com/ZachHofmeister/MissionSite.git && cd MissionSite
+git clone https://github.com/ZachHofmeister/MissionSite.git
+cd MissionSite
 
 # Make a copy of the example env file. You don't need to edit it if you are just trying it out.
 cp EXAMPLE.env .env
