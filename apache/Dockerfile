@@ -1,4 +1,4 @@
-FROM httpd:2.4
+FROM httpd:latest
 
 # Enable mod_rewrite and mod_proxy
 RUN sed -i 's/#LoadModule rewrite_module/LoadModule rewrite_module/' /usr/local/apache2/conf/httpd.conf
